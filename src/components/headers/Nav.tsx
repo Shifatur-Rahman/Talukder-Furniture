@@ -396,7 +396,8 @@ export default function Nav({ textColor = "" }: NavProps) {
       </li>
 
       {/* DEMOS MENU hello */} 
-      <li className="menu-item">
+      
+      {/* <li className="menu-item">
         <a
           href="#"
           className={`item-link ${textColor} ${
@@ -432,7 +433,8 @@ export default function Nav({ textColor = "" }: NavProps) {
             </div>
           </div>
         </div>
-      </li>
+      </li> */}
+
     </>
   );
 }

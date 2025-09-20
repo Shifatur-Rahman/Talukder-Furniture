@@ -36,7 +36,7 @@ export default function Categories() {
                   </Link>
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
-                      Home Furniture
+                      Industrial Furniture
                     </Link>
                   </h3>
                 </div>
@@ -52,14 +52,14 @@ export default function Categories() {
                   </Link>
                   <h3>
                     <Link className="link" to={`/shop-default`}>
-                      Metal Furniture
+                      Home Furniture
                     </Link>
                   </h3>
                 </div>
-                <div className="cls-img-item hover-img">
-                  <Link to={`/shop-default`} className="image img-style">
+                <div className="cls-img-item hover-img"> 
+                  <Link to={`/shop-default`} className="image img-style"> 
                     <img
-                      data-src="/images/section/collections-banner-3.jpg"
+                      data-src="/images/section/collections-banner-3.jpg" 
                       alt="Cls Image"
                       src="/images/section/collections-banner-3.jpg"
                       width={441}
@@ -68,7 +68,7 @@ export default function Categories() {
                   </Link>
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
-                      Industrial Furniture
+                      Metal Furniture
                     </Link>
                   </h3>
                 </div>
@@ -84,7 +84,7 @@ export default function Categories() {
                   </Link>
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
-                      Hospital
+                      Hospital 
                     </Link> 
                   </h3>
                 </div>
