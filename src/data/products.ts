@@ -31,10 +31,10 @@ export const products = [
   {
     id: 2,
     delay: "0.1s",
-    title: "Open Box - Adjustable Laptop Stand",
+    title: "Wooden Cabinet",
     imgSrc: "/images/shop/product-2.jpg",
     hoverImg: "/images/shop/product-2.1.jpg", 
-    price: 79.99,
+    price: 0.0,
     oldPrice: 98,
     sale: "-25%",
     swatches: [ 
@@ -60,7 +60,7 @@ export const products = [
   {
     id: 3,
     delay: "0.2s",
-    title: "Laptop Stand",
+    title: "Almirah",
     imgSrc: "/images/shop/product-3.jpg",
     hoverImg: "/images/shop/product-3.1.jpg",
     price: 89.99,
@@ -143,10 +143,10 @@ export const products = [
   {
     id: 5,
     delay: "0s",
-    title: "Wireless Charging Dock",
+    title: "Wooden Book Shelf",
     imgSrc: "/images/shop/product-5.jpg",
     hoverImg: "/images/shop/product-5.1.jpg",
-    price: 89.99,
+    price: 0.0,
     oldPrice: 98,
     sale: "-25%",
     swatches: [
@@ -172,7 +172,7 @@ export const products = [
   {
     id: 6,
     delay: "0.1s",
-    title: "Ergonomic Headrest",
+    title: "Almirah",
     imgSrc: "/images/shop/product-6.jpg",
     hoverImg: "/images/shop/product-6.1.jpg",
     price: 79.99,
@@ -182,12 +182,12 @@ export const products = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-6.jpg",
+        img: "/images/shop/product-6.jpg", 
       },
       {
         label: "Light Blue",
         bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-6.1.jpg",
+        img: "/images/shop/product-6.1.jpg", 
       },
     ],
     isOnSale: false,
@@ -214,7 +214,7 @@ export const products = [
   {
     id: 7,
     delay: "0.2s",
-    title: "Hybrid Laptop Sleeve", 
+    title: "Almirah", 
     imgSrc: "/images/shop/product-7.jpg",
     hoverImg: "/images/shop/product-7.1.jpg",
     price: 79.99,
@@ -224,13 +224,8 @@ export const products = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-7.2.jpg",
-      },
-      {
-        label: "Light Blue",
-        bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-7.3.jpg",
-      },
+        img: "/images/shop/product-7.1.jpg",
+      }
     ],
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"],
     inStock: true,
@@ -259,7 +254,7 @@ export const products = [
   {
     id: 8,
     delay: "0.3s",
-    title: "Wireless Charging Tray",
+    title: "Dressing Table",
     imgSrc: "/images/shop/product-8.jpg",
     hoverImg: "/images/shop/product-8.1.jpg",
     price: 69.99,
@@ -269,18 +264,8 @@ export const products = [
       {
         label: "Light Brown",
         bgClass: "bg-light-brown",
-        img: "/images/shop/product-8.2.jpg",
-      },
-      {
-        label: "Light Pink",
-        bgClass: "bg-light-pink",
-        img: "/images/shop/product-8.3.jpg",
-      },
-      {
-        label: "Light Grey",
-        bgClass: "bg-dark-grey-2",
-        img: "/images/shop/product-8.4.jpg",
-      },
+        img: "/images/shop/product-8.1.jpg",
+      }
     ],
     isOnSale: true,
     colors: [
@@ -429,7 +414,7 @@ export const products2 = [
 export const products3 = [
   {
     id: 11,
-    title: "Softside Chair",
+    title: "Softside Chair", 
     delay: "0s",
     imgSrc: "/images/shop/product-9.jpg",
     hoverImg: "/images/shop/product-9.1.jpg",
