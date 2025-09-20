@@ -8,7 +8,7 @@ export default function Products1({ cardStyle = 1 }) {
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center">
-              <h3 className="wow fadeInUp">Our Picks For You</h3> 
+              <h3 className="wow fadeInUp">Our Picks For You (600 X 600)</h3> 
               <p
                 className="text-body-default text_secondary wow fadeInUp"
                 data-wow-delay="0.1s"

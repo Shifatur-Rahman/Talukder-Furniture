@@ -33,11 +33,11 @@ export const products = [
     delay: "0.1s",
     title: "Open Box - Adjustable Laptop Stand",
     imgSrc: "/images/shop/product-2.jpg",
-    hoverImg: "/images/shop/product-2.1.jpg",
+    hoverImg: "/images/shop/product-2.1.jpg", 
     price: 79.99,
     oldPrice: 98,
     sale: "-25%",
-    swatches: [
+    swatches: [ 
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
@@ -46,7 +46,7 @@ export const products = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-2.2.jpg",
+        img: "/images/shop/product-2.1.jpg",
       },
     ],
     filterBrands: ["Nike", "Zalando", "Adidas"],
@@ -70,12 +70,12 @@ export const products = [
       {
         label: "Light Orange",
         bgClass: "bg-light-orange",
-        img: "/images/shop/product-3.2.jpg",
+        img: "/images/shop/product-3.jpg",
       },
       {
         label: "Light Grey",
         bgClass: "bg-light-grey",
-        img: "/images/shop/product-3.3.jpg",
+        img: "/images/shop/product-3.1.jpg",
       },
     ],
     filterBrands: ["Hermes", "Gucci", "Zalando", "Adidas"],
