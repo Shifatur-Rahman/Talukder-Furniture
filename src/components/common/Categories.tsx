@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Categories() {
+export default function Categories() { 
   return (
     <section className="flat-spacing-2">
       <div className="container-full">
@@ -8,31 +8,31 @@ export default function Categories() {
           <div className="col-12"> 
             <div className="text-center flat-spacing pt-0 line-bottom-container"> 
               <div className="wrap-cls-img">
-                <div className="cls-img-item hover-img">
+                <div className="cls-img-item hover-img"> 
                   <Link to={`/shop-default`} className="image img-style"> 
-                    <img
-                      data-src="/images/section/collections-banner.jpg"
+                    <img 
+                      data-src="/images/section/collections-banner.jpg" 
                       alt="Cls Image"
-                      src="/images/section/collections-banner.jpg"
+                      src="/images/section/collections-banner.jpg" 
                       width={441}
                       height={242}
                     />
-                  </Link>
+                  </Link> 
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
-                      Office Furniture
+                      Office Furniture 
                     </Link>
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img"> 
-                  <Link to={`/shop-default`} className="image img-style">
+                  <Link to={`/shop-default`} className="image img-style"> 
                     <img
                       data-src="/images/section/collections-banner-1.jpg"
                       alt="Cls Image"
                       src="/images/section/collections-banner-1.jpg"
                       width={441}
                       height={242}
-                    />
+                    /> 
                   </Link>
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
@@ -49,9 +49,9 @@ export default function Categories() {
                       width={441}
                       height={242}
                     />
-                  </Link>
+                  </Link> 
                   <h3>
-                    <Link className="link" to={`/shop-default`}>
+                    <Link className="link" to={`/shop-default`}> 
                       Home Furniture
                     </Link>
                   </h3>
@@ -65,7 +65,7 @@ export default function Categories() {
                       width={441}
                       height={242}
                     />
-                  </Link>
+                  </Link> 
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
                       Metal Furniture
@@ -96,6 +96,6 @@ export default function Categories() {
           </div>
         </div>
       </div>
-    </section>
+    </section> 
   );
 }

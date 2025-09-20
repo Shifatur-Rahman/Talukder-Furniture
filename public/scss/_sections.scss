@@ -428,19 +428,19 @@
   }
 }
 
-.wrap-cls-img {
+.wrap-cls-img { 
   display: flex;
-  gap: 40px;
-  justify-content: center;
+  gap: 40px; 
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1530px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
   .cls-img-item {
     display: flex;
     gap: 40px;
-    align-items: center;
+    align-items: center; 
     .image {
       width: 220px;
       height: 121px;
@@ -449,6 +449,7 @@
     }
   }
 }
+
 
 .flat-img-with-text-4 {
   display: grid;

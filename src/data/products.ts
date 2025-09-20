@@ -63,7 +63,7 @@ export const products = [
     title: "Almirah",
     imgSrc: "/images/shop/product-3.jpg",
     hoverImg: "/images/shop/product-3.1.jpg",
-    price: 89.99,
+    price: 0.0,
     oldPrice: 98,
     sale: "-25%",
     swatches: [
@@ -600,7 +600,7 @@ export const products3 = [
   },
   {
     id: 15,
-    title: "Alumina Lamp",
+    title: "Rocking Sofa", 
     delay: "0s",
     imgSrc: "/images/shop/product-1.jpg",
     hoverImg: "/images/shop/product-1.1.jpg", 
@@ -611,13 +611,13 @@ export const products3 = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-1.2.jpg",
+        img: "/images/shop/product-1.1.jpg",
       },
-      {
-        label: "Light Blue",
-        bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-1.3.jpg",
-      },
+      // {
+      //   label: "Light Blue",
+      //   bgClass: "bg-light-blue-2",
+      //   img: "/images/shop/product-1.3.jpg",
+      // },
     ],
     filterBrands: ["Nike", "Louis Vuitton", "Adidas"],
     inStock: true,
@@ -640,7 +640,7 @@ export const products3 = [
       "Shoes",
       "Uncategorized",
     ],
-    filterSizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+    filterSizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"], 
   },
 ];
 export const productMain = [...products, ...products2, ...products3].slice(
