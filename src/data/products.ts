@@ -35,7 +35,7 @@ export const products = [
     imgSrc: "/images/shop/product-2.jpg",
     hoverImg: "/images/shop/product-2.1.jpg", 
     price: 0.0,
-    oldPrice: 98,
+    // oldPrice: 98,
     sale: "-25%",
     swatches: [ 
       {
