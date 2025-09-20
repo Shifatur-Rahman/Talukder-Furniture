@@ -153,12 +153,12 @@ export const products = [
       {
         label: "Light Orange",
         bgClass: "bg-light-orange",
-        img: "/images/shop/product-5.2.jpg",
+        img: "/images/shop/product-5.1.jpg",
       },
       {
         label: "Light Grey",
         bgClass: "bg-light-grey",
-        img: "/images/shop/product-5.3.jpg",
+        img: "/images/shop/product-5.1.jpg",
       },
     ],
     filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"],
@@ -187,7 +187,7 @@ export const products = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-6.2.jpg",
+        img: "/images/shop/product-6.1.jpg",
       },
     ],
     isOnSale: false,
@@ -214,7 +214,7 @@ export const products = [
   {
     id: 7,
     delay: "0.2s",
-    title: "Hybrid Laptop Sleeve",
+    title: "Hybrid Laptop Sleeve", 
     imgSrc: "/images/shop/product-7.jpg",
     hoverImg: "/images/shop/product-7.1.jpg",
     price: 79.99,
