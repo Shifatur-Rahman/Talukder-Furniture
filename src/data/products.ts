@@ -414,10 +414,10 @@ export const products2 = [
 export const products3 = [
   {
     id: 11,
-    title: "Softside Chair", 
+    title: "BedRoom Set", 
     delay: "0s",
     imgSrc: "/images/shop/product-9.jpg",
-    hoverImg: "/images/shop/product-9.1.jpg",
+    hoverImg: "/images/shop/product-9.jpg",
     price: 79.99,
     oldPrice: null,
     sale: null,
@@ -425,15 +425,10 @@ export const products3 = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-9.2.jpg",
-      },
-      {
-        label: "Light Blue",
-        bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-9.3.jpg",
-      },
+        img: "/images/shop/product-9.jpg",
+      }
     ],
-    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Gucci"],
+    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Gucci"], 
     inStock: true,
     filterColor: [
       "Pink",
@@ -459,10 +454,10 @@ export const products3 = [
   },
   {
     id: 12,
-    title: "Softside Chair",
+    title: "BedRoom Set",
     delay: "0s",
     imgSrc: "/images/shop/product-10.jpg",
-    hoverImg: "/images/shop/product-10.1.jpg",
+    hoverImg: "/images/shop/product-10.jpg",
     price: 79.99,
     oldPrice: 98,
     sale: "-25%",
@@ -470,12 +465,12 @@ export const products3 = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-10.2.jpg",
+        img: "/images/shop/product-10.jpg",
       },
       {
         label: "Light Blue",
         bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-10.3.jpg",
+        img: "/images/shop/product-10.jpg",
       },
     ],
     filterBrands: ["Nike", "Hermes", "Gucci", "Zalando", "Adidas"],
@@ -505,10 +500,10 @@ export const products3 = [
   },
   {
     id: 13,
-    title: "Double Standing Desk",
+    title: "BedRoom Set",
     delay: "0s",
-    imgSrc: "/images/shop/product-11.jpg",
-    hoverImg: "/images/shop/product-11.1.jpg",
+    imgSrc: "/images/shop/product-11.jpg", 
+    hoverImg: "/images/shop/product-11.jpg",
     price: 89.99,
     oldPrice: 98,
     sale: "-25%",
@@ -516,12 +511,12 @@ export const products3 = [
       {
         label: "Light Orange",
         bgClass: "bg-light-orange",
-        img: "/images/shop/product-11.2.jpg",
+        img: "/images/shop/product-11.jpg",
       },
       {
         label: "Light Grey",
         bgClass: "bg-light-grey",
-        img: "/images/shop/product-11.3.jpg",
+        img: "/images/shop/product-11.jpg",
       },
     ],
     filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"],
@@ -549,10 +544,10 @@ export const products3 = [
   },
   {
     id: 14,
-    title: "Duo Standing Desk",
+    title: "BedRoom Set",
     delay: "0s",
     imgSrc: "/images/shop/product-12.jpg",
-    hoverImg: "/images/shop/product-12.1.jpg",
+    hoverImg: "/images/shop/product-12.jpg",
     price: 69.99,
     oldPrice: null,
     sale: null,
@@ -560,18 +555,8 @@ export const products3 = [
       {
         label: "Light Brown",
         bgClass: "bg-light-brown",
-        img: "/images/shop/product-12.2.jpg",
-      },
-      {
-        label: "Light Pink",
-        bgClass: "bg-light-pink",
-        img: "/images/shop/product-12.3.jpg",
-      },
-      {
-        label: "Light Grey",
-        bgClass: "bg-dark-grey-2",
-        img: "/images/shop/product-12.4.jpg",
-      },
+        img: "/images/shop/product-12.jpg",
+      }
     ],
     filterBrands: ["Nike", "Gucci", "Zalando", "Adidas"],
     inStock: true,
@@ -596,13 +581,13 @@ export const products3 = [
       "Shoes",
       "Uncategorized",
     ],
-    filterSizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+    filterSizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"], 
   },
   {
     id: 15,
-    title: "Rocking Sofa", 
+    title: "BedRoom Set", 
     delay: "0s",
-    imgSrc: "/images/shop/product-1.jpg",
+    imgSrc: "/images/shop/product-13.jpg",
     hoverImg: "/images/shop/product-1.1.jpg", 
     price: 79.99,
     oldPrice: 98,
@@ -611,7 +596,7 @@ export const products3 = [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-1.1.jpg",
+        img: "/images/shop/product-13.jpg",
       },
       // {
       //   label: "Light Blue",
