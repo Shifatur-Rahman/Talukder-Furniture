@@ -77,7 +77,7 @@ export default function Categories() {
                     <img
                       data-src="/images/section/collections-banner-4.jpg"
                       alt="Cls Image"
-                      src="/images/section/collections-banner-4.jpg"
+                      src="/images/section/collections-banner-4.jpg" 
                       width={441}
                       height={242}
                     />
@@ -89,7 +89,7 @@ export default function Categories() {
                   </h3>
                 </div>
               </div>
-              <Link to={`/shop-default`} className="btn-line">
+              <Link to={`/shop-default`} className="btn-line"> 
                 <span>View All Categiories</span>
               </Link>
             </div>
@@ -98,4 +98,4 @@ export default function Categories() {
       </div>
     </section> 
   );
-}
+} 
