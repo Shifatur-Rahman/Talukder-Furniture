@@ -14,7 +14,7 @@ export default function Products2({ parentClass = "flat-spacing-5" }) {
           <div className="col-12">
             <div className="heading-section style-2">
               <div className="left">
-                <h3 className="wow fadeInUp">Shop Top Sellers</h3>
+                <h3 className="wow fadeInUp">Our Exclusive Bedroom Set</h3>
                 <p
                   className="text-body-default text_secondary wow fadeInUp"
                   data-wow-delay="0s"

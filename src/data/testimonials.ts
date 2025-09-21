@@ -1,31 +1,31 @@
 export const testimonials = [
   {
-    name: "Sarah",
+    name: "Mr. Abdur Rahman",
     image: "/images/shop/testimonials-item-1.jpg",
-    productTitle: "Contrasting sheepskin...",
+    productTitle: "File Cabinet",
     price: "$60.00",
-    review: `I recently purchased a sofa from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
+    review: `I recently purchased a Office Cabinet from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
   },
   {
-    name: "Michael",
+    name: "Mr. Tushar Rahman  ",
     image: "/images/shop/testimonials-item-2.jpg",
-    productTitle: "Contrasting sheepskin...",
+    productTitle: "Bedroom Set",
     price: "$60.00",
-    review: `I recently purchased a sofa from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
+    review: `I recently purchased a Bedroom Set from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
   },
   {
-    name: "Jennifer",
+    name: "Mr. Jubayer Hasan",
     image: "/images/shop/testimonials-item-3.jpg",
-    productTitle: "Contrasting sheepskin...",
+    productTitle: "Drawer Unit",
     price: "$60.00",
-    review: `I recently purchased a sofa from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
+    review: `I recently purchased a drawer unit from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
   },
   {
-    name: "Sarah",
-    image: "/images/shop/testimonials-item-1.jpg",
-    productTitle: "Contrasting sheepskin...",
+    name: "Mrs. Sumaiya",
+    image: "/images/shop/testimonials-item-4.jpg",
+    productTitle: "Dressing Table",
     price: "$60.00",
-    review: `I recently purchased a sofa from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
+    review: `I recently purchased a Dressing Table from this store, and it has completely transformed my living room. The quality is outstanding, and the design fits perfectly with my style.`,
   },
 ];
 
@@ -44,4 +44,4 @@ export const testimonialData = [
     role: "Stylist",
     wow: false,
   },
-];
+]; 
