@@ -55,37 +55,37 @@ export const categories = [
 
    {
     title: "Book Shelves",
-    image: "/images/section/categories-4.jpg",
+    image: "/images/section/categories-7.jpg", 
   },
   {
     title: "Chair",
-    image: "/images/section/categories-5.jpg",
+    image: "/images/section/categories-8.jpg", 
   },
   {
     title: "File Rack",
-    image: "/images/section/categories-6.jpg",
+    image: "/images/section/categories-9.jpg", 
   },
   {
     title: "Bedroom Set",
-    image: "/images/section/categories-6.jpg",
+    image: "/images/section/categories-10.jpg",
   },
    {
     title: "Reading Table",
-    image: "/images/section/categories-6.jpg",
+    image: "/images/section/categories-11.jpg",
   },
    {
     title: "Director Table",
-    image: "/images/section/categories-6.jpg",
+    image: "/images/section/categories-12.jpg",
   },
    {
     title: "File Cabinet",
-    image: "/images/section/categories-6.jpg",
+    image: "/images/section/categories-13.jpg",
   },
     {
     title: "Office Almirah",
-    image: "/images/section/categories-6.jpg",
+    image: "/images/section/categories-14.jpg",
   }
-];
+]; 
 
 export const categories2 = [
   {
