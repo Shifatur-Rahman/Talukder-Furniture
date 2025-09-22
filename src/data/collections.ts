@@ -213,7 +213,7 @@ export const categoryData = [
     title: "Director Table",
     items: "18 items",
     delay: "0.5s",
-  },
+  }, 
    {
     imgSrc: "/images/section/categories-6.jpg",
     title: "File Cabinet",

@@ -10,7 +10,7 @@ export const blogs = [
     category: null,
     width: 1110,
     height: 833,
-    featured: true,
+    featured: true, 
   },
   {
     id: 20,
@@ -60,7 +60,7 @@ export const blogArticles = [
     title: "The Best Office Desks for Small Spaces",
     description:
       "Learn how to choose compact yet functional desks to make the most of your office space.",
-  },
+  }, 
   {
     id: 3,
     image: "/images/blog/blog-3.jpg",
@@ -70,7 +70,7 @@ export const blogArticles = [
     title: "How to Create a Stylish and Productive Workspace",
     description:
       "Tips for balancing aesthetics and functionality when designing your office.",
-  },
+  }, 
   {
     id: 4,
     image: "/images/blog/blog-4.jpg",
