@@ -148,7 +148,7 @@ export default function BlogList() {
                           key={index}
                         >
                           <div className="image">
-                            <Link to={`/blog-details/${post.id}`}>
+                            <Link to={`/blog-details/${post.id}`}> 
                               <img
                                 className="lazyloaded"
                                 data-src={post.image}

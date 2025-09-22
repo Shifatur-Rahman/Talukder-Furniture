@@ -16,44 +16,75 @@ export const collections = [
     title: "Bedroom Elegance Collection", 
     image: "/images/section/collections-banner-2.jpg",
     delay: "0.2s",
-  },
+  }, 
   {
     id: "04",
     title: "Storage Solutions Collection",
     image: "/images/section/collections-banner-3.jpg",
-    delay: "0.2s",
+    delay: "0.2s", 
   },
 ];
-     
-     
-  
+       
 
 
 export const categories = [
   {
-    title: "Storage Solutions",
+    title: "Conference Table",
     image: "/images/section/categories-1.jpg",
   },
   {
-    title: "Office Chairs",
+    title: "Center Table",
     image: "/images/section/categories-2.jpg",
   },
   {
-    title: "Accessories",
+    title: "Sofa Set",
     image: "/images/section/categories-3.jpg",
   },
   {
-    title: "Decor Office",
+    title: "Shoe Rack",
     image: "/images/section/categories-4.jpg",
   },
   {
-    title: "Lighting",
+    title: "File Rack",
     image: "/images/section/categories-5.jpg",
   },
   {
-    title: "Desks wood",
+    title: "TV Cabinet",
     image: "/images/section/categories-6.jpg",
   },
+
+   {
+    title: "Book Shelves",
+    image: "/images/section/categories-4.jpg",
+  },
+  {
+    title: "Chair",
+    image: "/images/section/categories-5.jpg",
+  },
+  {
+    title: "File Rack",
+    image: "/images/section/categories-6.jpg",
+  },
+  {
+    title: "Bedroom Set",
+    image: "/images/section/categories-6.jpg",
+  },
+   {
+    title: "Reading Table",
+    image: "/images/section/categories-6.jpg",
+  },
+   {
+    title: "Director Table",
+    image: "/images/section/categories-6.jpg",
+  },
+   {
+    title: "File Cabinet",
+    image: "/images/section/categories-6.jpg",
+  },
+    {
+    title: "Office Almirah",
+    image: "/images/section/categories-6.jpg",
+  }
 ];
 
 export const categories2 = [
@@ -107,40 +138,94 @@ export const bannerData = [
 export const categoryData = [
   {
     imgSrc: "/images/section/categories-1.jpg",
-    title: "Desks Wood",
+    title: "Conference Table",
     items: "12 items",
     delay: "0s",
   },
   {
     imgSrc: "/images/section/categories-2.jpg",
-    title: "Office Chairs",
+    title: "Center Table",
     items: "35 items",
     delay: "0.1s",
   },
   {
     imgSrc: "/images/section/categories-3.jpg",
-    title: "Storage Office",
+    title: "Sofa Set",
     items: "28 items",
     delay: "0.2s",
   },
   {
     imgSrc: "/images/section/categories-4.jpg",
-    title: "Decor Office",
+    title: "Divan",
     items: "34 items",
     delay: "0.3s",
   },
   {
     imgSrc: "/images/section/categories-5.jpg",
-    title: "Lighting",
+    title: "Shoe Rack",
     items: "21 items",
     delay: "0.4s",
   },
   {
     imgSrc: "/images/section/categories-6.jpg",
-    title: "Accessories",
+    title: "File Rack",
     items: "18 items",
     delay: "0.5s",
   },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "TV Cabinet",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "Book Shelves",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "Chair",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "File Rack",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "Bedroom Set",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "Reading Table",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg", 
+    title: "Director Table",
+    items: "18 items",
+    delay: "0.5s",
+  },
+   {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "File Cabinet",
+    items: "18 items",
+    delay: "0.5s",
+  },
+    {
+    imgSrc: "/images/section/categories-6.jpg",
+    title: "Office Almirah",
+    items: "18 items",
+    delay: "0.5s",
+  }
 ];
 
 export const collectionData = [
