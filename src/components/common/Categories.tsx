@@ -27,14 +27,14 @@ export default function Categories() {
                 <div className="cls-img-item hover-img"> 
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
-                      data-src="/images/section/collections-banner-1.jpg"
+                      data-src="/images/section/collections-banner-1.jpg" 
                       alt="Cls Image"
                       src="/images/section/collections-banner-1.jpg"
                       width={441}
                       height={242}
                     /> 
-                  </Link>
-                  <h3>
+                  </Link> 
+                  <h3> 
                     <Link className="link" to={`/shop-default`}> 
                       Industrial Furniture
                     </Link>
