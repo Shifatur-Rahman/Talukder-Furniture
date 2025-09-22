@@ -1,7 +1,7 @@
 export const collections = [
   {
     id: "01",
-    title: "Modern Minimalist Collection",
+    title: "Talukder Prestige Collection",
     image: "/images/section/collections-banner.jpg",
     delay: "",
   },
@@ -13,7 +13,7 @@ export const collections = [
   },
   {
     id: "03",
-    title: "Scandinavian Elegance Collection",
+    title: "Bedroom Elegance Collection", 
     image: "/images/section/collections-banner-2.jpg",
     delay: "0.2s",
   },
@@ -24,6 +24,10 @@ export const collections = [
     delay: "0.2s",
   },
 ];
+     
+     
+  
+
 
 export const categories = [
   {
