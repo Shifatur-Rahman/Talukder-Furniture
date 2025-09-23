@@ -50,7 +50,7 @@ export default function ShopGram() {
                   >
                     <div className="img-style">
                       <img
-                        className="lazyload img-hover"
+                        className="lazyload img-hover" 
                         data-src={item.imgSrc}
                         src={item.imgSrc}
                         alt="image-gallery"

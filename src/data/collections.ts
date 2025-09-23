@@ -215,13 +215,13 @@ export const categoryData = [
     delay: "0.5s",
   }, 
    {
-    imgSrc: "/images/section/categories-6.jpg",
+    imgSrc: "/images/section/categories-6.jpg", 
     title: "File Cabinet",
     items: "18 items",
     delay: "0.5s",
   },
     {
-    imgSrc: "/images/section/categories-6.jpg",
+    imgSrc: "/images/section/categories-6.jpg", 
     title: "Office Almirah",
     items: "18 items",
     delay: "0.5s",
