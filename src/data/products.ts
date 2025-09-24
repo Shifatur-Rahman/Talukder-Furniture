@@ -216,7 +216,7 @@ export const products = [
     delay: "0.2s",
     title: "Almirah", 
     imgSrc: "/images/shop/product-7.jpg",
-    hoverImg: "/images/shop/product-7.1.jpg",
+    hoverImg: "/images/shop/product-7.1.jpg", 
     price: 79.99,
     oldPrice: 98,
     sale: "-25%",
@@ -295,7 +295,7 @@ export const products = [
       "Grey",
       "Light Blue",
       "Dark Blue",
-    ],
+    ], 
     filterCategory: ["Bags", "Booking", "Clothing", "Women"],
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "Best Seller", "On Sale"],
@@ -346,15 +346,15 @@ export const products2 = [
       "Light Blue",
       "Dark Blue",
     ],
-    filterCategory: ["Bags", "Booking", "Clothing", "Women", "Men", "Shoes"],
+    filterCategory: ["Bags", "Booking", "Clothing", "Women", "Men", "Shoes"], 
     filterSizes: ["XS", "S", "M", "L", "3XL"],
   },
   {
-    id: 10,
-    delay: null,
-    title: "Double Standing Desk",
-    imgSrc: "/images/shop/product-4.jpg",
-    hoverImg: "/images/shop/product-4.1.jpg",
+    id: 10, 
+    delay: null, 
+    title: "Double Standing Desk", 
+    imgSrc: "/images/shop/product-4.jpg", 
+    hoverImg: "/images/shop/product-4.1.jpg", 
     price: 69.99,
     oldPrice: null,
     swatches: [
@@ -407,10 +407,10 @@ export const products2 = [
       "Shoes",
       "Uncategorized",
     ],
-    filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
   },
 ];
-   
+      
 export const products3 = [
   {
     id: 11,
@@ -552,15 +552,15 @@ export const products3 = [
     oldPrice: null,
     sale: null,
     swatches: [
-      {
-        label: "Light Brown",
-        bgClass: "bg-light-brown",
-        img: "/images/shop/product-12.jpg",
+      { 
+        label: "Light Brown", 
+        bgClass: "bg-light-brown", 
+        img: "/images/shop/product-12.jpg", 
       }
     ],
-    filterBrands: ["Nike", "Gucci", "Zalando", "Adidas"],
+    filterBrands: ["Nike", "Gucci", "Zalando", "Adidas"], 
     inStock: true,
-    filterColor: [
+    filterColor: [ 
       "Pink",
       "Red",
 
@@ -572,7 +572,7 @@ export const products3 = [
       "Light Blue",
       "Dark Blue",
     ],
-    filterCategory: [
+    filterCategory: [ 
       "Bags",
       "Booking",
       "Clothing",

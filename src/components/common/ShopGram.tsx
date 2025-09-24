@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { galleryItems } from "@/data/products";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react"; 
 
 import { Pagination } from "swiper/modules";
 export default function ShopGram() {
@@ -11,12 +11,12 @@ export default function ShopGram() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center">
-              <h3 className="wow fadeInUp">Shop Instagram</h3>
+              <h3 className="wow fadeInUp">Shop Instagram</h3> 
               <p
-                className="text-body-default text_secondary wow fadeInUp"
+                className="text-body-default text_secondary wow fadeInUp" 
                 data-wow-delay="0.1s"
               >
-                Elevate your wardrobe with fresh finds today!
+                Elevate your wardrobe with fresh finds today! 
               </p>
             </div>
             <Swiper
