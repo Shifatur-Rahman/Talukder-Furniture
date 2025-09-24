@@ -9,16 +9,16 @@ interface Option {
 
 const optionsData: Option[] = [
   {
-    value: "us",
-    thumbnail: "/images/country/us.svg",
-    text: "USD",
+    value: "bd",
+    thumbnail: "/images/country/bd.svg",
+    text: "BD",
     selected: true,
   },
-  {
-    value: "vn",
-    thumbnail: "/images/country/vn.svg",
-    text: "VND",
-  },
+  // {
+  //   value: "vn",
+  //   thumbnail: "/images/country/vn.svg", 
+  //   text: "VND",
+  // },
 ];
 
 interface CurrencySelectProps {

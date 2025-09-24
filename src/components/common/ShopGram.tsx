@@ -57,7 +57,7 @@ export default function ShopGram() {
                         width={500}
                         height={500}
                       />
-                    </div>
+                    </div> 
                     <Link
                       to={`/product-detail/${item.id}`}
                       className="box-icon hover-tooltip"
@@ -68,7 +68,7 @@ export default function ShopGram() {
                   </div>
                 </SwiperSlide>
               ))}
-              <div className="sw-pagination-gallery sw-dots type-circle justify-content-center spd8" />
+              <div className="sw-pagination-gallery sw-dots type-circle justify-content-center spd8" /> 
             </Swiper>
           </div>
         </div>
