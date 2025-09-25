@@ -7,19 +7,20 @@ export default function Categories() {
         <div className="row">
           <div className="col-12"> 
             <div className="text-center flat-spacing pt-0 line-bottom-container"> 
-              <div className="wrap-cls-img">
+              <div className="wrap-cls-img"> 
                 <div className="cls-img-item hover-img"> 
-                  <Link to={`/shop-default`} className="image img-style"> 
+                  {/* <Link to={`/shop-default`} className="image img-style">  */} 
+                   <Link to={`/office-furniture`} className="image img-style">
                     <img 
                       data-src="/images/section/collections-banner.jpg" 
                       alt="Cls Image"
-                      src="/images/section/collections-banner.jpg" 
+                      src="/images/section/collections-banner.jpg"
                       width={441}
                       height={242}
                     />
                   </Link> 
                   <h3>
-                    <Link className="link" to={`/shop-default`}> 
+                    <Link className="link" to={`/office-furniture`}> 
                       Office Furniture 
                     </Link>
                   </h3>
@@ -66,14 +67,14 @@ export default function Categories() {
                       height={242}
                     />
                   </Link> 
-                  <h3>
+                  <h3> 
                     <Link className="link" to={`/shop-default`}> 
                       Metal Furniture
-                    </Link>
+                    </Link> 
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
-                  <Link to={`/shop-default`} className="image img-style">
+                  <Link to={`/shop-default`} className="image img-style"> 
                     <img
                       data-src="/images/section/collections-banner-4.jpg"
                       alt="Cls Image"

@@ -81,9 +81,9 @@ export default function Nav({ textColor = "" }: NavProps) {
                         <li key={index}>
                           <Link
                             to="/shop-default"
-                            className="categories-item text_secondary"
-                          >
-                            <span className="inner-left">{text}</span>
+                            className="categories-item text_secondary" 
+                          > 
+                            <span className="inner-left">{text}</span> 
                           </Link>
                         </li>
                       ))}
@@ -147,15 +147,15 @@ export default function Nav({ textColor = "" }: NavProps) {
         </div>
       </li>
 
-      {/* PRODUCTS MENU */}
-      <li className="menu-item">
-        <a
+      {/* PRODUCTS MENU */} 
+      <li className="menu-item"> 
+        <a 
           href="#"
           className={`item-link ${
             isMenuParentActive2(shopDetailPages) ? "active" : ""
           } ${textColor}`}
         >
-          Living Room
+          Living Room 
           <i className="icon icon-down" />
         </a>
         <div className="sub-menu mega-menu mega-menu-1">
@@ -174,7 +174,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                         "Printing & Paper(2)",
                         "Top 100 Offers(100)",
                         "New Arrivals(30)",
-                        "Value of the Day(31)",
+                        "Value of the Day(31)", 
                       ].map((text, index) => (
                         <li key={index}>
                           <Link

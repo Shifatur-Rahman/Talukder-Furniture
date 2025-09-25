@@ -42,8 +42,8 @@ export default function ContactForm() {
       {/* map */}
       <div className="wrap-map">
         <div id="map-contact" className="map-contact h590">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.148272329334!2d151.20657421407668!3d-33.858885268389294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae682c546039%3A0x16da940d587922a1!2sCircular%20Quay!5e0!3m2!1sen!2s!4v1745205798630!5m2!1sen!2s"
+          <iframe 
+            src="https://www.google.com/maps/embed/v1/place?q=talukder+group+nikunja&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
             width="100%"
             height={"100%"}
             style={{ border: 0 }}
@@ -53,37 +53,33 @@ export default function ContactForm() {
           />
         </div>
       </div>
-      {/* /map */}
+      {/* /map */} 
       <section className="flat-spacing">
         <div className="container">
           <div className="contact-us-content">
             <div className="row">
               <div className="col-lg-4 mb-lg-30">
-                <h4 className="mb_30 wow fadeInUp">New York</h4>
+                <h4 className="mb_30 wow fadeInUp">Dhaka</h4>
                 <div className="mb_28">
                   <h6 className="mb_8">Phone:</h6>
-                  <p className="text-body-default">+1 666 234 8888</p>
+                  <p className="text-body-default">+8801966-333355</p>
                 </div>
                 <div className="mb_28">
                   <h6 className="mb_8">Email:</h6>
-                  <p className="text-body-default">example@example.com</p>
+                  <p className="text-body-default">info@talukder-group.com.bd</p> 
                 </div>
                 <div className="mb_28">
                   <h6 className="mb_8">Address:</h6>
                   <p className="text-body-default">
-                    2163 Phillips Gap Rd, West Jefferson, North Carolina, United
-                    States
+                    Talukder Group of Industries, H#39,
+             Lake Drive Road, Nikunja-1, Dhaka-1229, Bangladesh 
                   </p>
                 </div>
                 <div>
                   <h6 className="mb_8">Open Time:</h6>
-                  <p className="text-body-default mb_4 open-time">
-                    <span>Mon - Sat:</span>
-                    7:30am - 8:00pm PST
-                  </p>
-                  <p className="text-body-default open-time">
-                    <span>Sunday:</span>
-                    9:00am - 5:00pm PST
+                  <p className="text-body-default mb_4 open-time">       
+                    <span>Sat - Thu:</span>
+                    9:00am - 6:00pm 
                   </p>
                 </div>
               </div>
