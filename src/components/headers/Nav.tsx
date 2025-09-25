@@ -25,7 +25,7 @@ type MenuGroup = {
   links: MenuLink[];
 };
  
-type DemoPage = {
+type DemoPage = { 
   href: string;
   src: string;
   alt: string;
@@ -41,12 +41,12 @@ export default function Nav({ textColor = "" }: NavProps) {
 
   const isMenuParentActive = (menu: MenuLink[]): boolean => {
     return menu.some((elm) => isMenuActive(elm));
-  };
-
-  const isMenuParentActive2 = (menu: MenuGroup[]): boolean => {
-    return menu.some((elm) => isMenuParentActive(elm.links));
   }; 
 
+  const isMenuParentActive2 = (menu: MenuGroup[]): boolean => { 
+    return menu.some((elm) => isMenuParentActive(elm.links)); 
+  }; 
+ 
   return (
     <>
       {/* SHOP MENU */}
@@ -57,7 +57,7 @@ export default function Nav({ textColor = "" }: NavProps) {
             isMenuParentActive2(shopPages) ? "active" : ""
           } ${textColor}`}
         >
-          Office Furniture
+          Office Furniture 
           <i className="icon icon-down" />
         </a>
         <div className="sub-menu mega-menu mega-menu-1">
@@ -72,8 +72,8 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <ul>
                       {[
                         "Ergonomic Furniture(2)",
-                        "Storage Solutions(11)",
-                        "Office Supplies(7)",
+                        "Storage Solutions(11)", 
+                        "Office Supplies(7)", 
                         "Tech Accessories(4)",
                         "Office Furniture(20)",
                         "Ergonomic Equipment(4)",

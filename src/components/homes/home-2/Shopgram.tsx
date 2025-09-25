@@ -12,7 +12,7 @@ export default function Shopgram() {
           <div className="col-12">
             <div className="heading-section text-center">
               <h3 className="wow fadeInUp">Shop Instagram</h3>
-              <p
+              <p 
                 className="text-body-default text_secondary wow fadeInUp"
                 data-wow-delay="0.1s"
               >

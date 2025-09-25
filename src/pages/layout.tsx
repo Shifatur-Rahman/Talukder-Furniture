@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="preload-wrapper">
         <div id="wrapper">
-          <LayoutWrapper>
+          <LayoutWrapper> 
             <Context>
               {children}
               <Toolbar />

@@ -44,7 +44,7 @@ export default function Hero() {
                   alt="banner-cls"
                   src={slide.image}
                   loading="eager"
-                  fetchPriority="high" // ✅ KEY: prioritize for LCP
+                  fetchPriority="high" // ✅ KEY: prioritize for LCP 
                   decoding="async"
                   width={1330}
                   height={702}
@@ -60,14 +60,14 @@ export default function Hero() {
                   </p>
                 </div>
                 <Link
-                  to={`/shop-default`}
-                  className="tf-btn btn-white fade-item fade-item-3"
+                  to={`/shop-default`} 
+                  className="tf-btn btn-white fade-item fade-item-3" 
                 >
-                  Explore Collection <i className="icon-arrow-up-right" />
+                  Explore Collection <i className="icon-arrow-up-right" /> 
                 </Link>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> 
         ))}
         <div className="wrap-pagination">
           <div className="container">

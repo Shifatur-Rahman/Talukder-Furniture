@@ -22,7 +22,7 @@ const QuestionModal = lazy(() => import("@/components/modals/QuestionModal"));
 const SeliveryReturn = lazy(() => import("@/components/modals/SeliveryReturn"));
 const Share = lazy(() => import("@/components/modals/Share"));
 const Toolbar = lazy(() => import("@/components/headers/Toolbar"));
-const SidebarAccount = lazy(() => import("@/components/modals/SidebarAccount"));
+const SidebarAccount = lazy(() => import("@/components/modals/SidebarAccount")); 
 
 // Pages
 const HomePage = lazy(() => import("./pages"));
@@ -33,7 +33,7 @@ const Homepage5 = lazy(() => import("./pages/homes/home-5"));
 
 // Product Pages
 const ProductLayout = lazy(() => import("./pages/products/layout"));
-const ShopDefaultPage = lazy(() => import("./pages/products/shop-default"));
+const ShopDefaultPage = lazy(() => import("./pages/products/shop-default")); 
 const ShopListPage = lazy(() => import("./pages/products/shop-list"));
 const ShopFullGridPage = lazy(() => import("./pages/products/shop-full-grid"));
 const ShopFullListPage = lazy(() => import("./pages/products/shop-full-list"));

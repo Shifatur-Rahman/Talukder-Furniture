@@ -18,7 +18,7 @@ interface Products1Props {
   defaultActiveLayout?: number;
   isFullLayout?: boolean;
   cardStyle?: number;
-}
+} 
 
 export default function Products1({
   parentClass = "flat-spacing",

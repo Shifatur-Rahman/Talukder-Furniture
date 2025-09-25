@@ -17,13 +17,13 @@ export default function Categories() {
                 Fresh styles just in! Elevate your look.
               </p>
             </div>
-            <div className="wrap-categories overflow-x-auto style-2 has-boxshadow">
+            <div className="wrap-categories overflow-x-auto style-2 has-boxshadow"> 
               {categories2.map((category, index) => (
                 <div
                   className="categories-item wow fadeInUp"
                   data-wow-delay={category.delay}
                   key={index}
-                >
+                > 
                   <div className="icon">
                     <i className={category.iconClass} />
                   </div>

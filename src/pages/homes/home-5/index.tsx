@@ -24,7 +24,7 @@ export default function Homepage5() {
     <>
       <MetaComponent meta={metadata} />
       <Topbar2 />
-      <Header1 parentClass="header-default border-bot" />
+      <Header1 parentClass="header-default border-bot" /> 
       <Collections3 parentClass="slider-home5" />
       <Collections5 />
       <Products1 cardStyle={5} />

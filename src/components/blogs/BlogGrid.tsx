@@ -22,7 +22,7 @@ export default function BlogGrid() {
                         width={615}
                         height={461}
                       />
-                    </Link>
+                    </Link> 
                     <div className="article-label">
                       <a href="#" className="text-button-small">
                         {article.label}

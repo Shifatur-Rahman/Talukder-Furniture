@@ -90,7 +90,7 @@ export default function Collections({
                         <span className="text-title">{item.id}.</span>
                         {item.title}
                       </h3>
-                      <Link to={`/shop-default`} className="arr-link">
+                      <Link to={`/shop-default`} className="arr-link"> 
                         <span className="text-button-small text-more">
                           View More
                         </span>
