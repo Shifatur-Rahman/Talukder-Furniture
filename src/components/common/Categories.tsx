@@ -91,8 +91,8 @@ export default function Categories() {
                 </div>
               </div>
               <Link to={`/shop-default`} className="btn-line"> 
-                <span>View All Categiories</span>
-              </Link>
+                <span>View All Categiories</span> 
+              </Link> 
             </div>
           </div>
         </div>
