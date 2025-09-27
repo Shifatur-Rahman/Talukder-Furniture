@@ -1,9 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 
 import {
-  blogLinks,
-  demoPages,
-  otherPages,
+  blogLinks, 
+  demoPages, 
+  otherPages, 
   shopDetailPages,
   shopPages,
 } from "@/data/menu";
@@ -145,7 +145,7 @@ export default function Nav({ textColor = "" }: NavProps) {
             </div>
           </div>
         </div>
-      </li>
+      </li> 
 
       {/* PRODUCTS MENU */} 
       <li className="menu-item"> 

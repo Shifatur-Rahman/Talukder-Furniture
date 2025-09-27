@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { slidesData } from "@/data/heroSlides";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay  } from "swiper/modules";
 export default function Hero() {
   return (
     <div className="tf-slideshow style-default slider-nav-sw slider-effect-fade efect-2">
@@ -12,6 +12,7 @@ export default function Hero() {
         centeredSlides
         loop
         spaceBetween={20}
+        speed={1000} // ✅ Smooth transition (1s) 
         breakpoints={{
           0: { slidesPerView: 1 },
           575: {
@@ -24,7 +25,14 @@ export default function Hero() {
             slidesPerView: 1.428,
           },
         }}
-        modules={[Navigation, Pagination]}
+
+         // ✅ Add autoplay config
+        autoplay={{
+          delay: 4000, // 4 seconds
+          disableOnInteraction: false,
+        }}
+
+        modules={[Navigation, Pagination, Autoplay]}
         pagination={{
           clickable: true,
           el: ".spd10",
@@ -80,3 +88,4 @@ export default function Hero() {
     </div>
   );
 }
+

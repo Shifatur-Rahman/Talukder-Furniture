@@ -4,7 +4,7 @@ export const slidesData = [
     slideClass: "slide-1",
     title: "Talukder Bedroom Set",
     description:
-      "Get superior support and better posture with ergonomic chairs for long work hours",
+      "Get superior support and better posture with ergonomic furniture for ", 
   }, 
   {  
     image: "/images/slider/slider-2.jpg",
@@ -16,7 +16,7 @@ export const slidesData = [
   {
     image: "/images/slider/slider-3.jpg",
     slideClass: "slide-3",
-    title: "Talukder Dinning Set", 
+    title: "Talukder Dinning Set",
     description: 
       "Get superior support and better posture with ergonomic chairs for long work hours", 
   },
