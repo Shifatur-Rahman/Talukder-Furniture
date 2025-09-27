@@ -60,32 +60,32 @@ export default function Categories() {
                 <div className="cls-img-item hover-img"> 
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
-                      data-src="/images/section/collections-banner-3.jpg" 
+                      data-src="/images/section/collections-banner-4.jpg" 
                       alt="Cls Image"
-                      src="/images/section/collections-banner-3.jpg"
+                      src="/images/section/collections-banner-4.jpg"
                       width={441}
                       height={242}
                     />
                   </Link> 
                   <h3> 
                     <Link className="link" to={`/shop-default`}> 
-                      Metal Furniture
+                      Hospital Furniture
                     </Link> 
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
-                      data-src="/images/section/collections-banner-4.png"
+                      data-src="/images/section/collections-banner-3.jpg" 
                       alt="Cls Image"
-                      src="/images/section/collections-banner-4.png" 
+                      src="/images/section/collections-banner-3.jpg" 
                       width={441}
                       height={242}
                     />
                   </Link>
                   <h3>
                     <Link className="link" to={`/shop-default`}> 
-                      Hospital 
+                      Metal Furniture
                     </Link> 
                   </h3>
                 </div>
