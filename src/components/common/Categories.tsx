@@ -76,9 +76,9 @@ export default function Categories() {
                 <div className="cls-img-item hover-img">
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
-                      data-src="/images/section/collections-banner-4.jpg"
+                      data-src="/images/section/collections-banner-4.png"
                       alt="Cls Image"
-                      src="/images/section/collections-banner-4.jpg" 
+                      src="/images/section/collections-banner-4.png" 
                       width={441}
                       height={242}
                     />
