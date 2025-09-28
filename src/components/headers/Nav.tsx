@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { FaArrowRight } from "react-icons/fa"; 
 
 import {
   blogLinks, 
@@ -46,11 +48,13 @@ export default function Nav({ textColor = "" }: NavProps) {
   const isMenuParentActive2 = (menu: MenuGroup[]): boolean => { 
     return menu.some((elm) => isMenuParentActive(elm.links)); 
   }; 
+
+  const [open, setOpen] = useState(false);
  
   return (
     <>
       {/* SHOP MENU */}
-      <li className="menu-item">
+      {/* <li className="menu-item">
         <a
           href="#"
           className={`item-link ${
@@ -66,20 +70,21 @@ export default function Nav({ textColor = "" }: NavProps) {
               <div className="mega-menu-list">
                 <div className="mega-menu-item">
                   <div className="list-categories-inner">
-
-                    {/* <div className="menu-heading text-title"> 
+                    <div className="menu-heading text-title"> 
                       Browse Categories 
-                    </div>  */}
-
-                    {/* <ul> 
-                      {[
-                        "Ergonomic Furniture(2)",
+                    </div> 
+                    <ul> 
+                      {
+                      [
+                        "Ergonomic Furniture(2)", 
                         "Storage Solutions(11)", 
                         "Office Supplies(7)", 
                         "Tech Accessories(4)",
                         "Office Furniture(20)",
-                        "Ergonomic Equipment(4)", 
-                      ].map((text, index) => (
+                        "Ergonomic Equipment(4)",
+                      ]
+                      
+                      .map((text, index) => (
                         <li key={index}>
                           <Link
                             to="/shop-default"
@@ -89,15 +94,13 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </Link>
                         </li>
                       ))}
-                    </ul> */}
-
-                    {/* <div className="box-cate-bottom">
+                    </ul>
+                    <div className="box-cate-bottom">
                       <Link to="/shop-default" className="btn-line">
                         <span>View All Products </span>
                         <i className="icon-arrow-up-right" />
                       </Link>
-                    </div> */}
-
+                    </div>
                   </div>
                 </div>
 
@@ -149,15 +152,68 @@ export default function Nav({ textColor = "" }: NavProps) {
             </div>
           </div>
         </div>
-      </li> 
-
-         
-        
-      
+      </li>  */}
 
 
+       <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Office Furniture <i className="icon icon-down" />
+      </a>
 
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1">
+          <div className="container">
+            <div className="row-demo-1">
+              <div className="mega-menu-list">
+                {officeFurnitureMenu.map((menu, index) => (
+                  <div className="mega-menu-item" key={index}>
+                    <div className="list-categories-inner">
+                    <div className="menu-heading text-title">{menu.title} 
 
+                       {/* <i className="fa-solid fa-arrow-right"></i> 
+                       <i class="fa-solid fa-arrow-right"></i> */}
+                       <FaArrowRight className="arrow-icon" /> 
+                    </div>
+
+                    <ul className="menu-list">
+                      {menu.links.map((link, idx) => (
+                        <li key={idx}>
+                          {link.children ? (
+                            <>
+                              <span className="menu-link-text">
+                                {link.label}
+                              </span>
+                              <ul className="submenu-list">
+                                {link.children.map((child, cIdx) => (
+                                  <li key={cIdx}>
+                                    <a href={child.href} className="menu-link-text">
+                                      {child.label}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          ) : (
+                            <a href={link.href} className="menu-link-text">
+                              {link.label}
+                            </a>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  </div> 
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </li>
 
       {/* PRODUCTS MENU */} 
       <li className="menu-item"> 
@@ -479,3 +535,72 @@ export default function Nav({ textColor = "" }: NavProps) {
     </>
   );
 }
+
+
+
+
+
+
+
+// data/officeFurniture.js
+export const officeFurnitureMenu = [
+  {
+    title: "Tables",
+    links: [
+      { label: "MD/CEO Table", href: "/md-ceo-table" },
+      { label: "Executive Table", href: "/executive-table" }, 
+      { label: "Side Rack", href: "/side-rack" },
+      { label: "Conference Table", href: "/conference-table" },
+      { label: "Computer Table", href: "/computer-table" },
+    ],
+  },
+  {
+    title: "Chairs",
+    links: [
+      { label: "Swivel Chair", href: "/swivel-chair" },
+      { label: "Low Back Chair", href: "/low-back-chair" },
+      { label: "Medium Back Chair", href: "/medium-back-chair" },
+      { label: "High Back Chair", href: "/high-back-chair" },
+      { label: "Swivel Stool", href: "/swivel-stool" },
+      { label: "Fixed Chair", href: "/fixed-chair" },
+      { label: "Visitor's Chair", href: "/visitors-chair" },
+    ],
+  },
+  {
+    title: "Office Sofa",
+    links: [
+      { label: "1 Seater", href: "/sofa-1-seater" },
+      { label: "2 Seater", href: "/sofa-2-seater" },
+      { label: "3 Seater", href: "/sofa-3-seater" },
+    ],
+  },
+  {
+    title: "Cabinets",
+    links: [
+      { label: "Office Cupboard", href: "/office-cupboard" },
+      { label: "Office Almirah", href: "/office-almirah" },
+      {
+        label: "Filing Cabinet",
+        children: [
+          { label: "2 Drawer Cabinet", href: "/2-drawer" },
+          { label: "2 Drawer Cabinet Combined", href: "/2-drawer-combined" },
+          { label: "3 Drawer Cabinet", href: "/3-drawer" },
+          { label: "3 Drawer Cabinet Combined", href: "/3-drawer-combined" },
+          { label: "4 Drawer Cabinet", href: "/4-drawer" },
+          { label: "4 Drawer Cabinet Combined", href: "/4-drawer-combined" },
+        ],
+      },
+      { label: "Multi-Purpose Cabinet", href: "/multi-purpose-cabinet" },
+    ],
+  },
+  {
+    title: "Waiting",
+    links: [
+      { label: "Waiting Chair", href: "/waiting-chair" },
+      { label: "Auditorium Chair", href: "/auditorium-chair" },
+      { label: "Workstation", href: "/workstation" },
+      { label: "Waiting Sofa", href: "/waiting-sofa" },
+      { label: "Working Desk", href: "/working-desk" },
+    ],
+  },
+];

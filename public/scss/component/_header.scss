@@ -377,8 +377,8 @@ header {
     .menu-heading {
       margin-bottom: 8px;
 
-      font-weight: 400;
-      font-size: 20px;
+      font-weight: 600;
+      font-size: 16px;
 
       color: #222;
     }
@@ -460,6 +460,11 @@ header {
       }
     }
   }
+}
+
+.arrow-icon{
+  font-size: 13px;
+  margin-left: 6px;
 }
 
 .canvas-mb {
