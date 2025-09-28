@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa"; 
+import { AiOutlineMinus } from "react-icons/ai";
+
 
 import {
   blogLinks, 
@@ -165,7 +167,7 @@ export default function Nav({ textColor = "" }: NavProps) {
       </a>
 
       {open && (
-        <div className="sub-menu mega-menu mega-menu-1">
+        <div className="sub-menu mega-menu mega-menu-1"> 
           <div className="container">
             <div className="row-demo-1">
               <div className="mega-menu-list">
@@ -189,8 +191,10 @@ export default function Nav({ textColor = "" }: NavProps) {
                               </span>
                               <ul className="submenu-list">
                                 {link.children.map((child, cIdx) => (
+                                  
                                   <li key={cIdx}>
                                     <a href={child.href} className="menu-link-text">
+                                      <AiOutlineMinus />
                                       {child.label}
                                     </a>
                                   </li>
@@ -208,81 +212,8 @@ export default function Nav({ textColor = "" }: NavProps) {
                   </div>
                   </div> 
                 ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </li>
 
-      {/* PRODUCTS MENU */} 
-      <li className="menu-item"> 
-        <a 
-          href="#"
-          className={`item-link ${
-            isMenuParentActive2(shopDetailPages) ? "active" : ""
-          } ${textColor}`}
-        >
-          Living Room 
-          <i className="icon icon-down" />
-        </a>
-        <div className="sub-menu mega-menu mega-menu-1">
-          <div className="container">
-            <div className="row-demo-1">
-              <div className="mega-menu-list">
-                <div className="mega-menu-item">
-                  <div className="list-categories-inner">
-                    <div className="menu-heading text-title">
-                      Browse Categories
-                    </div>
-                    <ul>
-                      {[
-                        "Lighting Solutions(9)",
-                        "Cleaning Supplies(15)",
-                        "Printing & Paper(2)",
-                        "Top 100 Offers(100)",
-                        "New Arrivals(30)",
-                        "Value of the Day(31)", 
-                      ].map((text, index) => (
-                        <li key={index}>
-                          <Link
-                            to="/shop-default"
-                            className="categories-item text_secondary"
-                          >
-                            <span className="inner-left">{text}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="box-cate-bottom">
-                      <Link to="/shop-default" className="btn-line">
-                        <span>View All Products </span>
-                        <i className="icon-arrow-up-right" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {shopDetailPages.map((group, index) => (
-                  <div className="mega-menu-item" key={index}>
-                    <ul className="menu-list">
-                      {group.links.map((link, idx) => (
-                        <li key={idx}>
-                          <Link
-                            to={link.href}
-                            className={`menu-link-text text_secondary link ${
-                              isMenuActive(link) ? "active" : ""
-                            }`}
-                          >
-                            {link.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-
-                <div className="mega-menu-item">
+                 <div className="mega-menu-item">
                   <div className="collection-position hover-img style-4">
                     <Link to="/product-detail/1" className="img-style w-100">
                       <img
@@ -300,88 +231,61 @@ export default function Nav({ textColor = "" }: NavProps) {
                           Desks
                         </Link>
                       </h6>
-                      <h6>25 products</h6>
+                      <h6>25 products</h6> 
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-      </li>
+      )}
+    </li>
 
-      {/* PRODUCTS MENU */}
-      <li className="menu-item">
-        <a
-          href="#"
-          className={`item-link ${
-            isMenuParentActive2(shopDetailPages) ? "active" : ""
-          } ${textColor}`}
-        >
-          Dinning Room
-          <i className="icon icon-down" />
-        </a>
-        <div className="sub-menu mega-menu mega-menu-1">
+      {/* Living Room */} 
+      <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Living Room <i className="icon icon-down" />
+      </a>
+
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1"> 
           <div className="container">
             <div className="row-demo-1">
               <div className="mega-menu-list">
-                <div className="mega-menu-item">
-                  <div className="list-categories-inner">
-                    <div className="menu-heading text-title">
-                      Browse Categories
-                    </div>
-                    <ul>
-                      {[
-                        "Lighting Solutions(9)",
-                        "Cleaning Supplies(15)",
-                        "Printing & Paper(2)",
-                        "Top 100 Offers(100)",
-                        "New Arrivals(30)",
-                        "Value of the Day(31)",
-                      ].map((text, index) => (
-                        <li key={index}>
-                          <Link
-                            to="/shop-default"
-                            className="categories-item text_secondary"
-                          >
-                            <span className="inner-left">{text}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="box-cate-bottom">
-                      <Link to="/shop-default" className="btn-line">
-                        <span>View All Products </span>
-                        <i className="icon-arrow-up-right" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {shopDetailPages.map((group, index) => (
+                {livingRoom.map((menu, index) => (
                   <div className="mega-menu-item" key={index}>
-                    <ul className="menu-list">
-                      {group.links.map((link, idx) => (
-                        <li key={idx}>
-                          <Link
-                            to={link.href}
-                            className={`menu-link-text text_secondary link ${
-                              isMenuActive(link) ? "active" : ""
-                            }`}
-                          >
-                            {link.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul> 
+                    <div className="list-categories-inner">
+                    <div className="menu-heading text-title">{menu.title} 
+
+                       {/* <i className="fa-solid fa-arrow-right"></i> 
+                       <i class="fa-solid fa-arrow-right"></i> */} 
+                       <FaArrowRight className="arrow-icon" /> 
+                    </div>
+
+                     <ul className="menu-list">
+                    {menu.links.map((link, idx) => (
+                      <li key={idx}>
+                        <a href={link.href} className="menu-link-text">
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                   </div> 
-                ))} 
-  
-                <div className="mega-menu-item"> 
-                  <div className="collection-position hover-img style-4"> 
-                    <Link to="/product-detail/1" className="img-style w-100"> 
-                      <img 
-                        className="lazyload" 
+                  </div> 
+                ))}
+
+                 <div className="mega-menu-item">
+                  <div className="collection-position hover-img style-4">
+                    <Link to="/product-detail/1" className="img-style w-100">
+                      <img
+                        className="lazyload"
                         data-src="/images/banner/collections-1.jpg"
                         alt="banner-cls"
                         src="/images/banner/collections-1.jpg"
@@ -395,44 +299,179 @@ export default function Nav({ textColor = "" }: NavProps) {
                           Desks
                         </Link>
                       </h6>
-                      <h6>25 products</h6>
+                      <h6>25 products</h6> 
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-      </li>
+      )}
+    </li>
 
-      {/* BLOGS MENU */}
-      <li className="menu-item position-relative">
-        <a
-          href="#"
-          className={`item-link ${
-            isMenuParentActive(blogLinks) ? "active" : "" 
-          } ${textColor}`}
-        >
-          Bedroom
-          <i className="icon icon-down" />
-        </a>
-        <div className="sub-menu submenu-default">
-          <ul className="menu-list">
-            {blogLinks.map((link, index) => (
-              <li key={index}>
-                <Link 
-                  to={link.href}
-                  className={`menu-link-text ${
-                    isMenuActive(link) ? "active" : ""
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+     {/* Dining Room */} 
+
+      <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Dining Room <i className="icon icon-down" /> 
+      </a>
+
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1"> 
+          <div className="container">
+            <div className="row-demo-1">
+              <div className="mega-menu-list">
+                {diningRoom.map((menu, index) => (
+                  <div className="mega-menu-item" key={index}>
+                    <div className="list-categories-inner">
+                    <div className="menu-heading text-title">{menu.title} 
+
+                       {/* <i className="fa-solid fa-arrow-right"></i> 
+                       <i class="fa-solid fa-arrow-right"></i> */} 
+                       <FaArrowRight className="arrow-icon" /> 
+                    </div>
+
+                     <ul className="menu-list">
+                    {menu.links.map((link, idx) => (
+                      <li key={idx}>
+                        <a href={link.href} className="menu-link-text">
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  </div> 
+                  </div> 
+                ))}
+
+                 <div className="mega-menu-item">
+                  <div className="collection-position hover-img style-4">
+                    <Link to="/product-detail/1" className="img-style w-100">
+                      <img
+                        className="lazyload"
+                        data-src="/images/banner/collections-1.jpg"
+                        alt="banner-cls"
+                        src="/images/banner/collections-1.jpg"
+                        width={657}
+                        height={877}
+                      />
+                    </Link>
+                    <div className="content cls-content">
+                      <h6>
+                        <Link to="/product-detail/1" className="link">
+                          Desks
+                        </Link>
+                      </h6>
+                      <h6>25 products</h6> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-      </li> 
+      )}
+    </li>
+
+      {/* bedRoomFurniture */}
+
+          <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Bedroom <i className="icon icon-down" />
+      </a>
+
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1"> 
+          <div className="container">
+            <div className="row-demo-1">
+              <div className="mega-menu-list">
+                 {bedRoomFurnitureMenu.map((menu, index) => (
+              <div className="mega-menu-item" key={index}>
+                {/* Main Category Title */}
+                <div className="menu-heading font-bold flex items-center">
+                  {menu.title}
+                  <FaArrowRight className="ml-2 text-xs" />
+                </div>
+
+                {/* Links */}
+                <ul className="menu-list">
+                  {menu.links.map((link, idx) => (
+                    <li key={idx}>
+                      {link.children ? (
+                        <>
+                          {/* Parent item (not clickable) */}
+                          <span className="menu-link-text font-semibold flex items-center cursor-default">
+                            {link.label}
+                            <FaArrowRight className="ml-1 text-[10px]" />
+                          </span>
+
+                          {/* Child items */}
+                          <ul className="submenu-list ml-4 mt-1">
+                            {link.children.map((child, cIdx) => (
+                              <li key={cIdx}>
+                                <Link
+                                  to={child.href}
+                                  className="menu-link-text"
+                                >
+                                  {child.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </>
+                      ) : (
+                        // Normal clickable link
+                        <Link to={link.href} className="menu-link-text">
+                          {link.label}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))} 
+
+                 <div className="mega-menu-item">
+                  <div className="collection-position hover-img style-4">
+                    <Link to="/product-detail/1" className="img-style w-100">
+                      <img
+                        className="lazyload"
+                        data-src="/images/banner/collections-1.jpg"
+                        alt="banner-cls"
+                        src="/images/banner/collections-1.jpg"
+                        width={657}
+                        height={877}
+                      />
+                    </Link>
+                    <div className="content cls-content">
+                      <h6>
+                        <Link to="/product-detail/1" className="link">
+                          Desks
+                        </Link>
+                      </h6>
+                      <h6>25 products</h6> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </li>
 
        {/* BLOGS MENU */}
       <li className="menu-item position-relative">
@@ -537,8 +576,7 @@ export default function Nav({ textColor = "" }: NavProps) {
 }
 
 
-
-// data/officeFurniture.js
+//officeFurniture
 export const officeFurnitureMenu = [
   {
     title: "Tables",
@@ -553,13 +591,21 @@ export const officeFurnitureMenu = [
   {
     title: "Chairs",
     links: [
-      { label: "Swivel Chair", href: "/swivel-chair" },
-      { label: "Low Back Chair", href: "/low-back-chair" },
-      { label: "Medium Back Chair", href: "/medium-back-chair" },
-      { label: "High Back Chair", href: "/high-back-chair" },
-      { label: "Swivel Stool", href: "/swivel-stool" },
-      { label: "Fixed Chair", href: "/fixed-chair" },
-      { label: "Visitor's Chair", href: "/visitors-chair" },
+      {
+        label: "Swivel Chair", // parent, no href 
+        children: [
+          { label: "Low Back Chair", href: "/low-back-chair" },
+          { label: "Medium Back Chair", href: "/medium-back-chair" },
+          { label: "High Back Chair", href: "/high-back-chair" },
+          { label: "Swivel Stool", href: "/swivel-stool" },
+        ],
+      },
+      {
+        label: "Fixed Chair", // parent, no href
+        children: [
+          { label: "Visitor's Chair", href: "/visitors-chair" }, 
+        ],
+      },
     ],
   },
   {
@@ -567,7 +613,7 @@ export const officeFurnitureMenu = [
     links: [
       { label: "1 Seater", href: "/sofa-1-seater" },
       { label: "2 Seater", href: "/sofa-2-seater" },
-      { label: "3 Seater", href: "/sofa-3-seater" },
+      { label: "3 Seater", href: "/sofa-3-seater" }, 
     ],
   },
   {
@@ -575,6 +621,7 @@ export const officeFurnitureMenu = [
     links: [
       { label: "Office Cupboard", href: "/office-cupboard" },
       { label: "Office Almirah", href: "/office-almirah" },
+      { label: "Multi-Purpose Cabinet", href: "/multi-purpose-cabinet" }, 
       {
         label: "Filing Cabinet",
         children: [
@@ -586,7 +633,7 @@ export const officeFurnitureMenu = [
           { label: "4 Drawer Cabinet Combined", href: "/4-drawer-combined" },
         ],
       },
-      { label: "Multi-Purpose Cabinet", href: "/multi-purpose-cabinet" },
+    
     ],
   },
   {
@@ -597,6 +644,202 @@ export const officeFurnitureMenu = [
       { label: "Workstation", href: "/workstation" },
       { label: "Waiting Sofa", href: "/waiting-sofa" },
       { label: "Working Desk", href: "/working-desk" },
+    ],
+  },
+];
+
+// livingRoom
+export const livingRoom = [ 
+  {
+    title: "Sofa Set",
+    links: [
+      { label: "Sofa Set 3-1-1", href: "/md-ceo-table" },
+      { label: "Sofa Set 3-2-1", href: "/executive-table" }, 
+      { label: "Sofa Set 2-2-1", href: "/side-rack" },
+      { label: "1 Seater", href: "/conference-table" },
+      { label: "2 Seater", href: "/computer-table" },
+      { label: "3 Seater", href: "/side-rack" },
+      { label: "Divan Sofa", href: "/conference-table" },
+      { label: "Sofa Cum Bed", href: "/computer-table" },
+    ],
+  },
+
+  {
+    title: "Recliner/Rocker",
+    links: [
+        { label: "Rocking Chair", href: "/md-ceo-table" },
+    ],
+  },
+
+  {
+    title: "Accent Chairs",
+    links: [
+      { label: "Accent Chairs Stool", href: "/sofa-1-seater" },
+      { label: "Folding Chair", href: "/sofa-2-seater" },
+    ],
+  },
+
+  {
+    title: "Accent Tables",
+    links: [
+      { label: "Center Table", href: "/sofa-1-seater" },
+      { label: "Side Table", href: "/sofa-2-seater" },
+    ],
+  },
+
+  {
+    title: "Cabinets",
+    links: [
+      { label: "Showcase", href: "/sofa-1-seater" },
+      { label: "TV/Media Cabinet", href: "/sofa-2-seater" },
+    ],
+  },
+
+  {
+    title: "Racks",
+    links: [
+      { label: "Display Racks", href: "/sofa-1-seater" },
+      { label: "Magazine Racks", href: "/sofa-2-seater" },
+    ],
+  },
+];
+
+// dinning room 
+// data/officeFurniture.js
+export const diningRoom = [ 
+  {
+    title: "Dining Set",
+    links: [
+      { label: "Dining Set 4 Seater", href: "/md-ceo-table" },
+      { label: "Dining Set 6 Seater", href: "/executive-table" }, 
+      { label: "Dining Set 8 Seater", href: "/side-rack" },
+      ],
+  },
+
+  {
+    title: "Dining Table",
+    links: [
+        { label: "Dining Table", href: "/md-ceo-table" },
+    ],
+  },
+
+  {
+    title: "Dining Chair",
+    links: [
+      { label: "Dining Chair", href: "/sofa-1-seater" },
+    ],
+  },
+
+  {
+    title: "Dining Room Cabinets",
+    links: [
+      { label: "Dinner Wagon", href: "/sofa-1-seater" },
+      { label: "Buffet Cabinet", href: "/sofa-2-seater" },
+    ],
+  },
+
+  {
+    title: "Kitchen Racks",
+    links: [
+      { label: "Kitchen Racks", href: "/sofa-1-seater" },
+      { label: "Tea Trolley", href: "/sofa-2-seater" },
+    ],
+  },
+
+  {
+    title: "Dolna",
+    links: [
+      { label: "Dolna", href: "/sofa-1-seater" },
+    ],
+  },
+
+  {
+    title: "Iron Shelf",
+    links: [
+      { label: "Iron Shelf", href: "/sofa-1-seater" },
+    ],
+  },
+];
+
+
+//    Bed Room
+
+export const bedRoomFurnitureMenu = [
+  {
+    title: "Mattress", 
+    links: [
+      {
+        label: "Spring Mattresses", // parent
+        children: [
+          { label: "Single Spring Mattress", href: "/single-spring-mattress" },
+          { label: "Double Spring Mattress", href: "/double-spring-mattress" },
+          { label: "King Spring Mattress", href: "/king-spring-mattress" },
+        ],
+      },
+      {
+        label: "Coir Mattresses", // parent
+        children: [
+          { label: "Single Coir Mattress", href: "/single-coir-mattress" },
+          { label: "Double Coir Mattress", href: "/double-coir-mattress" },
+          { label: "King Coir Mattress", href: "/king-coir-mattress" },
+        ],
+      },
+      {
+        label: "Foam Mattresses", // parent
+        children: [
+          { label: "Single Foam Mattress", href: "/single-foam-mattress" },
+          { label: "Double Foam Mattress", href: "/double-foam-mattress" },
+          { label: "King Foam Mattress", href: "/king-foam-mattress" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Bed Frames",
+    links: [
+      { label: "Single Bed Frame", href: "/single-bed-frame" },
+      { label: "Double Bed Frame", href: "/double-bed-frame" },
+      { label: "King Bed Frame", href: "/king-bed-frame" },
+    ],
+  },
+  {
+    title: "Bed Side Table",
+    links: [
+      { label: "Bed Side Table", href: "/bed-side-table" },
+    ],
+  },
+  {
+    title: "Cabinets",
+    links: [
+      { label: "Wardrobe Cabinet", href: "/wardrobe-cabinet" },
+    ],
+  },
+  {
+    title: "Cupboard",
+    links: [
+      { label: "2 Door Cupboard", href: "/2-door-cupboard" },
+      { label: "3 Door Cupboard", href: "/3-door-cupboard" },
+      { label: "4 Door Cupboard", href: "/4-door-cupboard" },
+      { label: "5 Door Cupboard", href: "/5-door-cupboard" },
+      { label: "6 Door Cupboard", href: "/6-door-cupboard" },
+    ],
+  },
+  {
+    title: "Chest of Drawers",
+    links: [
+      { label: "Chest of Drawers", href: "/chest-of-drawers" },
+    ],
+  },
+  {
+    title: "Shoe Rack",
+    links: [
+      { label: "Shoe Rack", href: "/shoe-rack" },
+    ],
+  },
+  {
+    title: "Dressing Table",
+    links: [
+      { label: "Dressing Table", href: "/dressing-table" },
     ],
   },
 ];

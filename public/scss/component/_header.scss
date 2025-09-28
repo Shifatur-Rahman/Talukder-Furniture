@@ -285,7 +285,7 @@ header {
     padding: 8px 20px;
     .menu-list {
       display: flex;
-      flex-direction: column;
+      flex-direction: column; 
       gap: 7px;
     } 
     .menu-link-text {
@@ -398,7 +398,7 @@ header {
         -webkit-transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
         -o-transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
         transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-        background: var(--Onsurface);
+        background: var(--Onsurface); 
       }
       &.active,
       &:hover {
@@ -468,6 +468,24 @@ header {
   margin-left: 6px;
   color: #263993;
 }
+
+// margin right start
+
+.menu-parent {
+  margin-bottom: 8px;
+}
+
+.submenu-list {
+  margin-left: 16px; /* indent children */
+  margin-top: 4px;
+}
+
+.submenu-item {
+  padding-left: 12px; /* extra indent */
+  list-style: none;
+}
+
+// margin right end
 
 .canvas-mb {
   width: 100% !important;
