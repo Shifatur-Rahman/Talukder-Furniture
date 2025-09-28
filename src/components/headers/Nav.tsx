@@ -34,7 +34,7 @@ type DemoPage = {
 
 export default function Nav({ textColor = "" }: NavProps) { 
   const { pathname } = useLocation(); 
-
+ 
   const isMenuActive = (link: MenuLink): boolean => {
     return link.href?.split("/")[1] === pathname.split("/")[1];
   }; 
@@ -66,17 +66,19 @@ export default function Nav({ textColor = "" }: NavProps) {
               <div className="mega-menu-list">
                 <div className="mega-menu-item">
                   <div className="list-categories-inner">
-                    <div className="menu-heading text-title">
-                      Browse Categories
-                    </div>
-                    <ul>
+
+                    {/* <div className="menu-heading text-title"> 
+                      Browse Categories 
+                    </div>  */}
+
+                    {/* <ul> 
                       {[
                         "Ergonomic Furniture(2)",
                         "Storage Solutions(11)", 
                         "Office Supplies(7)", 
                         "Tech Accessories(4)",
                         "Office Furniture(20)",
-                        "Ergonomic Equipment(4)",
+                        "Ergonomic Equipment(4)", 
                       ].map((text, index) => (
                         <li key={index}>
                           <Link
@@ -87,13 +89,15 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </Link>
                         </li>
                       ))}
-                    </ul>
-                    <div className="box-cate-bottom">
+                    </ul> */}
+
+                    {/* <div className="box-cate-bottom">
                       <Link to="/shop-default" className="btn-line">
                         <span>View All Products </span>
                         <i className="icon-arrow-up-right" />
                       </Link>
-                    </div>
+                    </div> */}
+
                   </div>
                 </div>
 
@@ -146,6 +150,14 @@ export default function Nav({ textColor = "" }: NavProps) {
           </div>
         </div>
       </li> 
+
+         
+        
+      
+
+
+
+
 
       {/* PRODUCTS MENU */} 
       <li className="menu-item"> 
@@ -364,7 +376,36 @@ export default function Nav({ textColor = "" }: NavProps) {
             ))}
           </ul>
         </div>
-      </li>
+      </li> 
+
+       {/* BLOGS MENU */}
+      <li className="menu-item position-relative">
+        <a
+          href="#"
+          className={`item-link ${
+            isMenuParentActive(blogLinks) ? "active" : "" 
+          } ${textColor}`}
+        >
+          Institutional
+          <i className="icon icon-down" />
+        </a>
+        <div className="sub-menu submenu-default">
+          <ul className="menu-list">
+            {blogLinks.map((link, index) => (
+              <li key={index}>
+                <Link 
+                  to={link.href}
+                  className={`menu-link-text ${
+                    isMenuActive(link) ? "active" : ""
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </li> 
 
       {/* PAGES MENU */}
       <li className="menu-item position-relative">
