@@ -289,7 +289,8 @@ header {
       gap: 7px;
     }
     .menu-link-text {
-      padding: 7px 0;
+      padding: 4px 0;
+      font-size: 14px;
       color: var(--Secondary);
       position: relative;
       &::after {
@@ -383,7 +384,8 @@ header {
       color: #222;
     }
     .menu-link-text {
-      padding: 7px 0;
+      padding: 4px 0;
+      font-size: 14px;
       position: relative;
       &::after {
         position: absolute;
