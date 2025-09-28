@@ -6,11 +6,11 @@ import {
   otherPages, 
   shopDetailPages,
   shopPages,
-} from "@/data/menu";
+} from "@/data/menu"; 
 
-type NavProps = {
-  textColor?: string;
-};
+type NavProps = { 
+  textColor?: string; 
+}; 
 
 type MenuLink = {
   href: string;
@@ -18,9 +18,9 @@ type MenuLink = {
   src?: string;
   alt?: string;
   name?: string;
-};
-
-type MenuGroup = {
+}; 
+ 
+type MenuGroup = { 
   title: string;
   links: MenuLink[];
 };
@@ -33,11 +33,11 @@ type DemoPage = {
 };
 
 export default function Nav({ textColor = "" }: NavProps) { 
-  const { pathname } = useLocation();
+  const { pathname } = useLocation(); 
 
   const isMenuActive = (link: MenuLink): boolean => {
     return link.href?.split("/")[1] === pathname.split("/")[1];
-  };
+  }; 
 
   const isMenuParentActive = (menu: MenuLink[]): boolean => {
     return menu.some((elm) => isMenuActive(elm));
@@ -132,11 +132,11 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <div className="content cls-content">
                       <div className="cls-heading">
                         <h4 className="text_white">Elevate Your Office</h4>
-                        <p className="text_white">Stylish office decor</p>
+                        <p className="text_white">Stylish office decor</p> 
                       </div>
-                      <Link to="/shop-default" className="tf-btn btn-white">
+                      <Link to="/shop-default" className="tf-btn btn-white"> 
                         Explore Collection
-                        <i className="icon-arrow-up-right" />
+                        <i className="icon-arrow-up-right" /> 
                       </Link>
                     </div>
                   </div>
