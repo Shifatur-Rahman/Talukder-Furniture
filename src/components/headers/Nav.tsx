@@ -380,10 +380,10 @@ export default function Nav({ textColor = "" }: NavProps) {
         </div>
       )}
     </li>
-
-      {/* bedRoomFurniture */}
-
-          <li
+ 
+      {/* bedRoomFurniture */} 
+ 
+          <li 
       className="menu-item"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
@@ -405,9 +405,9 @@ export default function Nav({ textColor = "" }: NavProps) {
                   <FaArrowRight className="ml-2 text-xs" />
                 </div>
 
-                {/* Links */}
-                <ul className="menu-list">
-                  {menu.links.map((link, idx) => (
+                {/* Links */} 
+                <ul className="menu-list"> 
+                  {menu.links.map((link, idx) => ( 
                     <li key={idx}>
                       {link.children ? (
                         <>
