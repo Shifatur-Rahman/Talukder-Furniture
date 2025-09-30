@@ -54,108 +54,10 @@ export default function Nav({ textColor = "" }: NavProps) {
   const [open, setOpen] = useState(false);
  
   return (
-    <>
-      {/* SHOP MENU */}
-      {/* <li className="menu-item">
-        <a
-          href="#"
-          className={`item-link ${
-            isMenuParentActive2(shopPages) ? "active" : ""
-          } ${textColor}`}
-        >
-          Office Furniture 
-          <i className="icon icon-down" />
-        </a>
-        <div className="sub-menu mega-menu mega-menu-1">
-          <div className="container">
-            <div className="row-demo-1">
-              <div className="mega-menu-list">
-                <div className="mega-menu-item">
-                  <div className="list-categories-inner">
-                    <div className="menu-heading text-title"> 
-                      Browse Categories 
-                    </div> 
-                    <ul> 
-                      {
-                      [
-                        "Ergonomic Furniture(2)", 
-                        "Storage Solutions(11)", 
-                        "Office Supplies(7)", 
-                        "Tech Accessories(4)",
-                        "Office Furniture(20)",
-                        "Ergonomic Equipment(4)",
-                      ]
-                      
-                      .map((text, index) => (
-                        <li key={index}>
-                          <Link
-                            to="/shop-default"
-                            className="categories-item text_secondary" 
-                          > 
-                            <span className="inner-left">{text}</span> 
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="box-cate-bottom">
-                      <Link to="/shop-default" className="btn-line">
-                        <span>View All Products </span>
-                        <i className="icon-arrow-up-right" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+    <> 
 
-                {shopPages.map((menu, index) => (
-                  <div className="mega-menu-item" key={index}>
-                    <div className="menu-heading text-title">{menu.title}</div>
-                    <ul className="menu-list">
-                      {menu.links.map((link, idx) => (
-                        <li key={idx}>
-                          <Link
-                            to={link.href}
-                            className={`menu-link-text text_secondary link ${
-                              isMenuActive(link) ? "active" : ""
-                            }`}
-                          >
-                            {link.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
 
-                <div className="mega-menu-item">
-                  <div className="collection-position style-2">
-                    <div className="img-style">
-                      <img
-                        className="lazyload effect-paralax opacity-100"
-                        data-src="/images/banner/banner-1.jpg"
-                        alt="banner-cls"
-                        src="/images/banner/banner-1.jpg"
-                        width={1891}
-                        height={1891}
-                      />
-                    </div>
-                    <div className="content cls-content">
-                      <div className="cls-heading">
-                        <h4 className="text_white">Elevate Your Office</h4>
-                        <p className="text_white">Stylish office decor</p> 
-                      </div>
-                      <Link to="/shop-default" className="tf-btn btn-white"> 
-                        Explore Collection
-                        <i className="icon-arrow-up-right" /> 
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>  */}
-
+     {/* Office Furniture */}
 
        <li
       className="menu-item"
@@ -218,7 +120,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <Link to="/product-detail/1" className="img-style w-100">
                       <img
                         className="lazyload"
-                        data-src="/images/banner/collections-1.jpg"
+                        data-src="/images/banner/collections-1.jpg" 
                         alt="banner-cls"
                         src="/images/banner/collections-1.jpg"
                         width={657}
@@ -228,10 +130,10 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <div className="content cls-content">
                       <h6>
                         <Link to="/product-detail/1" className="link">
-                          Desks
+                          Office Items
                         </Link>
                       </h6>
-                      <h6>25 products</h6> 
+                      <h6>500 products</h6> 
                     </div>
                   </div>
                 </div>
@@ -286,9 +188,9 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <Link to="/product-detail/1" className="img-style w-100">
                       <img
                         className="lazyload"
-                        data-src="/images/banner/collections-1.jpg"
+                        data-src="/images/banner/collections-2.jpg"
                         alt="banner-cls"
-                        src="/images/banner/collections-1.jpg"
+                        src="/images/banner/collections-2.jpg"
                         width={657}
                         height={877}
                       />
@@ -296,10 +198,10 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <div className="content cls-content">
                       <h6>
                         <Link to="/product-detail/1" className="link">
-                          Desks
+                          Bedroom Set
                         </Link>
                       </h6>
-                      <h6>25 products</h6> 
+                      <h6>200 products</h6> 
                     </div>
                   </div>
                 </div>
@@ -356,9 +258,9 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <Link to="/product-detail/1" className="img-style w-100">
                       <img
                         className="lazyload"
-                        data-src="/images/banner/collections-1.jpg"
+                        data-src="/images/banner/collections-3.jpg"
                         alt="banner-cls"
-                        src="/images/banner/collections-1.jpg"
+                        src="/images/banner/collections-3.jpg"
                         width={657}
                         height={877}
                       />
@@ -366,10 +268,10 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <div className="content cls-content">
                       <h6>
                         <Link to="/product-detail/1" className="link">
-                          Desks
+                          Dining Room
                         </Link>
                       </h6>
-                      <h6>25 products</h6> 
+                      <h6> 100 products</h6> 
                     </div>
                   </div>
                 </div>
@@ -709,14 +611,14 @@ export default function Nav({ textColor = "" }: NavProps) {
 
             {/* Right side promo image */}
 
-            {/* <div className="mega-menu-item">
+            <div className="mega-menu-item">
               <div className="collection-position hover-img style-4">
                 <Link to="/product-detail/1" className="img-style w-100">
                   <img
                     className="lazyload"
-                    data-src="/images/banner/collections-1.jpg"
+                    data-src="/images/banner/collections-5.jpg"
                     alt="banner-cls"
-                    src="/images/banner/collections-1.jpg"
+                    src="/images/banner/collections-5.jpg"
                     width={657}
                     height={877}
                   />
@@ -724,13 +626,13 @@ export default function Nav({ textColor = "" }: NavProps) {
                 <div className="content cls-content">
                   <h6>
                     <Link to="/product-detail/1" className="link">
-                      Desks
+                      Industrial Rack
                     </Link>
                   </h6>
-                  <h6>25 products</h6> 
+                  <h6>100 products</h6> 
                 </div>
               </div>
-            </div> */}
+            </div>
 
           </div>
         </div>
@@ -1032,6 +934,7 @@ export const bedRoomFurnitureMenu = [
       },
     ],
   },
+
   {
     title: "Bed Frames",
     links: [
@@ -1086,6 +989,7 @@ export const bedRoomFurnitureMenu = [
       { label: "Plastic Tables & Chairs", href: "/dressing-table" }, 
     ], 
   }, 
+  
    {
     title: "Children Furniture",
     links: [
@@ -1187,19 +1091,18 @@ export const institutionalFurnitureMenu = [
 
     ]
   },
-  
-  {
-    title: "Auditorium",
-    links: [
-      { label: "Auditorium Chairs", href: "/auditorium-chairs" },
-    ],
-  },
   {
     title: "Educational",
     links: [
       { label: "Classroom Chairs", href: "/classroom-chairs" },
       { label: "Storage and Organizers", href: "/storage-organizers" },
       { label: "Kitchenware Accents of Decors", href: "/kitchenware-accents-decors" },
+    ],
+  },
+    {
+    title: "Auditorium",
+    links: [
+      { label: "Auditorium Chairs", href: "/auditorium-chairs" },
     ],
   },
 ];

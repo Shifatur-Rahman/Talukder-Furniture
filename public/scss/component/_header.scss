@@ -753,7 +753,7 @@ header {
     &:hover {
       color: var(--Onsurface) !important;
       &::after {
-        width: 100%;
+        width: 100%; 
         left: 0;
         right: auto;
       }
@@ -767,4 +767,9 @@ header {
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+
+.cls-content h6{
+  font-size: 17px;
 }
