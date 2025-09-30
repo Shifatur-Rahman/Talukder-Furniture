@@ -382,8 +382,182 @@ export default function Nav({ textColor = "" }: NavProps) {
     </li>
  
       {/* bedRoomFurniture */} 
+
+   {/*    <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Bedroom <i className="icon icon-down" />
+      </a>
+
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1"> 
+          <div className="container">
+            <div className="row-demo-1">
+              <div className="mega-menu-list">
+                {bedRoomFurnitureMenu.map((menu, index) => (
+                  <div className="mega-menu-item" key={index}>
+                    <div className="list-categories-inner">
+                    <div className="menu-heading text-title">{menu.title} 
+                       <FaArrowRight className="arrow-icon" /> 
+                    </div>
+
+                    <ul className="menu-list">
+                      {menu.links.map((link, idx) => (
+                        <li key={idx}>
+                          {link.children ? (
+                            <>
+                              <span className="menu-link-text">
+                                {link.label}
+                              </span>
+                              <ul className="submenu-list">
+                                {link.children.map((child, cIdx) => (
+                                  
+                                  <li key={cIdx}>
+                                    <a href={child.href} className="menu-link-text">
+                                      <AiOutlineMinus />
+                                      {child.label}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          ) : (
+                            <a href={link.href} className="menu-link-text">
+                              {link.label}
+                            </a>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  </div> 
+                ))}
+
+                 <div className="mega-menu-item">
+                  <div className="collection-position hover-img style-4">
+                    <Link to="/product-detail/1" className="img-style w-100">
+                      <img
+                        className="lazyload"
+                        data-src="/images/banner/collections-1.jpg"
+                        alt="banner-cls"
+                        src="/images/banner/collections-1.jpg"
+                        width={657}
+                        height={877}
+                      />
+                    </Link>
+                    <div className="content cls-content">
+                      <h6>
+                        <Link to="/product-detail/1" className="link">
+                          Desks
+                        </Link>
+                      </h6>
+                      <h6>25 products</h6> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </li> */} 
+
+
+   <li
+  className="menu-item"
+  onMouseEnter={() => setOpen(true)}
+  onMouseLeave={() => setOpen(false)}
+>
+  <a href="#" className="item-link">
+    Bedroom <i className="icon icon-down" />
+  </a> 
+
+  {open && (
+    <div className="sub-menu mega-menu mega-menu-1">
+      <div className="container">
+        <div className="row-demo-1">
+          <div className="mega-menu-list">
+            {bedRoomFurnitureMenu.map((menu, index) => (
+              <div className="mega-menu-item" key={index}>
+                <div className="list-categories-inner">
+                  {/* Category Title */}
+                  <div className="menu-heading text-title font-bold flex items-center">
+                    {menu.title}
+                    <FaArrowRight className="arrow-icon ml-2 text-xs" />
+                  </div>
+
+                  {/* Links inside Category */}
+                  <ul className="menu-list">
+                    {menu.links.map((link, idx) => (
+                      <li key={idx}>
+                        {/* If this link has children → Parent */}
+                        {link.children && Array.isArray(link.children) ? (
+                          <>
+                            <span className="menu-link-text font-semibold flex items-center cursor-default">
+                              {link.label}
+                              <FaArrowRight className="ml-1 text-[10px]" />
+                            </span>
+                            <ul className="submenu-list ml-4 mt-1">
+                              {link.children.map((child, cIdx) => (
+                                <li key={cIdx}>
+                                  <Link to={child.href} className="menu-link-text flex items-center">
+                                    <AiOutlineMinus className="mr-1" />
+                                    {child.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        ) : (
+                          // Normal clickable link (no children)
+                          <Link to={link.href} className="menu-link-text">
+                            {link.label}
+                          </Link>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+
+            {/* Right side promo image */}
+
+            {/* <div className="mega-menu-item">
+              <div className="collection-position hover-img style-4">
+                <Link to="/product-detail/1" className="img-style w-100">
+                  <img
+                    className="lazyload"
+                    data-src="/images/banner/collections-1.jpg"
+                    alt="banner-cls"
+                    src="/images/banner/collections-1.jpg"
+                    width={657}
+                    height={877}
+                  />
+                </Link>
+                <div className="content cls-content">
+                  <h6>
+                    <Link to="/product-detail/1" className="link">
+                      Desks
+                    </Link>
+                  </h6>
+                  <h6>25 products</h6> 
+                </div>
+              </div>
+            </div> */}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+</li> 
  
-          <li 
+          {/* <li 
       className="menu-item"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
@@ -399,25 +573,25 @@ export default function Nav({ textColor = "" }: NavProps) {
               <div className="mega-menu-list">
                  {bedRoomFurnitureMenu.map((menu, index) => (
               <div className="mega-menu-item" key={index}>
-                {/* Main Category Title */}
+            
                 <div className="menu-heading font-bold flex items-center">
-                  {menu.title}
-                  <FaArrowRight className="ml-2 text-xs" />
-                </div>
+                  {menu.title} 
+                  <FaArrowRight className="ml-2 text-xs" /> 
+                </div> 
 
-                {/* Links */} 
+            
                 <ul className="menu-list"> 
                   {menu.links.map((link, idx) => ( 
                     <li key={idx}>
                       {link.children ? (
                         <>
-                          {/* Parent item (not clickable) */}
+                      
                           <span className="menu-link-text font-semibold flex items-center cursor-default">
                             {link.label}
                             <FaArrowRight className="ml-1 text-[10px]" />
                           </span>
 
-                          {/* Child items */}
+                         
                           <ul className="submenu-list ml-4 mt-1">
                             {link.children.map((child, cIdx) => (
                               <li key={cIdx}>
@@ -432,7 +606,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </ul>
                         </>
                       ) : (
-                        // Normal clickable link
+                       
                         <Link to={link.href} className="menu-link-text">
                           {link.label}
                         </Link>
@@ -471,9 +645,9 @@ export default function Nav({ textColor = "" }: NavProps) {
           </div>
         </div>
       )}
-    </li>
+    </li> */}
 
-       {/* BLOGS MENU */}
+       {/* BLOGS MENU */} 
       <li className="menu-item position-relative">
         <a
           href="#"
@@ -827,7 +1001,7 @@ export const bedRoomFurnitureMenu = [
   {
     title: "Chest of Drawers",
     links: [
-      { label: "Chest of Drawers", href: "/chest-of-drawers" },
+      { label: "Chest of Drawers", href: "/chest-of-drawers" }, 
     ],
   },
   {
@@ -839,7 +1013,31 @@ export const bedRoomFurnitureMenu = [
   {
     title: "Dressing Table",
     links: [
-      { label: "Dressing Table", href: "/dressing-table" },
+      { label: "Dressing Table", href: "/dressing-table" }, 
+    ],
+  },
+   {
+    title: "Outdoor Furniture",
+    links: [
+      { label: "Plastic Tables & Chairs", href: "/dressing-table" }, 
+    ], 
+  }, 
+   {
+    title: "Children Furniture",
+    links: [
+      { label: "Children's Bed Frame", href: "/single-bed-frame" },
+      { label: "Cot", href: "/double-bed-frame" },
+      { label: "Cradle", href: "/king-bed-frame" }, 
+
+      {
+        label: "Children's Cabinets", // parent
+        children: [
+          { label: "Waredrobe Cabinet", href: "/single-spring-mattress" },
+          { label: "Children's Cupboard", href: "/double-spring-mattress" },
+          { label: "Children's Storage", href: "/king-spring-mattress" },
+        ],
+      },
+
     ],
   },
 ];
