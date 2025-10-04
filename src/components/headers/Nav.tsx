@@ -719,6 +719,7 @@ export default function Nav({ textColor = "" }: NavProps) {
 export const officeFurnitureMenu = [
   {
     title: "Tables",
+     href: "/tables", // route for title
     links: [
       { label: "MD/CEO Table", href: "/md-ceo-table" },
       { label: "Executive Table", href: "/executive-table" }, 
@@ -729,6 +730,7 @@ export const officeFurnitureMenu = [
   },
   {
     title: "Chairs",
+      href: "/chairs",
     links: [
       {
         label: "Swivel Chair", // parent, no href 
@@ -741,6 +743,7 @@ export const officeFurnitureMenu = [
       },
       {
         label: "Fixed Chair", // parent, no href
+         href: "/chairs/fixed-chair",
         children: [
           { label: "Visitor's Chair", href: "/visitors-chair" }, 
         ],
@@ -749,6 +752,7 @@ export const officeFurnitureMenu = [
   },
   {
     title: "Office Sofa",
+    href: "/office-sofa",
     links: [
       { label: "1 Seater", href: "/sofa-1-seater" },
       { label: "2 Seater", href: "/sofa-2-seater" },
@@ -757,12 +761,14 @@ export const officeFurnitureMenu = [
   },
   {
     title: "Cabinets",
+    href: "/cabinets",
     links: [
       { label: "Office Cupboard", href: "/office-cupboard" },
       { label: "Office Almirah", href: "/office-almirah" },
       { label: "Multi-Purpose Cabinet", href: "/multi-purpose-cabinet" }, 
       {
         label: "Filing Cabinet",
+        href: "/cabinets/filing-cabinet",
         children: [
           { label: "2 Drawer Cabinet", href: "/2-drawer" },
           { label: "2 Drawer Cabinet Combined", href: "/2-drawer-combined" },
@@ -772,11 +778,11 @@ export const officeFurnitureMenu = [
           { label: "4 Drawer Cabinet Combined", href: "/4-drawer-combined" },
         ],
       },
-    
     ],
   },
   {
     title: "Waiting",
+    href: "/waiting",
     links: [
       { label: "Waiting Chair", href: "/waiting-chair" },
       { label: "Auditorium Chair", href: "/auditorium-chair" },
@@ -785,7 +791,7 @@ export const officeFurnitureMenu = [
       { label: "Working Desk", href: "/working-desk" },
     ],
   },
-];
+]; 
 
 // livingRoom
 export const livingRoom = [ 

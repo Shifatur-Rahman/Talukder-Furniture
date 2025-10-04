@@ -216,16 +216,33 @@ function App() {
                     <Route path="home-2" element={<Homepage2 />} />
                     <Route path="home-3" element={<Homepage3 />} />
                     <Route path="home-4" element={<Homepage4 />} />
-                    <Route path="home-5" element={<Homepage5 />} />
+                    <Route path="home-5" element={<Homepage5 />} /> 
 
                     <Route
-                      path="shop-default"
+                      path="shop-default" 
+                      element={
+                        <ProductLayout> 
+                          <ShopDefaultPage /> 
+                        </ProductLayout> 
+                      } 
+                    />
+
+                    {/* md-ceo table */}
+
+                    
+                    <Route
+                      path="md-ceo-table"
                       element={
                         <ProductLayout>
-                          <ShopDefaultPage />
+                          {/* <ShopDefaultPage /> */}
                         </ProductLayout>
                       }
                     />
+                    {/* md-ceo table */}
+
+
+
+
                     <Route
                       path="shop-list"
                       element={
