@@ -13,10 +13,10 @@ export const shopPages = [
   {
     title: "Shop Filter",
     links: [
-      { href: "/shop-filter-canvas", label: "Filter Canvas" },
-      { href: "/shop-filter-dropdown", label: "Filter Dropdown" },
-      { href: "/shop-filter-sidebar", label: "Filter Sidebar" },
-    ],
+      { href: "/shop-filter-canvas", label: "Filter Canvas" }, 
+      { href: "/shop-filter-dropdown", label: "Filter Dropdown" }, 
+      { href: "/shop-filter-sidebar", label: "Filter Sidebar" }, 
+    ], 
   },
   {
     title: "Shop Pagination",
@@ -29,7 +29,7 @@ export const shopPages = [
   {
     title: "Product Style",
     links: [
-      { href: "/product-style-01", label: "Product Style 1" },
+      { href: "/product-style-01", label: "Product Style 1" }, 
       { href: "/product-style-02", label: "Product Style 2" },
       { href: "/product-style-03", label: "Product Style 3" },
       { href: "/product-style-04", label: "Product Style 4" },
@@ -39,7 +39,7 @@ export const shopPages = [
   {
     title: "My Pages",
     links: [
-      { href: "/shopping-cart", label: "Shopping Cart" },
+      { href: "/shopping-cart", label: "Shopping Cart" }, 
       { href: "/checkout", label: "Check Out" },
       { href: "/order", label: "Order Tracking" },
       { href: "/login", label: "Login/Register" },

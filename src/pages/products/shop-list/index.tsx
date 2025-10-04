@@ -11,7 +11,7 @@ export default function ShopListPage() {
   return (
     <>
       <MetaComponent meta={metadata} />
-      <Products1 defaultActiveLayout={1} />
+      <Products1 defaultActiveLayout={1} /> 
     </> 
   ); 
 }

@@ -10,8 +10,8 @@ const metadata = {
 export default function ShopDefaultPage() {
   return (
     <>
-      <MetaComponent meta={metadata} />
-      <Products1 />
+      <MetaComponent meta={metadata} /> 
+      <Products1 /> 
     </>
   );
 }
