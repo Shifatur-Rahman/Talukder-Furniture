@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa"; 
 import { AiOutlineMinus } from "react-icons/ai";
 
-
 import {
   blogLinks, 
   demoPages, 

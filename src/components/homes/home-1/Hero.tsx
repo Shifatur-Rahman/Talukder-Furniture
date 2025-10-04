@@ -44,7 +44,7 @@ export default function Hero() {
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide className="swiper-slide" key={index}>
-            <div className={`wrap-slider ${slide.slideClass}`}>
+            <div className={`wrap-slider ${slide.slideClass}`}> 
               <div className="img-style">
                 <img
                   className="lazyload"
