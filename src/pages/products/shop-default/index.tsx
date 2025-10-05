@@ -7,11 +7,11 @@ const metadata = {
   description: "GearO - Office equipment eCommerce Reactjs Template",
 };
 
-export default function ShopDefaultPage() {
+export default function ShopDefaultPage() { 
   return (
     <>
       <MetaComponent meta={metadata} /> 
       <Products1 /> 
-    </>
+    </> 
   );
 }

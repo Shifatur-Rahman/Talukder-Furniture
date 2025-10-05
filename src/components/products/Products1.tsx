@@ -15,8 +15,8 @@ import { productMain } from "@/data/products";
 // Props for Products1
 interface Products1Props {
   parentClass?: string;
-  defaultActiveLayout?: number;
-  isFullLayout?: boolean;
+  defaultActiveLayout?: number; 
+  isFullLayout?: boolean; 
   cardStyle?: number;  
 }  
  
@@ -96,7 +96,7 @@ export default function Products1({
     },
   };
   useEffect(() => {
-    dispatch({ type: "FILTER_PRODUCTS", payload: productMain });
+    dispatch({ type: "FILTER_PRODUCTS", payload: productMain }); 
   }, [
     price,
     availability,

@@ -2,10 +2,10 @@ export const products = [
   {
     id: 1,
     delay: "0s",
-    title: "Rocking Sofa",
-    imgSrc: "/images/shop/product-1.jpg",
-    hoverImg: "/images/shop/product-1.1.jpg",
-    price: 0.0,
+    title: "Rocking Sofa", 
+    imgSrc: "/images/shop/product-1.jpg", 
+    hoverImg: "/images/shop/product-1.1.jpg", 
+    price: 24,
     oldPrice: null, 
     sale: null,
     swatches: [
