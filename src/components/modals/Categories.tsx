@@ -87,19 +87,19 @@ export default function Categories() {
               aria-controls="forDesk"
             >
               <img
-                className="avt"
-                alt="avt"
-                src="/images/shop/popup-slidebar-item-2.jpg"
-                width={180}
-                height={180}
+                className="avt" 
+                alt="avt" 
+                src="/images/shop/popup-slidebar-item-2.jpg" 
+                width={180} 
+                height={180} 
               />
-              <span className="title">Desk</span>
-              <span className="icon icon-down" />
+              <span className="title">Desk</span> 
+              <span className="icon icon-down" /> 
             </div>
-            <div id="forDesk" className="collapse">
-              <ul className="facet-body">
+            <div id="forDesk" className="collapse"> 
+              <ul className="facet-body"> 
                 <li>
-                  <Link to={`/shop-default`} className="item link">
+                  <Link to={`/shop-default`} className="item link"> 
                     <img
                       className="avt"
                       alt="avt"

@@ -21,8 +21,8 @@ const productsData: Product[] = [
     compareAtPrice: 79.99,
     options: ["Green, B", "Green, L"],
     checked: true,
-  },
-  {
+  }, 
+  { 
     id: 2,
     title: "Office Desk",
     image: "/images/shop/product-4.jpg",

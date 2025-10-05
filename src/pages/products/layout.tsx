@@ -19,7 +19,7 @@ export default function ProductLayout({
         parentPage=""
       />
       {children}
-      <Footer1 />
+      <Footer1 /> 
     </>
   );
 }

@@ -309,7 +309,7 @@ export const products = [
     ],
   },
 ];
-
+ 
 export const products2 = [
   {
     id: 9,
@@ -379,19 +379,19 @@ export const products2 = [
     colors: [
       {
         bgColor: "bg-beige",
-        imgSrc: "/images/products/mens/men-13.jpg",
+        imgSrc: "/images/products/mens/men-13.jpg",   
       },
       {
         bgColor: "bg-light-blue-2",
         imgSrc: "/images/products/mens/men-12.jpg",
       },
     ],
-    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"],
-    inStock: true,
-    filterColor: [
-      "Pink",
-      "Red",
-      "Beige",
+    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"], 
+    inStock: true, 
+    filterColor: [ 
+      "Pink", 
+      "Red", 
+      "Beige", 
       "Orange",
       "Green",
       "Black",
@@ -642,8 +642,8 @@ export const galleryItems = [
   },
   {
     id: 17,
-    imgSrc: "/images/gallery/gallery-2.jpg",
-    title: "Demo Title",
+    imgSrc: "/images/gallery/gallery-2.jpg", 
+    title: "Demo Title", 
     price: 10,
     delay: "0.1s",
   },

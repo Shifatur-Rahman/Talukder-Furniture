@@ -25,19 +25,19 @@ const Toolbar = lazy(() => import("@/components/headers/Toolbar"));
 const SidebarAccount = lazy(() => import("@/components/modals/SidebarAccount")); 
 
 // Pages
-const HomePage = lazy(() => import("./pages"));
+const HomePage = lazy(() => import("./pages")); 
 const Homepage2 = lazy(() => import("./pages/homes/home-2"));
-const Homepage3 = lazy(() => import("./pages/homes/home-3"));
-const Homepage4 = lazy(() => import("./pages/homes/home-4"));
-const Homepage5 = lazy(() => import("./pages/homes/home-5"));
+const Homepage3 = lazy(() => import("./pages/homes/home-3")); 
+const Homepage4 = lazy(() => import("./pages/homes/home-4")); 
+const Homepage5 = lazy(() => import("./pages/homes/home-5")); 
 
-// Product Pages
-const ProductLayout = lazy(() => import("./pages/products/layout"));
+// Product Pages 
+const ProductLayout = lazy(() => import("./pages/products/layout")); 
 const ShopDefaultPage = lazy(() => import("./pages/products/shop-default")); 
 // const MdTable = lazy(() => import("./pages/products/md-ceo-table")); 
-const ShopListPage = lazy(() => import("./pages/products/shop-list"));
-const ShopFullGridPage = lazy(() => import("./pages/products/shop-full-grid"));
-const ShopFullListPage = lazy(() => import("./pages/products/shop-full-list"));
+const ShopListPage = lazy(() => import("./pages/products/shop-list")); 
+const ShopFullGridPage = lazy(() => import("./pages/products/shop-full-grid")); 
+const ShopFullListPage = lazy(() => import("./pages/products/shop-full-list")); 
 const ShopSidebarLeftPage = lazy(
   () => import("./pages/products/shop-sidebar-left")
 );

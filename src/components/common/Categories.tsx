@@ -23,8 +23,8 @@ export default function Categories() {
                     <Link className="link" to={`/office-furniture`}> 
                       Office Furniture 
                     </Link>
-                  </h3>
-                </div>
+                  </h3> 
+                </div> 
                 <div className="cls-img-item hover-img"> 
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
@@ -56,7 +56,7 @@ export default function Categories() {
                       Home Furniture
                     </Link>
                   </h3>
-                </div>
+                </div> 
                 <div className="cls-img-item hover-img"> 
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img

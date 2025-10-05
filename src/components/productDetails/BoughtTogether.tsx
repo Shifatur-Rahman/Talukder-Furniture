@@ -43,10 +43,10 @@ const productsData: Product[] = [
 ];
 
 export default function BoughtTogether() {
-  const [selectedProducts, setSelectedProducts] =
+  const [selectedProducts, setSelectedProducts] = 
     useState<Product[]>(productsData);
 
-  const handleCheckboxChange = (id: number) => {
+  const handleCheckboxChange = (id: number) => { 
     setSelectedProducts((prev) =>
       prev.map((p) => (p.id === id ? { ...p, checked: !p.checked } : p))
     );
@@ -70,7 +70,7 @@ export default function BoughtTogether() {
             100
         )
       : 0;
-
+ 
   return (
     <div className="frequently-bought-together">
       <form className="form-bundle-product">
@@ -124,7 +124,7 @@ export default function BoughtTogether() {
             </div>
           ))}
         </div>
-
+ 
         <div className="tf-bundle-product-total-submit">
           <h5>Total Price:</h5>
           <div className="tf-product-info-price type-1">
@@ -136,12 +136,12 @@ export default function BoughtTogether() {
               </>
             )}
           </div>
-        </div>
+        </div> 
 
         <a
           href="#shoppingCart"
           data-bs-toggle="modal"
-          className="tf-btn btn-onsurface"
+          className="tf-btn btn-onsurface" 
         >
           Add selected to cart
         </a>
@@ -149,3 +149,4 @@ export default function BoughtTogether() {
     </div>
   );
 }
+ 

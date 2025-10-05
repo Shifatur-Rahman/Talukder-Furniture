@@ -10,16 +10,16 @@ import FilterModal from "./FilterModal";
 import Listview from "./Listview";
 import { productMain } from "@/data/products";
 
-// Filter state type (update this to match your reducer state exactly)
+// Filter state type (update this to match your reducer state exactly) 
 
 // Props for Products1
 interface Products1Props {
   parentClass?: string;
   defaultActiveLayout?: number;
   isFullLayout?: boolean;
-  cardStyle?: number;
-} 
-
+  cardStyle?: number;  
+}  
+ 
 export default function Products1({
   parentClass = "flat-spacing",
   defaultActiveLayout = 4,
