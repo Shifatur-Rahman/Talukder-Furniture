@@ -630,7 +630,7 @@ export const products3 = [
 ];
 export const productMain = [...products, ...products2, ...products3].slice(
   0,
-  12
+  15
 );
 export const galleryItems = [
   {

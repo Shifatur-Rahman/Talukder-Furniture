@@ -8,7 +8,8 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 import FilterMeta from "./FilterMeta";
 import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { productMain } from "@/data/products";
+ import { productMain } from "@/data/products";
+// import { sofaMain } from "@/data/sofa"; 
 
 // Filter state type (update this to match your reducer state exactly) 
 
@@ -17,7 +18,7 @@ interface Products1Props {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
-  cardStyle?: number;  
+  cardStyle?: number; 
 }  
  
 export default function Products1({
@@ -92,10 +93,11 @@ export default function Products1({
       dispatch({ type: "SET_ITEM_PER_PAGE", payload: value });
     },
     clearFilter: () => {
-      dispatch({ type: "CLEAR_FILTER" });
+      dispatch({ type: "CLEAR_FILTER" }); 
     },
   };
   useEffect(() => {
+    // dispatch({ type: "FILTER_PRODUCTS", payload: productMain });
     dispatch({ type: "FILTER_PRODUCTS", payload: productMain }); 
   }, [
     price,
@@ -107,9 +109,9 @@ export default function Products1({
     activeFilterOnSale,
   ]);
 
-  useEffect(() => {
-    dispatch({ type: "SORT_PRODUCTS" });
-  }, [filtered, sortingOption]);
+  // useEffect(() => {
+  //   dispatch({ type: "SORT_PRODUCTS" });
+  // }, [filtered, sortingOption]);
 
   return (
     <>
@@ -128,7 +130,7 @@ export default function Products1({
               </a>
               <div
                 onClick={allProps.toggleFilterWithOnSale}
-                className={`d-none d-lg-flex shop-sale-text ${
+                className={`d-none d-lg-flex shop-sale-text ${ 
                   activeFilterOnSale ? "active" : ""
                 }`}
               >
@@ -148,7 +150,7 @@ export default function Products1({
             </div>
           </div>
           <div className="wrapper-control-shop">
-            <FilterMeta productLength={sorted.length} allProps={allProps} />
+            {/* <FilterMeta productLength={sorted.length} allProps={allProps} /> */} 
             {activeLayout === 1 ? (
               <div className="tf-list-layout wrapper-shop" id="listLayout">
                 <Listview products={sorted} />
@@ -164,7 +166,7 @@ export default function Products1({
           </div>
         </div>
       </section>
-      <FilterModal allProps={allProps} />
+      {/* <FilterModal allProps={allProps} /> */}
     </>
   );
 }

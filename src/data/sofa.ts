@@ -1,4 +1,4 @@
-export const products = [ 
+export const sofaProducts = [ 
 
     {
     id: 1,
@@ -98,3 +98,9 @@ export const products = [
   }
 
 ]
+
+
+export const sofaMain = [...sofaProducts].slice( 
+  0,
+  15
+); 
