@@ -27,7 +27,7 @@ export default function Products1({
   cardStyle = 1,
 }: Products1Props) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout);
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState); 
   const {
     availability,
     color,
@@ -66,7 +66,7 @@ export default function Products1({
       const updated = [...brands].includes(newBrand)
         ? [...brands].filter((elm) => elm !== newBrand)
         : [...brands, newBrand];
-      dispatch({ type: "SET_BRANDS", payload: updated });
+      dispatch({ type: "SET_BRANDS", payload: updated }); 
     },
     removeBrand: (newBrand: string) => {
       const updated = brands.filter((brand) => brand !== newBrand);
