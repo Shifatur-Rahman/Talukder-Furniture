@@ -3,7 +3,7 @@ export const shoeRackProducts = [
 {
     id: 1,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/01.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/01.jpg", 
     price: 100,
@@ -32,7 +32,7 @@ export const shoeRackProducts = [
   {
     id: 2,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/02.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/02.jpg", 
     price: 100,
@@ -61,7 +61,7 @@ export const shoeRackProducts = [
   {
     id: 3,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/03.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/03.jpg", 
     price: 100,
@@ -90,7 +90,7 @@ export const shoeRackProducts = [
   {
     id: 4,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/04.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/04.jpg", 
     price: 100,
@@ -119,7 +119,7 @@ export const shoeRackProducts = [
   {
     id: 5,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/05.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/05.jpg", 
     price: 100,
@@ -148,7 +148,7 @@ export const shoeRackProducts = [
   {
     id: 6,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/06.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/06.jpg", 
     price: 100,
@@ -177,7 +177,7 @@ export const shoeRackProducts = [
   {
     id: 7,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/07.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/07.jpg", 
     price: 100,
@@ -206,7 +206,7 @@ export const shoeRackProducts = [
   {
     id: 8,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/08.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/08.jpg", 
     price: 100,
@@ -235,7 +235,7 @@ export const shoeRackProducts = [
   {
     id: 9,
     delay: "0s",
-    title: "Sofa 111", 
+    title: "Shoe Rack", 
     imgSrc: "/images/category/bedroom/shoeRack/09.jpg", 
     hoverImg: "/images/category/bedroom/shoeRack/09.jpg", 
     price: 100,
@@ -261,8 +261,8 @@ export const shoeRackProducts = [
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   }, 
-
 ];
+
 
 
 export const shoeRackMain = [...shoeRackProducts].slice( 
