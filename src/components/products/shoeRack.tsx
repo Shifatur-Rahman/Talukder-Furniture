@@ -5,29 +5,29 @@ import { useEffect, useReducer, useState } from "react";
 
 import { initialState, reducer } from "@/reducer/filterReducer";
 
-import FilterMeta from "./FilterMeta";
-import FilterModal from "./FilterModal";
+// import FilterMeta from "./FilterMeta";
+// import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { sofaMain } from "@/data/sofa"; 
+import { shoeRackMain } from "@/data/shoeRack"; 
  
-// Filter state type (update this to match your reducer state exactly) 
+// Filter state type (update this to match your reducer state exactly)   
  
 // Props for Products1
-interface SofaProps {
+interface ShoeRackProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
  
-// console.log("sofaMain products:", sofaMain); 
+console.log("ShoeRackMain products:", shoeRackMain); 
  
-export default function Sofa({
+export default function ShoeRack({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: SofaProps) {
+}: ShoeRackProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -98,7 +98,7 @@ export default function Sofa({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: sofaMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: shoeRackMain });
   }, [ 
     price,
     availability,

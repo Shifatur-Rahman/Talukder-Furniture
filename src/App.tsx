@@ -4,6 +4,7 @@ import "rc-slider/assets/index.css";
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
+import ShoeRackPage from "./pages/products/shoe-rack";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -248,7 +249,7 @@ function App() {
                       path="shoe-rack"
                       element={
                         <ProductLayout>
-                          <ShopListPage />
+                          <ShoeRackPage />
                         </ProductLayout>
                       }
                     />
