@@ -225,10 +225,10 @@ function App() {
                         <ProductLayout> 
                           <ShopDefaultPage /> 
                         </ProductLayout> 
-                      } 
-                    />
+                      }   
+                    /> 
 
-                    {/* md-ceo table */}
+                    {/* md-ceo table */} 
 
                     
                     <Route
@@ -239,7 +239,7 @@ function App() {
                         </ProductLayout>
                       }
                     />
-                    {/* md-ceo table */}
+                    {/* md-ceo table */} 
 
 
 
