@@ -95,12 +95,62 @@ export const sofaProducts = [
     filterSizes: ["XS", "S", "M", "L", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "On pieces", "Tops", "Skirts", "Dresses"],
-  }
+  },
+   {
+    id: 4,
+    delay: "0.3s", 
+    title: "Director Table",
+    imgSrc: "/images/shop/product-4.jpg",
+    hoverImg: "/images/shop/product-4.1.jpg",
+    price: 100,
+    oldPrice: 180,
+    sale: null,
+    swatches: [
+      { 
+        label: "Light Brown",
+        bgClass: "bg-light-brown",
+        img: "/images/shop/product-4.1.jpg", 
+      }, 
+      {
+        label: "Light Pink",
+        bgClass: "bg-light-pink",
+        img: "/images/shop/product-4.1.jpg",
+      },
+      {
+        label: "Light Grey",
+        bgClass: "bg-dark-grey-2",
+        img: "/images/shop/product-4.1.jpg",
+      },
+    ],
+    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Gucci"],
+    inStock: true,
+    filterColor: [
+      "Pink",
+      "Red",
 
+      "Green",
+      "Black",
+      "White",
+      "Purple",
+      "Grey",
+      "Light Blue",
+      "Dark Blue",
+    ],
+    filterCategory: ["Bags", "Booking", "Clothing", "Uncategorized"],
+    filterSizes: ["XS", "S", "M", "2XL", "3XL"],
+    tabFilterOptions2: ["New Arrivals", "Best Seller"],
+    tabFilterOptions: ["Bottoms", "On pieces", "Skirts", "Dresses", "Sale"],
+  },
 ]
 
 
 export const sofaMain = [...sofaProducts].slice( 
   0,
-  15
-); 
+  4
+);
+
+export const allSofa = [ 
+  ...sofaProducts, 
+]; 
+
+

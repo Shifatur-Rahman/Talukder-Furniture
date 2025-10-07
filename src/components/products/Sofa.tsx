@@ -8,26 +8,27 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 import FilterMeta from "./FilterMeta";
 import FilterModal from "./FilterModal";
 import Listview from "./Listview";
- import { productMain } from "@/data/products";
 import { sofaMain } from "@/data/sofa"; 
-
+ 
 // Filter state type (update this to match your reducer state exactly) 
-
+ 
 // Props for Products1
-interface Products1Props {
+interface SofaProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
  
-export default function Products1({
-  parentClass = "flat-spacing",
-  defaultActiveLayout = 4,
-  isFullLayout = false,
-  cardStyle = 1,
-}: Products1Props) {
-  const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout);
+console.log("sofaMain products:", sofaMain); 
+ 
+export default function Sofa({
+  parentClass = "flat-spacing", 
+  defaultActiveLayout = 4, 
+  isFullLayout = false, 
+  cardStyle = 1, 
+}: SofaProps) {
+  const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
     availability,
@@ -97,9 +98,8 @@ export default function Products1({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: productMain }); 
-   // dispatch({ type: "FILTER_PRODUCTS", payload: sofaMain }); 
-  }, [
+     dispatch({ type: "FILTER_PRODUCTS", payload: sofaMain });
+  }, [ 
     price,
     availability,
     color,
@@ -109,9 +109,9 @@ export default function Products1({
     activeFilterOnSale,
   ]);
 
-  // useEffect(() => {
-  //   dispatch({ type: "SORT_PRODUCTS" });
-  // }, [filtered, sortingOption]);
+  useEffect(() => {
+    dispatch({ type: "SORT_PRODUCTS" });
+  }, [filtered, sortingOption]);
 
   return (
     <>
