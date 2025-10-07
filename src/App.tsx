@@ -245,7 +245,7 @@ function App() {
 
 
                     <Route
-                      path="shop-list"
+                      path="shoe-rack"
                       element={
                         <ProductLayout>
                           <ShopListPage />
