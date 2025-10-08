@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ShoeRackPage from "./pages/products/shoe-rack";
+import TvCabinetPage from "./pages/products/tv-cabinet";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -254,13 +255,14 @@ function App() {
                       }
                     />
                     <Route
-                      path="shop-full-grid"
+                      path="tv-cabinet"
                       element={
                         <ProductLayout>
-                          <ShopFullGridPage />
+                          <TvCabinetPage />
                         </ProductLayout>
                       }
                     />
+
                     <Route
                       path="shop-full-list"
                       element={
@@ -379,7 +381,7 @@ function App() {
                   <Route path="checkout" element={<CheckoutPage />} />
                   <Route path="order" element={<OrderPage />} />
                   <Route path="login" element={<LoginPage />} />
-                  <Route path="register" element={<RegisterPage />} />
+                  <Route path="register" element={<RegisterPage />} /> 
                   <Route path="wish-list" element={<WishListPage />} />
                   <Route path="search-result" element={<SearchResultPage />} />
                   <Route path="my-account" element={<MyAccountPage />} />

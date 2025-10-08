@@ -812,7 +812,7 @@ export const livingRoom = [
   {
     title: "Recliner/Rocker",
     links: [
-        { label: "Rocking Chair", href: "/md-ceo-table" },
+        { label: "Rocking Chair", href: "/md-ceo-table" }, 
     ],
   },
 
@@ -836,7 +836,7 @@ export const livingRoom = [
     title: "Cabinets",
     links: [
       { label: "Showcase", href: "/sofa-1-seater" },
-      { label: "TV/Media Cabinet", href: "/sofa-2-seater" },
+      { label: "TV/Media Cabinet", href: "/tv-cabinet" },
     ],
   },
 
