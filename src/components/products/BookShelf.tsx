@@ -8,12 +8,12 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { tvCabinetMain } from "@/data/tvCabinet"; 
+import { bookShelfMain } from "@/data/bookShelf"; 
  
 // Filter state type (update this to match your reducer state exactly)   
  
 // Props for Products1
-interface TvCabinetProps {
+interface BookShelfProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
@@ -22,12 +22,12 @@ interface TvCabinetProps {
  
 // console.log("ShoeRackMain products:", shoeRackMain); 
  
-export default function tvCabinet({
+export default function bookShelf({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: TvCabinetProps) {
+}: BookShelfProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -41,7 +41,7 @@ export default function tvCabinet({
     filtered,
     sorted,
     activeFilterOnSale,
-  } = state; 
+  } = state;
 
   const allProps = {
     ...state,
@@ -98,7 +98,7 @@ export default function tvCabinet({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: tvCabinetMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: bookShelfMain }); 
   }, [ 
     price,
     availability,

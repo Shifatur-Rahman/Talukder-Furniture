@@ -7,6 +7,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import ShoeRackPage from "./pages/products/shoe-rack";
 import TvCabinetPage from "./pages/products/tv-cabinet";
 import IronShelfPage from "./pages/products/iron-shelf";
+import BookShelfPage from "./pages/products/book-shelf";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -276,10 +277,10 @@ function App() {
                     />
    
                     <Route
-                      path="shop-sidebar-left"
+                      path="book-shelf"
                       element={
                         <ProductLayout>
-                          <ShopSidebarLeftPage />
+                          <BookShelfPage />
                         </ProductLayout>
                       }
                     />

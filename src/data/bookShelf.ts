@@ -150,8 +150,6 @@ export const bookShelfProducts = [
 
 
 
-
-
 export const bookShelfMain = [...bookShelfProducts].slice( 
   0,
   9
