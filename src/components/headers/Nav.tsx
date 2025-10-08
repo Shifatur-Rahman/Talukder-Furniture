@@ -847,10 +847,11 @@ export const livingRoom = [
       { label: "Magazine Racks", href: "/sofa-2-seater" },
     ],
   },
-];
-
+]; 
+ 
 // dinning room 
 // data/officeFurniture.js
+
 export const diningRoom = [ 
   {
     title: "Dining Set",
@@ -887,7 +888,7 @@ export const diningRoom = [
     title: "Kitchen Racks",
     links: [
       { label: "Kitchen Racks", href: "/sofa-1-seater" },
-      { label: "Tea Trolley", href: "/sofa-2-seater" },
+      { label: "Tea Trolley", href: "/tea-trolley" }, 
     ],
   },
 
