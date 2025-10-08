@@ -6,6 +6,7 @@ import { lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ShoeRackPage from "./pages/products/shoe-rack";
 import TvCabinetPage from "./pages/products/tv-cabinet";
+import IronShelfPage from "./pages/products/iron-shelf";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -263,14 +264,17 @@ function App() {
                       }
                     />
 
+                    {/* Iron shelf */}
+
                     <Route
-                      path="shop-full-list"
+                      path="iron-shelf"
                       element={
                         <ProductLayout>
-                          <ShopFullListPage />
+                          <IronShelfPage />
                         </ProductLayout>
                       }
                     />
+   
                     <Route
                       path="shop-sidebar-left"
                       element={

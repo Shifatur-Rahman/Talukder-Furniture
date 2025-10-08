@@ -901,7 +901,14 @@ export const diningRoom = [
   {
     title: "Iron Shelf",
     links: [
-      { label: "Iron Shelf", href: "/sofa-1-seater" },
+      { label: "Iron Shelf", href: "/iron-shelf" },
+    ],
+  },
+
+   {
+    title: "Book Shelf",
+    links: [
+      { label: "Book Shelf", href: "/book-shelf" },
     ],
   },
 ];
