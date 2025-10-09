@@ -8,6 +8,8 @@ import ShoeRackPage from "./pages/products/shoe-rack";
 import TvCabinetPage from "./pages/products/tv-cabinet";
 import IronShelfPage from "./pages/products/iron-shelf";
 import BookShelfPage from "./pages/products/book-shelf";
+import TeaTrolleyPage from "./pages/products/tea-trolley";
+import CoffeeTablePage from "./pages/products/coffee-table";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -285,21 +287,22 @@ function App() {
                       }
                     />
                     <Route
-                      path="shop-sidebar-right"
+                      path="tea-trolley"
                       element={
                         <ProductLayout>
-                          <ShopSidebarRightPage />
+                          <TeaTrolleyPage />
                         </ProductLayout>
                       }
                     />
                     <Route
-                      path="shop-filter-canvas"
+                      path="coffee-table"
                       element={
                         <ProductLayout>
-                          <ShopFilterCanvasPage />
+                          <CoffeeTablePage />
                         </ProductLayout>
                       }
                     />
+                    
                     <Route
                       path="shop-filter-dropdown"
                       element={

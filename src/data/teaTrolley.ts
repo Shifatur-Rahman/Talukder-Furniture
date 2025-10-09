@@ -153,7 +153,7 @@ export const teaTrolleyProducts = [
 
 
 
-export const ironShelfMain = [...teaTrolleyProducts].slice( 
+export const teaTrolleyMain = [...teaTrolleyProducts].slice( 
   0,
   5
 );

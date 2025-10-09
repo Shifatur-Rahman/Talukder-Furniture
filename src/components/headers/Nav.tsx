@@ -821,6 +821,7 @@ export const livingRoom = [
     links: [
       { label: "Accent Chairs Stool", href: "/sofa-1-seater" },
       { label: "Folding Chair", href: "/sofa-2-seater" },
+      { label: "Coffee Table", href: "/coffee-table" },
     ],
   },
 
