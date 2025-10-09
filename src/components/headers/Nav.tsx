@@ -821,7 +821,6 @@ export const livingRoom = [
     links: [
       { label: "Accent Chairs Stool", href: "/sofa-1-seater" },
       { label: "Folding Chair", href: "/sofa-2-seater" },
-      { label: "Coffee Table", href: "/coffee-table" },
     ],
   },
 
@@ -830,9 +829,11 @@ export const livingRoom = [
     links: [
       { label: "Center Table", href: "/sofa-1-seater" },
       { label: "Side Table", href: "/sofa-2-seater" },
+      { label: "Coffee Table", href: "/coffee-table" },
+      { label: "Reading Table", href: "/reading-table" },
     ],
   },
-
+   
   {
     title: "Cabinets",
     links: [

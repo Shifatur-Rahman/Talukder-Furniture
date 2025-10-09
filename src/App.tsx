@@ -10,6 +10,7 @@ import IronShelfPage from "./pages/products/iron-shelf";
 import BookShelfPage from "./pages/products/book-shelf";
 import TeaTrolleyPage from "./pages/products/tea-trolley";
 import CoffeeTablePage from "./pages/products/coffee-table";
+import ReadingTablePage from "./pages/products/reading-table";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -302,12 +303,12 @@ function App() {
                         </ProductLayout>
                       }
                     />
-                    
+
                     <Route
-                      path="shop-filter-dropdown"
+                      path="reading-table"
                       element={
                         <ProductLayout>
-                          <ShopFilterDropdownPage />
+                          <ReadingTablePage />
                         </ProductLayout>
                       }
                     />

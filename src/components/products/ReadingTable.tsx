@@ -5,15 +5,15 @@ import { useEffect, useReducer, useState } from "react";
 
 import { initialState, reducer } from "@/reducer/filterReducer";
 
-// import FilterMeta from "./FilterMeta";
-// import FilterModal from "./FilterModal";
+import FilterMeta from "./FilterMeta";
+import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { sofaMain } from "@/data/sofa"; 
+import { readingTableMain } from "@/data/readingTable"; 
  
 // Filter state type (update this to match your reducer state exactly) 
  
 // Props for Products1
-interface SofaProps {
+interface ReadingTableProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
@@ -22,12 +22,12 @@ interface SofaProps {
  
 // console.log("sofaMain products:", sofaMain); 
  
-export default function Sofa({
+export default function ReadingTable({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: SofaProps) {
+}: ReadingTableProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -98,7 +98,7 @@ export default function Sofa({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: sofaMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: readingTableMain });
   }, [ 
     price,
     availability,
