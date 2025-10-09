@@ -14,6 +14,7 @@ import ReadingTablePage from "./pages/products/reading-table";
 import SofaCumBedPage from "./pages/products/sofacum-bed";
 import DolnaPage from "./pages/products/Dolna";
 import Dining4SeaterPage from "./pages/products/Dining-4-Seater";
+import Dining6SeaterPage from "./pages/products/Dining-6-Seater";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -338,14 +339,14 @@ function App() {
                           <Dining4SeaterPage />
                         </ProductLayout>
                       }
-                    />
-                    <Route
-                      path="dining-6-seater"
-                      element={
-                        <ProductLayout>
-                          <Dining4SeaterPage />
+                    /> 
+                    <Route 
+                      path="dining-6-seater" 
+                      element={ 
+                        <ProductLayout> 
+                          <Dining6SeaterPage /> 
                         </ProductLayout>
-                      }
+                      } 
                     />
                     <Route
                       path="dining-6-seater" 

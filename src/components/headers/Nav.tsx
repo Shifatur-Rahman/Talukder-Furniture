@@ -858,9 +858,9 @@ export const diningRoom = [
   {
     title: "Dining Set",
     links: [
-      { label: "Dining Set 4 Seater", href: "/dining-4-seater" },
-      { label: "Dining Set 6 Seater", href: "/executive-table" }, 
-      { label: "Dining Set 8 Seater", href: "/side-rack" },
+      { label: "Dining Set 4 Seater", href: "/dining-4-seater" }, 
+      { label: "Dining Set 6 Seater", href: "/dining-6-seater" }, 
+      { label: "Dining Set 8 Seater", href: "/dining-8-seater" }, 
       ],
   },
 
