@@ -292,8 +292,6 @@ export const readingTableProducts = [
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
 
-
-
 ]
 
 

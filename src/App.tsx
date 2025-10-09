@@ -11,6 +11,9 @@ import BookShelfPage from "./pages/products/book-shelf";
 import TeaTrolleyPage from "./pages/products/tea-trolley";
 import CoffeeTablePage from "./pages/products/coffee-table";
 import ReadingTablePage from "./pages/products/reading-table";
+import SofaCumBedPage from "./pages/products/sofacum-bed";
+import DolnaPage from "./pages/products/Dolna";
+import Dining4SeaterPage from "./pages/products/Dining-4-Seater";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -313,39 +316,39 @@ function App() {
                       }
                     />
                     <Route
-                      path="shop-filter-sidebar"
+                      path="sofa-cum-bed"
                       element={
                         <ProductLayout>
-                          <ShopFilterSidebarPage />
+                          <SofaCumBedPage />
+                        </ProductLayout>
+                      }
+                    /> 
+                    <Route
+                      path="dolna"
+                      element={
+                        <ProductLayout>
+                          <DolnaPage />
                         </ProductLayout>
                       }
                     />
                     <Route
-                      path="shop-pagination"
+                      path="dining-4-seater"
                       element={
                         <ProductLayout>
-                          <ShopPaginationPage />
+                          <Dining4SeaterPage />
                         </ProductLayout>
                       }
                     />
                     <Route
-                      path="shop-load-button"
+                      path="dining-6-seater"
                       element={
                         <ProductLayout>
-                          <ShopLoadButtonPage />
+                          <Dining4SeaterPage />
                         </ProductLayout>
                       }
                     />
                     <Route
-                      path="shop-infinite-scrolling"
-                      element={
-                        <ProductLayout>
-                          <ShopInfiniteScrollPage />
-                        </ProductLayout>
-                      }
-                    />
-                    <Route
-                      path="product-style-01"
+                      path="dining-6-seater" 
                       element={
                         <ProductLayout>
                           <ProductStylePage1 />

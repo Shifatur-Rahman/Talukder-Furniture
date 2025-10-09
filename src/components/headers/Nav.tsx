@@ -805,7 +805,7 @@ export const livingRoom = [
       { label: "2 Seater", href: "/computer-table" },
       { label: "3 Seater", href: "/side-rack" },
       { label: "Divan Sofa", href: "/conference-table" },
-      { label: "Sofa Cum Bed", href: "/computer-table" },
+      { label: "Sofa Cum Bed", href: "/sofa-cum-bed" }, 
     ],
   },
 
@@ -858,7 +858,7 @@ export const diningRoom = [
   {
     title: "Dining Set",
     links: [
-      { label: "Dining Set 4 Seater", href: "/md-ceo-table" },
+      { label: "Dining Set 4 Seater", href: "/dining-4-seater" },
       { label: "Dining Set 6 Seater", href: "/executive-table" }, 
       { label: "Dining Set 8 Seater", href: "/side-rack" },
       ],
@@ -897,7 +897,7 @@ export const diningRoom = [
   {
     title: "Dolna",
     links: [
-      { label: "Dolna", href: "/sofa-1-seater" },
+      { label: "Dolna", href: "/dolna" }, 
     ],
   },
 
