@@ -721,7 +721,7 @@ export const officeFurnitureMenu = [
     title: "Tables",
      href: "/tables", // route for title
     links: [
-      { label: "MD/CEO Table", href: "/md-ceo-table" },
+      { label: "MD/CEO Table", href: "/md-table" },
       { label: "Executive Table", href: "/executive-table" }, 
       { label: "Side Rack", href: "/side-rack" },
       { label: "Conference Table", href: "/conference-table" },
@@ -867,7 +867,7 @@ export const diningRoom = [
   {
     title: "Dining Table",
     links: [
-        { label: "Dining Table", href: "/md-ceo-table" },
+        { label: "Dining Table", href: "/dining" },
     ],
   },
 

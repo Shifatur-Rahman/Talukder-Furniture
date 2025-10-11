@@ -14,7 +14,7 @@ export default function Header2() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (Math.abs(currentScrollY - lastScrollY) <= delta) return;
+      if (Math.abs(currentScrollY - lastScrollY) <= delta) return; 
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         // Scrolling down
@@ -53,7 +53,7 @@ export default function Header2() {
   return (
     <header id="header" className={headerClasses}>
       <div className="main-header has-border-y">
-        <div className="container-full">
+        <div className="container-full"> 
           <div className="row wrapper-header align-items-center">
             <div className="col-xl-3 col-2 d-xl-none">
               <a
@@ -63,7 +63,7 @@ export default function Header2() {
                 aria-controls="mobileMenu"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg" 
                   width={24}
                   height={24}
                   fill="#fff"
@@ -119,7 +119,7 @@ export default function Header2() {
                     <span className="icon icon-heart" />
                   </Link>
                 </li>
-                <li className="nav-cart">
+                <li className="nav-cart"> 
                   <a
                     href="#shoppingCart"
                     data-bs-toggle="modal"
@@ -138,4 +138,6 @@ export default function Header2() {
       </div>
     </header>
   );
-}
+}  
+  
+  

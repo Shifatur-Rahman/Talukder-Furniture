@@ -16,6 +16,9 @@ import DolnaPage from "./pages/products/Dolna";
 import Dining4SeaterPage from "./pages/products/Dining-4-Seater";
 import Dining6SeaterPage from "./pages/products/Dining-6-Seater";
 import Dining8SeaterPage from "./pages/products/Dining-8-Seater";
+import MdTablePage from "./pages/products/Md-Table";
+import ExecutiveTablePage from "./pages/products/Executive-Table";
+import ComputerTablePage from "./pages/products/Computer-Table";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -183,7 +186,7 @@ const MyAccountOrdersPage = lazy(
 const MyAccountOrdersDetails = lazy(
   () => import("./pages/dashboard/my-account-orders-details")
 );
-
+ 
 function App() {
   return (
     <>
@@ -191,7 +194,7 @@ function App() {
         <ErrorBoundary
           fallbackRender={({ error, resetErrorBoundary }) => (
             <div
-              className="d-flex flex-column align-items-center justify-content-center"
+              className="d-flex flex-column align-items-center justify-content-center" 
               style={{ height: "100vh" }}
             >
               <h2>Something went wrong.</h2>
@@ -220,9 +223,9 @@ function App() {
                 </div>
               </div>
             }
-          >
-            <LayoutWrapper>
-              <Context>
+          > 
+            <LayoutWrapper> 
+              <Context>  
                 <Routes>
                   <Route path="/">
                     <Route index element={<HomePage />} />
@@ -244,17 +247,35 @@ function App() {
 
                     
                     <Route
-                      path="md-ceo-table"
+                      path="md-table"
                       element={
                         <ProductLayout>
-                          <SofaSetPage /> 
+                          <MdTablePage /> 
                         </ProductLayout>
                       }
-                    />
-                    {/* md-ceo table */} 
+                    /> 
 
+                    {/* executive-table */}  
 
+                    <Route
+                      path="/executive-table"
+                      element={
+                        <ProductLayout>
+                          <ExecutiveTablePage /> 
+                        </ProductLayout>
+                      }
+                    /> 
+   
+                    {/* computer-table */}   
 
+                    <Route
+                      path="/computer-table" 
+                      element={
+                        <ProductLayout> 
+                          <ComputerTablePage /> 
+                        </ProductLayout> 
+                      } 
+                    /> 
 
                     <Route
                       path="shoe-rack"
@@ -332,12 +353,12 @@ function App() {
                           <DolnaPage />
                         </ProductLayout>
                       }
-                    />
+                    /> 
                     <Route
                       path="dining-4-seater"
                       element={
                         <ProductLayout>
-                          <Dining4SeaterPage />
+                          <Dining4SeaterPage /> 
                         </ProductLayout>
                       }
                     /> 
