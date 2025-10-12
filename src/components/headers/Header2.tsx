@@ -10,16 +10,16 @@ export default function Header2() {
   useEffect(() => {
     let lastScrollY = window.scrollY;
     const delta = 5;
-
+ 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (Math.abs(currentScrollY - lastScrollY) <= delta) return; 
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down
+        // Scrolling down 
         setHideHeader(true);
-        setIsSticky(false);
+        setIsSticky(false); 
       } else {
         // Scrolling up
         setHideHeader(false);
@@ -55,6 +55,8 @@ export default function Header2() {
       <div className="main-header has-border-y">
         <div className="container-full"> 
           <div className="row wrapper-header align-items-center">
+
+
             <div className="col-xl-3 col-2 d-xl-none">
               <a
                 href="#mobileMenu"
@@ -66,20 +68,22 @@ export default function Header2() {
                   xmlns="http://www.w3.org/2000/svg" 
                   width={24}
                   height={24}
-                  fill="#fff"
+                  fill="#fff" 
                   viewBox="0 0 256 256"
                 >
                   <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z" />
                 </svg>
               </a>
-            </div>
+            </div> 
+    
             <div className="col-xl-5 d-none d-xl-block">
               <nav className="box-navigation text-center">
-                <ul className="box-nav-ul justify-content-start">
+                <ul className="box-nav-ul justify-content-start"> 
                   <Nav textColor="text_white" />
                 </ul>
               </nav>
             </div>
+
             <div className="col-xl-2 col-8 d-flex justify-content-center">
               <Link to={`/`} className="logo-header d-flex">
                 <img
@@ -96,8 +100,9 @@ export default function Header2() {
                   width={154}
                   height={38}
                 />
-              </Link>
+              </Link> 
             </div>
+            
             <div className="col-xl-5 col-2">
               <ul className="nav-icon">
                 <li className="nav-search">
@@ -133,6 +138,7 @@ export default function Header2() {
                 </li>
               </ul>
             </div>
+            
           </div>
         </div>
       </div>

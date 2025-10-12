@@ -143,7 +143,7 @@ export default function Nav({ textColor = "" }: NavProps) {
         </div>
       )}
     </li>
-
+   
       {/* Living Room */} 
       <li
       className="menu-item"
@@ -284,89 +284,6 @@ export default function Nav({ textColor = "" }: NavProps) {
  
       {/* bedRoomFurniture */} 
 
-   {/*    <li
-      className="menu-item"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
-      <a href="#" className="item-link">
-        Bedroom <i className="icon icon-down" />
-      </a>
-
-      {open && (
-        <div className="sub-menu mega-menu mega-menu-1"> 
-          <div className="container">
-            <div className="row-demo-1">
-              <div className="mega-menu-list">
-                {bedRoomFurnitureMenu.map((menu, index) => (
-                  <div className="mega-menu-item" key={index}>
-                    <div className="list-categories-inner">
-                    <div className="menu-heading text-title">{menu.title} 
-                       <FaArrowRight className="arrow-icon" /> 
-                    </div>
-
-                    <ul className="menu-list">
-                      {menu.links.map((link, idx) => (
-                        <li key={idx}>
-                          {link.children ? (
-                            <>
-                              <span className="menu-link-text">
-                                {link.label}
-                              </span>
-                              <ul className="submenu-list">
-                                {link.children.map((child, cIdx) => (
-                                  
-                                  <li key={cIdx}>
-                                    <a href={child.href} className="menu-link-text">
-                                      <AiOutlineMinus />
-                                      {child.label}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </>
-                          ) : (
-                            <a href={link.href} className="menu-link-text">
-                              {link.label}
-                            </a>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  </div> 
-                ))}
-
-                 <div className="mega-menu-item">
-                  <div className="collection-position hover-img style-4">
-                    <Link to="/product-detail/1" className="img-style w-100">
-                      <img
-                        className="lazyload"
-                        data-src="/images/banner/collections-1.jpg"
-                        alt="banner-cls"
-                        src="/images/banner/collections-1.jpg"
-                        width={657}
-                        height={877}
-                      />
-                    </Link>
-                    <div className="content cls-content">
-                      <h6>
-                        <Link to="/product-detail/1" className="link">
-                          Desks
-                        </Link>
-                      </h6>
-                      <h6>25 products</h6> 
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </li> */} 
-
 
    <li
   className="menu-item"
@@ -457,96 +374,6 @@ export default function Nav({ textColor = "" }: NavProps) {
     </div>
   )}
 </li> 
- 
-          {/* <li 
-      className="menu-item"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
-      <a href="#" className="item-link">
-        Bedroom <i className="icon icon-down" />
-      </a>
-
-      {open && (
-        <div className="sub-menu mega-menu mega-menu-1"> 
-          <div className="container">
-            <div className="row-demo-1">
-              <div className="mega-menu-list">
-                 {bedRoomFurnitureMenu.map((menu, index) => (
-              <div className="mega-menu-item" key={index}>
-            
-                <div className="menu-heading font-bold flex items-center">
-                  {menu.title} 
-                  <FaArrowRight className="ml-2 text-xs" /> 
-                </div> 
-
-            
-                <ul className="menu-list"> 
-                  {menu.links.map((link, idx) => ( 
-                    <li key={idx}>
-                      {link.children ? (
-                        <>
-                      
-                          <span className="menu-link-text font-semibold flex items-center cursor-default">
-                            {link.label}
-                            <FaArrowRight className="ml-1 text-[10px]" />
-                          </span>
-
-                         
-                          <ul className="submenu-list ml-4 mt-1">
-                            {link.children.map((child, cIdx) => (
-                              <li key={cIdx}>
-                                <Link
-                                  to={child.href}
-                                  className="menu-link-text"
-                                >
-                                  {child.label}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </>
-                      ) : (
-                       
-                        <Link to={link.href} className="menu-link-text">
-                          {link.label}
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))} 
-
-                 <div className="mega-menu-item">
-                  <div className="collection-position hover-img style-4">
-                    <Link to="/product-detail/1" className="img-style w-100">
-                      <img
-                        className="lazyload"
-                        data-src="/images/banner/collections-1.jpg"
-                        alt="banner-cls"
-                        src="/images/banner/collections-1.jpg"
-                        width={657}
-                        height={877}
-                      />
-                    </Link>
-                    <div className="content cls-content">
-                      <h6>
-                        <Link to="/product-detail/1" className="link">
-                          Desks
-                        </Link>
-                      </h6>
-                      <h6>25 products</h6> 
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </li> */}
 
        {/* institutionalFurnitureMenu MENU */} 
 
@@ -639,6 +466,168 @@ export default function Nav({ textColor = "" }: NavProps) {
     </div>
   )}
 </li> 
+    
+{/* new */}
+
+       <li
+  className="menu-item"
+  onMouseEnter={() => setOpen(true)}
+  onMouseLeave={() => setOpen(false)}
+>
+  <a href="#" className="item-link">
+    Hospital <i className="icon icon-down" />
+  </a> 
+
+  {open && (
+    <div className="sub-menu mega-menu mega-menu-1">
+      <div className="container">
+        <div className="row-demo-1">
+          <div className="mega-menu-list">
+            {hospitalFurnitureMenu.map((menu, index) => (
+              <div className="mega-menu-item" key={index}>
+                <div className="list-categories-inner">
+                  {/* Category Title */}
+                  <div className="menu-heading text-title font-bold flex items-center">
+                    {menu.title}
+                    <FaArrowRight className="arrow-icon ml-2 text-xs" />
+                  </div>
+
+                  {/* Links inside Category */}
+                  <ul className="menu-list">
+                    {menu.links.map((link, idx) => (
+                      <li key={idx}>
+                        {/* If this link has children → Parent */}
+                        {link.children && Array.isArray(link.children) ? (
+                          <>
+                            <span className="menu-link-text font-semibold flex items-center cursor-default">
+                              {link.label}
+                              <FaArrowRight className="ml-1 text-[10px]" />
+                            </span>
+                            <ul className="submenu-list ml-4 mt-1">
+                              {link.children.map((child, cIdx) => (
+                                <li key={cIdx}>
+                                  <Link to={child.href} className="menu-link-text flex items-center">
+                                    <AiOutlineMinus className="mr-1" />
+                                    {child.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        ) : (
+                          // Normal clickable link (no children)
+                          <Link to={link.href} className="menu-link-text">
+                            {link.label}
+                          </Link>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))} 
+
+            {/* Right side promo image */}
+
+            {/* <div className="mega-menu-item">
+              <div className="collection-position hover-img style-4">
+                <Link to="/product-detail/1" className="img-style w-100">
+                  <img
+                    className="lazyload"
+                    data-src="/images/banner/collections-1.jpg"
+                    alt="banner-cls"
+                    src="/images/banner/collections-1.jpg"
+                    width={657}
+                    height={877}
+                  />
+                </Link>
+                <div className="content cls-content">
+                  <h6>
+                    <Link to="/product-detail/1" className="link">
+                      Desks
+                    </Link>
+                  </h6>
+                  <h6>25 products</h6> 
+                </div>
+              </div>
+            </div> */}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+</li> 
+
+    {/* new */}
+
+    
+      <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Kids <i className="icon icon-down" /> 
+      </a>
+
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1"> 
+          <div className="container">
+            <div className="row-demo-1">
+              <div className="mega-menu-list">
+                {childrenFurniture.map((menu, index) => (
+                  <div className="mega-menu-item" key={index}>
+                    <div className="list-categories-inner">
+                    <div className="menu-heading text-title">{menu.title} 
+
+                       {/* <i className="fa-solid fa-arrow-right"></i> 
+                       <i class="fa-solid fa-arrow-right"></i> */} 
+                       <FaArrowRight className="arrow-icon" /> 
+                    </div>
+
+                     <ul className="menu-list">
+                    {menu.links.map((link, idx) => (
+                      <li key={idx}>
+                        <a href={link.href} className="menu-link-text">
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  </div> 
+                  </div> 
+                ))}
+
+                 <div className="mega-menu-item">
+                  <div className="collection-position hover-img style-4">
+                    <Link to="/product-detail/1" className="img-style w-100">
+                      <img
+                        className="lazyload"
+                        data-src="/images/banner/collections-3.jpg"
+                        alt="banner-cls"
+                        src="/images/banner/collections-3.jpg"
+                        width={657}
+                        height={877}
+                      />
+                    </Link>
+                    <div className="content cls-content">
+                      <h6>
+                        <Link to="/product-detail/1" className="link">
+                          Dining Room
+                        </Link>
+                      </h6>
+                      <h6> 100 products</h6> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </li>
     
 
       {/* PAGES MENU */}
@@ -1121,4 +1110,137 @@ export const institutionalFurnitureMenu = [
     ],
   },
 ];
+
+
+//    Institutional
+export const hospitalFurnitureMenu = [
+  {
+    title: "Hospital",
+    links: [
+      {
+        label: "Beds",
+        children: [
+          { label: "ICU Bed", href: "/icu-bed" },
+          { label: "Mechanical Bed", href: "/mechanical-bed" },
+          { label: "Hospital Bed", href: "/hospital-bed" },
+          { label: "Patient Stretcher", href: "/patient-stretcher" },
+          { label: "Patient Stretcher cum Trolley", href: "/patient-stretcher-cum-trolley" },
+          { label: "Gynecological Bed", href: "/gynecological-bed" },
+        ],
+      },
+      {
+        label: "Cabinets",
+        children: [
+          { label: "Bed Side Cabinet", href: "/bed-side-cabinet" },
+        ],
+      },
+    ]
+  }, 
+
+   {
+    
+    title: "Hospital",
+    links: [
+       {
+        label: "Trolleys",
+        children: [
+          { label: "Food Trolley", href: "/food-trolley" },
+          { label: "Medicine Trolley", href: "/medicine-trolley" },
+          { label: "Instrument Trolley", href: "/instrument-trolley" },
+        ],
+      },
+
+       { label: "Over Bed Table", href: "/over-bed-table" },
+      { label: "Medicine Cupboard", href: "/medicine-cupboard" },
+      { label: "Bowl Stand", href: "/bowl-stand" },
+      { label: "Kick Bucket", href: "/kick-bucket" },
+      { label: "Isolation Screen", href: "/isolation-screen" },
+
+      ],
+  },
+
+  {
+
+    title: "Hospital",
+    links: [
+      { label: "Saline Stand", href: "/saline-stand" },
+      { label: "Baby Cot", href: "/baby-cot" },
+      { label: "Bed Side Locker", href: "/bed-side-locker" },
+      {
+        label: "Waiting Chair",
+        children: [
+          { label: "3 Seater", href: "/waiting-chair-3-seater" },
+          { label: "4 Seater", href: "/waiting-chair-4-seater" },
+        ],
+      },
+      {
+        label: "Cart",
+        children: [
+          { label: "Food Cart", href: "/food-cart" },
+          { label: "Emergency Cart", href: "/emergency-cart" },
+        ],
+      },
+
+    ]
+  },
+    {
+    title: "Baby Cot",
+    links: [
+      { label: "Baby Cot", href: "/baby-cot" },
+    ],
+  },
+
+  {
+    title: "Bed Side Locker",
+    links: [
+      { label: "Bed Side Locker", href: "/bed-side-locker" }, 
+    ],
+  },
+]; 
+
+// Children furniture
+export const childrenFurniture = [ 
+  {
+    title: "Children's Cabinet",
+    links: [
+      { label: "Waredrobe Cabinet", href: "/single-spring-mattress" },
+      { label: "Children's Cupboard", href: "/double-spring-mattress" },
+      { label: "Children's Storage", href: "/king-spring-mattress" },
+    ],
+  },
+
+  {
+    title: "Children's Mattresses",
+    links: [
+      { label: "Children's Spring Mattresses", href: "/single-spring-mattress" },
+      { label: "Children's Coir Mattresses", href: "/double-spring-mattress" },
+      { label: "Children's Foam Mattresses", href: "/king-spring-mattress" },
+    ],
+  }, 
+
+  {
+    title: "Children's Bed Frame",
+    links: [
+       { label: "Children's Bed Frame", href: "/single-bed-frame" },
+    ],
+  },
+
+  {
+    title: "Children's Cot",
+    links: [
+       { label: "Children's Cot", href: "/single-bed-frame" },
+    ],
+  },
+
+  {
+    title: "Children's Cradle",
+    links: [
+       { label: "Children's Cradle", href: "/single-bed-frame" },
+    ],
+  },
+
+   
+
+  
+]; 
 

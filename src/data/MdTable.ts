@@ -1092,7 +1092,7 @@ export const mdTableProducts = [
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
-  {
+  { 
     id: 38,
     delay: "0s",
     title: "MD/Director Table", 

@@ -32,7 +32,7 @@ export default function Hero() {
           disableOnInteraction: false,
         }}
 
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay]} 
         pagination={{
           clickable: true,
           el: ".spd10",

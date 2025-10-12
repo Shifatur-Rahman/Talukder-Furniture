@@ -168,7 +168,7 @@ export default function OrderDetails() {
                           <span className="">$209.99</span>
                         </li>
                       </ul>
-                    </div>
+                    </div> 
                     <div
                       className={`widget-content-inner ${
                         activeIndex == 2 ? "active" : ""

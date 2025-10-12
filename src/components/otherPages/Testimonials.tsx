@@ -12,7 +12,7 @@ export default function Testimonials() {
     </>
   );
 
-  const VerifiedSVG = () => (
+  const VerifiedSVG = () => ( 
     <svg
       className="icon"
       width={20}

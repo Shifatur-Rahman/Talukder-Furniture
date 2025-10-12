@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Categories() { 
   return (
+    
     <section className="flat-spacing-2">
       <div className="container-full">
         <div className="row">
@@ -9,7 +10,6 @@ export default function Categories() {
             <div className="text-center flat-spacing pt-0 line-bottom-container"> 
               <div className="wrap-cls-img"> 
                 <div className="cls-img-item hover-img"> 
-                  {/* <Link to={`/shop-default`} className="image img-style">  */} 
                    <Link to={`/office-furniture`} className="image img-style">
                     <img 
                       data-src="/images/section/collections-banner.jpg" 
@@ -17,11 +17,11 @@ export default function Categories() {
                       src="/images/section/collections-banner.jpg"
                       width={441}
                       height={242}
-                    />
+                    /> 
                   </Link> 
-                  <h3>
+                  <h3> 
                     <Link className="link" to={`/office-furniture`}> 
-                      Office Furniture 
+                      Office Furniture
                     </Link>
                   </h3> 
                 </div> 
@@ -37,11 +37,12 @@ export default function Categories() {
                   </Link> 
                   <h3> 
                     <Link className="link" to={`/shop-default`}> 
-                      Industrial Furniture
+                      Living Furniture
                     </Link>
                   </h3>
                 </div>
-                <div className="cls-img-item hover-img">
+                <div className="cls-img-item hover-img"> 
+
                   <Link to={`/shop-default`} className="image img-style">
                     <img
                       data-src="/images/section/collections-banner-2.jpg"
@@ -50,14 +51,30 @@ export default function Categories() {
                       width={441}
                       height={242}
                     />
-                  </Link> 
-                  <h3>
+                  </Link>  
+                  <h3> 
                     <Link className="link" to={`/shop-default`}> 
-                      Home Furniture
+                      Dining Room
                     </Link>
                   </h3>
-                </div> 
+                </div>
                 <div className="cls-img-item hover-img"> 
+                  <Link to={`/shop-default`} className="image img-style"> 
+                    <img
+                      data-src="/images/section/collections-banner-3.jpg" 
+                      alt="Cls Image"
+                      src="/images/section/collections-banner-3.jpg"
+                      width={441}
+                      height={242}
+                    /> 
+                  </Link> 
+                  <h3> 
+                    <Link className="link" to={`/shop-default`}> 
+                      Bed Room
+                    </Link>
+                  </h3>
+                </div>
+                <div className="cls-img-item hover-img">
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
                       data-src="/images/section/collections-banner-4.jpg" 
@@ -65,30 +82,50 @@ export default function Categories() {
                       src="/images/section/collections-banner-4.jpg"
                       width={441}
                       height={242}
+                    /> 
+                  </Link> 
+                  <h3>
+                    <Link className="link" to={`/shop-default`}> 
+                      Kids Room
+                    </Link>
+                  </h3>
+                </div> 
+
+                <div className="cls-img-item hover-img">
+                  <Link to={`/shop-default`} className="image img-style"> 
+                    <img
+                      data-src="/images/section/collections-banner-5.jpg" 
+                      alt="Cls Image"
+                      src="/images/section/collections-banner-5.jpg"
+                      width={441}
+                      height={242}
                     />
                   </Link> 
-                  <h3> 
+                  
+                  <h3>
                     <Link className="link" to={`/shop-default`}> 
                       Hospital Furniture
                     </Link> 
                   </h3>
                 </div>
-                <div className="cls-img-item hover-img">
+     
+                <div className="cls-img-item hover-img"> 
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
-                      data-src="/images/section/collections-banner-3.jpg" 
+                      data-src="/images/section/collections-banner-6.jpg" 
                       alt="Cls Image"
-                      src="/images/section/collections-banner-3.jpg" 
+                      src="/images/section/collections-banner-6.jpg" 
                       width={441}
-                      height={242}
+                      height={242} 
                     />
-                  </Link>
-                  <h3>
+                  </Link> 
+                  <h3> 
                     <Link className="link" to={`/shop-default`}> 
-                      Metal Furniture
+                      Institutional
                     </Link> 
                   </h3>
                 </div>
+                
               </div>
               <Link to={`/shop-default`} className="btn-line"> 
                 <span>View All Categiories</span> 

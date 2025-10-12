@@ -19,14 +19,14 @@ const metadata = {
   description: "GearO - Office equipment eCommerce Reactjs Template",
 };
 
-export default function Homepage5() {
+export default function Homepage5() { 
   return (
     <>
       <MetaComponent meta={metadata} />
       <Topbar2 />
-      <Header1 parentClass="header-default border-bot" /> 
-      <Collections3 parentClass="slider-home5" />
-      <Collections5 />
+      <Header1 parentClass="header-default border-bot" />  
+      <Collections3 parentClass="slider-home5" /> 
+      <Collections5 /> 
       <Products1 cardStyle={5} />
       <Lookbook />
       <Collections2 />

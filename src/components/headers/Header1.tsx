@@ -6,7 +6,7 @@ import CartLength from "../common/CartLength";
 export default function Header1({ parentClass = "header-default" }) {
   const [isSticky, setIsSticky] = useState(false);
   const [hideHeader, setHideHeader] = useState(false);
-
+   
   useEffect(() => {
     let lastScrollY = window.scrollY;
     const delta = 5;
@@ -43,43 +43,20 @@ export default function Header1({ parentClass = "header-default" }) {
   const headerClasses = [
     parentClass,
     isSticky ? "header-sticky" : "",
-    hideHeader ? "header-hidden" : "",
+    hideHeader ? "header-hidden" : "", 
   ]
     .filter(Boolean)
     .join(" ");
-
+ 
   return (
     <header id="header" className={headerClasses}>
       <div className="main-header">
         <div className="container-full">
           <div className="row wrapper-header align-items-center">
-            <div className="col-xl-5 d-none d-xl-block">
-              <nav className="box-navigation text-center">
-                <ul className="box-nav-ul justify-content-start">
-                  <Nav />
-                </ul>
-              </nav>
-            </div>
-            <div className="col-md-4 col-2 d-xl-none">
-              <a
-                href="#mobileMenu"
-                className="mobile-menu"
-                data-bs-toggle="offcanvas"
-                aria-controls="mobileMenu"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  fill="#000000"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z" />
-                </svg>
-              </a>
-            </div>
-            <div className="col-xl-2 col-md-4 col-8 text-center">
-              <Link to={`/`} className="logo-header">
+
+
+             <div className="col-xl-2 col-md-4 col-8"> 
+              <Link to={`/`} className="logo-header"> 
                  <img
                   alt="logo"
                   className="logo"
@@ -90,8 +67,36 @@ export default function Header1({ parentClass = "header-default" }) {
         
               </Link>   
             </div>
-            <div className="col-xl-5 col-md-4 col-2">
-              <ul className="nav-icon">
+
+             <div className="col-md-4 col-2 d-xl-none">
+              <a
+                href="#mobileMenu"
+                className="mobile-menu"
+                data-bs-toggle="offcanvas"
+                aria-controls="mobileMenu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width={24}
+                  height={24}
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z" />
+                </svg>
+              </a>
+            </div> 
+ 
+            <div className="col-xl-7 d-none d-xl-block"> 
+                 <nav className="box-navigation text-center">
+                <ul className="box-nav-ul justify-content-center">
+                  <Nav /> 
+                </ul>
+              </nav>   
+            </div> 
+
+            <div className="col-xl-3 col-md-4 col-2"> 
+              <ul className="nav-icon"> 
                 <li className="nav-search">
                   <a
                     href="#search"
@@ -125,9 +130,13 @@ export default function Header1({ parentClass = "header-default" }) {
                 </li>
               </ul>
             </div>
+
+
+
           </div>
         </div>
       </div>
     </header>
   );
 }
+ 

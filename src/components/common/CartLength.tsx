@@ -4,3 +4,4 @@ export default function CartLength() {
   const { cartProducts } = useContextElement();
   return <>{cartProducts.length}</>;
 }
+ 

@@ -12,7 +12,7 @@ export default function Hero() {
         autoplay
         spaceBetween={15}
         effect="fade"
-        modules={[Autoplay, EffectFade, Pagination, Navigation]}
+        modules={[Autoplay, EffectFade, Pagination, Navigation]} 
         pagination={{
           clickable: true,
           el: ".spd16",
@@ -23,7 +23,7 @@ export default function Hero() {
         }}
       >
         {sliderData.map((slide, index) => (
-          <SwiperSlide className="swiper-slide" key={index}>
+          <SwiperSlide className="swiper-slide" key={index}> 
             <div className="wrap-slider">
               <div className="content-left">
                 <div className="box-content">

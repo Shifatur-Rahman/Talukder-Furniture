@@ -7,19 +7,19 @@ export const collections = [
   },
   {
     id: "02",
-    title: "Cozy Industrial Collection",
+    title: "Cozy Sofa Collection",
     image: "/images/section/collections-banner-1.jpg",
     delay: "0.1s",
   },
   {
     id: "03",
-    title: "Bedroom Elegance Collection", 
+    title: "Dining Elegance Collection", 
     image: "/images/section/collections-banner-2.jpg",
     delay: "0.2s",
   }, 
   {
     id: "04",
-    title: "Storage Solutions Collection",
+    title: "Comfortable Bedroom Collection",
     image: "/images/section/collections-banner-3.jpg",
     delay: "0.2s", 
   },

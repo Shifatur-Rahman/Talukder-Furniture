@@ -1,5 +1,6 @@
 import Blogs from "@/components/common/Blogs";
 import Categories from "@/components/common/Categories";
+import Second from "@/components/common/Second";
 import Collections from "@/components/common/Collections";
 import Features2 from "@/components/common/Features2";
 import Products2 from "@/components/common/Products2";
@@ -27,6 +28,7 @@ export default function Homepage4() {
       <Header1 />
       <Hero />
       <Categories />
+      <Second />
       <Products2 parentClass="flat-spacing-5 pt-0" />
       <Features2 />
       <Collections parentClass="flat-spacing-2" />
