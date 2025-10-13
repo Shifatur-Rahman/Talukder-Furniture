@@ -1113,7 +1113,7 @@ export const institutionalFurnitureMenu = [
 
 
 //    Institutional
-export const hospitalFurnitureMenu = [
+export const hospitalFurnitureMenu = [ 
   {
     title: "Hospital",
     links: [
@@ -1184,16 +1184,16 @@ export const hospitalFurnitureMenu = [
     ]
   },
     {
-    title: "Baby Cot",
+    title: "Hospital Baby Cot",
     links: [
-      { label: "Baby Cot", href: "/baby-cot" },
+      { label: "Hospital Baby Cot", href: "/baby-cot" },
     ],
   },
 
   {
-    title: "Bed Side Locker",
+    title: "Hospital Bed Side Locker",
     links: [
-      { label: "Bed Side Locker", href: "/bed-side-locker" }, 
+      { label: "Hospital Bed Side Locker", href: "/bed-side-locker" }, 
     ],
   },
 ]; 
