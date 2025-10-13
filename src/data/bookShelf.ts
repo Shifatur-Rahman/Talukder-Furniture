@@ -28,7 +28,7 @@ export const bookShelfProducts = [
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
-  },
+  }, 
   {
     id: 2,
     delay: "0s",

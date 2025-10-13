@@ -437,7 +437,7 @@ export default function Nav({ textColor = "" }: NavProps) {
 
             {/* Right side promo image */}
 
-            <div className="mega-menu-item">
+            {/* <div className="mega-menu-item">
               <div className="collection-position hover-img style-4">
                 <Link to="/product-detail/1" className="img-style w-100">
                   <img
@@ -458,7 +458,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                   <h6>100 products</h6> 
                 </div>
               </div>
-            </div>
+            </div> */} 
 
           </div>
         </div>
@@ -467,7 +467,7 @@ export default function Nav({ textColor = "" }: NavProps) {
   )}
 </li> 
     
-{/* new */}
+{/* new */} 
 
        <li
   className="menu-item"
@@ -726,7 +726,7 @@ export const officeFurnitureMenu = [
         children: [
           { label: "Low Back Chair", href: "/low-back-chair" },
           { label: "Medium Back Chair", href: "/medium-back-chair" },
-          { label: "High Back Chair", href: "/high-back-chair" },
+          { label: "High Back Chair", href: "/high-back-chair" }, 
           { label: "Swivel Stool", href: "/swivel-stool" },
         ],
       },
@@ -1026,81 +1026,81 @@ export const bedRoomFurnitureMenu = [
 
 //    Institutional
 export const institutionalFurnitureMenu = [
-  {
-    title: "Hospital",
-    links: [
-      {
-        label: "Beds",
-        children: [
-          { label: "ICU Bed", href: "/icu-bed" },
-          { label: "Mechanical Bed", href: "/mechanical-bed" },
-          { label: "Hospital Bed", href: "/hospital-bed" },
-          { label: "Patient Stretcher", href: "/patient-stretcher" },
-          { label: "Patient Stretcher cum Trolley", href: "/patient-stretcher-cum-trolley" },
-          { label: "Gynecological Bed", href: "/gynecological-bed" },
-        ],
-      },
-      {
-        label: "Cabinets",
-        children: [
-          { label: "Bed Side Cabinet", href: "/bed-side-cabinet" },
-        ],
-      },
-    ]
-  }, 
+  // {
+  //   title: "Hospital",
+  //   links: [
+  //     {
+  //       label: "Beds",
+  //       children: [
+  //         { label: "ICU Bed", href: "/icu-bed" },
+  //         { label: "Mechanical Bed", href: "/mechanical-bed" },
+  //         { label: "Hospital Bed", href: "/hospital-bed" },
+  //         { label: "Patient Stretcher", href: "/patient-stretcher" },
+  //         { label: "Patient Stretcher cum Trolley", href: "/patient-stretcher-cum-trolley" },
+  //         { label: "Gynecological Bed", href: "/gynecological-bed" },
+  //       ],
+  //     },
+  //     {
+  //       label: "Cabinets",
+  //       children: [
+  //         { label: "Bed Side Cabinet", href: "/bed-side-cabinet" },
+  //       ],
+  //     },
+  //   ]
+  // }, 
 
-   {
+  //  {
     
-    title: "Hospital",
-    links: [
-       {
-        label: "Trolleys",
-        children: [
-          { label: "Food Trolley", href: "/food-trolley" },
-          { label: "Medicine Trolley", href: "/medicine-trolley" },
-          { label: "Instrument Trolley", href: "/instrument-trolley" },
-        ],
-      },
+  //   title: "Hospital",
+  //   links: [
+  //      {
+  //       label: "Trolleys",
+  //       children: [
+  //         { label: "Food Trolley", href: "/food-trolley" },
+  //         { label: "Medicine Trolley", href: "/medicine-trolley" },
+  //         { label: "Instrument Trolley", href: "/instrument-trolley" },
+  //       ],
+  //     },
 
-       { label: "Over Bed Table", href: "/over-bed-table" },
-      { label: "Medicine Cupboard", href: "/medicine-cupboard" },
-      { label: "Bowl Stand", href: "/bowl-stand" },
-      { label: "Kick Bucket", href: "/kick-bucket" },
-      { label: "Isolation Screen", href: "/isolation-screen" },
+  //      { label: "Over Bed Table", href: "/over-bed-table" },
+  //     { label: "Medicine Cupboard", href: "/medicine-cupboard" },
+  //     { label: "Bowl Stand", href: "/bowl-stand" },
+  //     { label: "Kick Bucket", href: "/kick-bucket" },
+  //     { label: "Isolation Screen", href: "/isolation-screen" },
 
-      ],
-  },
+  //     ],
+  // },
 
-  {
+  // {
 
-    title: "Hospital",
-    links: [
-      { label: "Saline Stand", href: "/saline-stand" },
-      { label: "Baby Cot", href: "/baby-cot" },
-      { label: "Bed Side Locker", href: "/bed-side-locker" },
-      {
-        label: "Waiting Chair",
-        children: [
-          { label: "3 Seater", href: "/waiting-chair-3-seater" },
-          { label: "4 Seater", href: "/waiting-chair-4-seater" },
-        ],
-      },
-      {
-        label: "Cart",
-        children: [
-          { label: "Food Cart", href: "/food-cart" },
-          { label: "Emergency Cart", href: "/emergency-cart" },
-        ],
-      },
+  //   title: "Hospital",
+  //   links: [
+  //     { label: "Saline Stand", href: "/saline-stand" },
+  //     { label: "Baby Cot", href: "/baby-cot" },
+  //     { label: "Bed Side Locker", href: "/bed-side-locker" },
+  //     {
+  //       label: "Waiting Chair",
+  //       children: [
+  //         { label: "3 Seater", href: "/waiting-chair-3-seater" },
+  //         { label: "4 Seater", href: "/waiting-chair-4-seater" },
+  //       ],
+  //     },
+  //     {
+  //       label: "Cart",
+  //       children: [
+  //         { label: "Food Cart", href: "/food-cart" },
+  //         { label: "Emergency Cart", href: "/emergency-cart" },
+  //       ],
+  //     },
 
-    ]
-  },
+  //   ]
+  // }, 
   {
     title: "Educational",
     links: [
-      { label: "Classroom Chairs", href: "/classroom-chairs" },
-      { label: "Storage and Organizers", href: "/storage-organizers" },
-      { label: "Kitchenware Accents of Decors", href: "/kitchenware-accents-decors" },
+      { label: "Classroom Chairs", href: "/classroom-chairs" }, 
+      { label: "Storage and Organizers", href: "/storage-organizers" }, 
+      { label: "Kitchenware Accents of Decors", href: "/kitchenware-accents-decors" }, 
     ],
   },
     {

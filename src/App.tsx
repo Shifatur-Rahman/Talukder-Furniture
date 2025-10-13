@@ -19,6 +19,7 @@ import Dining8SeaterPage from "./pages/products/Dining-8-Seater";
 import MdTablePage from "./pages/products/Md-Table";
 import ExecutiveTablePage from "./pages/products/Executive-Table";
 import ComputerTablePage from "./pages/products/Computer-Table";
+import HighBackChairPage from "./pages/products/High-Back-Chair";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -303,8 +304,8 @@ function App() {
                           <IronShelfPage />
                         </ProductLayout>
                       }
-                    />
-   
+                    /> 
+    
                     <Route
                       path="book-shelf"
                       element={
@@ -379,10 +380,10 @@ function App() {
                       }
                     />
                     <Route
-                      path="product-style-02"
+                      path="high-back-chair"
                       element={
                         <ProductLayout>
-                          <ProductStylePage2 />
+                          <HighBackChairPage />
                         </ProductLayout>
                       }
                     />

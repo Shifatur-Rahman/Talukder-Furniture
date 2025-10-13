@@ -71,7 +71,7 @@ export default function Categories() {
                   <h3> 
                     <Link className="link" to={`/shop-default`}> 
                       Bed Room
-                    </Link>
+                    </Link> 
                   </h3>
                 </div>
                 <div className="cls-img-item hover-img">
