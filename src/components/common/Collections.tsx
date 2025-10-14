@@ -61,7 +61,7 @@ export default function Collections({
           <div className="row">
             <div className="col-12">
               <div className="heading-section style-white">
-                <h3 className="wow fadeInUp">
+                <h3 className="wow fadeInUp"> 
                   Discover Our Signature Interior Collections 
                 </h3>
                 <p

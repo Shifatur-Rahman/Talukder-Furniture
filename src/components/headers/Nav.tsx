@@ -4,11 +4,11 @@ import { FaArrowRight } from "react-icons/fa";
 import { AiOutlineMinus } from "react-icons/ai";
 
 import {
-  blogLinks, 
-  demoPages, 
+  // blogLinks, 
+  // demoPages, 
   otherPages, 
-  shopDetailPages,
-  shopPages,
+  // shopDetailPages,
+  // shopPages,
 } from "@/data/menu"; 
 
 type NavProps = { 
@@ -23,17 +23,17 @@ type MenuLink = {
   name?: string;
 }; 
  
-type MenuGroup = { 
-  title: string;
-  links: MenuLink[];
-};
+// type MenuGroup = { 
+//   title: string;
+//   links: MenuLink[];
+// };
  
-type DemoPage = { 
-  href: string;
-  src: string;
-  alt: string;
-  name: string;
-};
+// type DemoPage = { 
+//   href: string;
+//   src: string;
+//   alt: string;
+//   name: string;
+// };
 
 export default function Nav({ textColor = "" }: NavProps) { 
   const { pathname } = useLocation(); 
@@ -46,9 +46,9 @@ export default function Nav({ textColor = "" }: NavProps) {
     return menu.some((elm) => isMenuActive(elm));
   }; 
 
-  const isMenuParentActive2 = (menu: MenuGroup[]): boolean => { 
-    return menu.some((elm) => isMenuParentActive(elm.links)); 
-  }; 
+  // const isMenuParentActive2 = (menu: MenuGroup[]): boolean => { 
+  //   return menu.some((elm) => isMenuParentActive(elm.links)); 
+  // }; 
 
   const [open, setOpen] = useState(false);
  
@@ -332,7 +332,8 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </>
                         ) : (
                           // Normal clickable link (no children)
-                          <Link to={link.href} className="menu-link-text">
+                          // <Link to={link.href} className="menu-link-text">
+                          <Link to="link.href" className="menu-link-text"> 
                             {link.label}
                           </Link>
                         )}

@@ -50,40 +50,40 @@ const Homepage5 = lazy(() => import("./pages/homes/home-5"));
 // Product Pages 
 const ProductLayout = lazy(() => import("./pages/products/layout")); 
 const ShopDefaultPage = lazy(() => import("./pages/products/shop-default")); 
-const SofaSetPage = lazy(() => import("./pages/products/sofa-set")); 
-const ShopListPage = lazy(() => import("./pages/products/shop-list")); 
-const ShopFullGridPage = lazy(() => import("./pages/products/shop-full-grid")); 
-const ShopFullListPage = lazy(() => import("./pages/products/shop-full-list")); 
-const ShopSidebarLeftPage = lazy(
-  () => import("./pages/products/shop-sidebar-left")
-);
-const ShopSidebarRightPage = lazy(
-  () => import("./pages/products/shop-sidebar-right")
-);
-const ShopFilterCanvasPage = lazy(
-  () => import("./pages/products/shop-filter-canvas")
-);
-const ShopFilterDropdownPage = lazy(
-  () => import("./pages/products/shop-filter-dropdown")
-);
-const ShopFilterSidebarPage = lazy(
-  () => import("./pages/products/shop-filter-sidebar")
-);
-const ShopPaginationPage = lazy(
-  () => import("./pages/products/shop-pagination")
-);
-const ShopLoadButtonPage = lazy(
-  () => import("./pages/products/shop-load-button")
-);
-const ShopInfiniteScrollPage = lazy(
-  () => import("./pages/products/shop-infinite-scrolling")
-);
-const ProductStylePage1 = lazy(
-  () => import("./pages/products/product-style-01")
-);
-const ProductStylePage2 = lazy(
-  () => import("./pages/products/product-style-02")
-);
+// const SofaSetPage = lazy(() => import("./pages/products/sofa-set")); 
+// const ShopListPage = lazy(() => import("./pages/products/shop-list")); 
+// const ShopFullGridPage = lazy(() => import("./pages/products/shop-full-grid")); 
+// const ShopFullListPage = lazy(() => import("./pages/products/shop-full-list")); 
+// const ShopSidebarLeftPage = lazy(
+//   () => import("./pages/products/shop-sidebar-left")
+// );
+// const ShopSidebarRightPage = lazy(
+//   () => import("./pages/products/shop-sidebar-right")
+// );
+// const ShopFilterCanvasPage = lazy(
+//   () => import("./pages/products/shop-filter-canvas")
+// );
+// const ShopFilterDropdownPage = lazy(
+//   () => import("./pages/products/shop-filter-dropdown")
+// );
+// const ShopFilterSidebarPage = lazy(
+//   () => import("./pages/products/shop-filter-sidebar")
+// );
+// const ShopPaginationPage = lazy(
+//   () => import("./pages/products/shop-pagination")
+// );
+// const ShopLoadButtonPage = lazy(
+//   () => import("./pages/products/shop-load-button")
+// );
+// const ShopInfiniteScrollPage = lazy(
+//   () => import("./pages/products/shop-infinite-scrolling")
+// );
+// const ProductStylePage1 = lazy(
+//   () => import("./pages/products/product-style-01")
+// );
+// const ProductStylePage2 = lazy(
+//   () => import("./pages/products/product-style-02")
+// );
 const ProductStylePage3 = lazy(
   () => import("./pages/products/product-style-03")
 );
@@ -382,7 +382,7 @@ function App() {
                     <Route
                       path="high-back-chair"
                       element={
-                        <ProductLayout>
+                        <ProductLayout> 
                           <HighBackChairPage />
                         </ProductLayout>
                       }
