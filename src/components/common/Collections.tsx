@@ -62,7 +62,7 @@ export default function Collections({
             <div className="col-12">
               <div className="heading-section style-white">
                 <h3 className="wow fadeInUp">
-                  Discover Our Signature Interior Collections
+                  Discover Our Signature Interior Collections 
                 </h3>
                 <p
                   className="text-body-default wow fadeInUp"
@@ -71,7 +71,7 @@ export default function Collections({
                   Explore our carefully crafted interior design collections,
                   each tailored to bring elegance and <br />
                   functionality to your spaces.
-                </p>
+                </p> 
               </div>
               <ul className="tab-banner">
                 {collections.map((item, index) => (
@@ -105,7 +105,7 @@ export default function Collections({
                         />
                       </div>
                     </div>
-                  </li>
+                  </li> 
                 ))}
               </ul>
             </div>
