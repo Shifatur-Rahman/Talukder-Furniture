@@ -50,7 +50,7 @@ export default function Nav({ textColor = "" }: NavProps) {
   //   return menu.some((elm) => isMenuParentActive(elm.links)); 
   // }; 
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); 
  
   return (
     <> 
@@ -332,8 +332,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </>
                         ) : (
                           // Normal clickable link (no children)
-                          // <Link to={link.href} className="menu-link-text">
-                          <Link to="link.href" className="menu-link-text"> 
+                          <Link to={link.href} className="menu-link-text">
                             {link.label}
                           </Link>
                         )}
@@ -405,32 +404,34 @@ export default function Nav({ textColor = "" }: NavProps) {
                   <ul className="menu-list">
                     {menu.links.map((link, idx) => (
                       <li key={idx}>
-                        {/* If this link has children → Parent */}
-                        {link.children && Array.isArray(link.children) ? (
+                        {Array.isArray((link as any).children) &&
+                        (link as any).children.length > 0 ? (
                           <>
-                            <span className="menu-link-text font-semibold flex items-center cursor-default">
+                            <span className="menu-link-text">
                               {link.label}
-                              <FaArrowRight className="ml-1 text-[10px]" />
                             </span>
-                            <ul className="submenu-list ml-4 mt-1">
-                              {link.children.map((child, cIdx) => (
-                                <li key={cIdx}>
-                                  <Link to={child.href} className="menu-link-text flex items-center">
-                                    <AiOutlineMinus className="mr-1" />
-                                    {child.label}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
+                            <ul className="submenu-list">
+                              {(link as any).children.map( 
+                                (child: any, cIdx: number) => (
+                                  <li key={cIdx}>
+                                    <a
+                                      href={child.href ?? "#"}
+                                      className="menu-link-text"
+                                    >
+                                      <AiOutlineMinus /> {child.label}
+                                    </a>
+                                  </li>
+                                )
+                              )}
+                            </ul> 
                           </>
                         ) : (
-                          // Normal clickable link (no children)
-                          <Link to={link.href} className="menu-link-text">
+                          <a href={link.href ?? "#"} className="menu-link-text">
                             {link.label}
-                          </Link>
-                        )}
+                          </a>
+                        )} 
                       </li>
-                    ))}
+                    ))} 
                   </ul>
                 </div>
               </div>
