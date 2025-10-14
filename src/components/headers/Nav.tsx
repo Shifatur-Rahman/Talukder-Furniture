@@ -725,7 +725,7 @@ export const officeFurnitureMenu = [
         label: "Swivel Chair", // parent, no href 
         children: [
           { label: "Low Back Chair", href: "/low-back-chair" },
-          { label: "Medium Back Chair", href: "/medium-back-chair" },
+          { label: "Medium Back Chair", href: "/medium-back-chair" }, 
           { label: "High Back Chair", href: "/high-back-chair" }, 
           { label: "Swivel Stool", href: "/swivel-stool" },
         ],

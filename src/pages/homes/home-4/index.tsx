@@ -1,6 +1,6 @@
 import Blogs from "@/components/common/Blogs";
 import Categories from "@/components/common/Categories";
-import Second from "@/components/common/Second";
+// import Second from "@/components/common/Second";
 import Collections from "@/components/common/Collections";
 import Features2 from "@/components/common/Features2";
 import Products2 from "@/components/common/Products2";
@@ -12,7 +12,6 @@ import Collections2 from "@/components/homes/home-4/Collections2";
 import Hero from "@/components/homes/home-4/Hero";
 import Lookbook from "@/components/homes/home-4/Lookbook";
 import Testimonials from "@/components/homes/home-4/Testimonials";
-
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
@@ -28,7 +27,7 @@ export default function Homepage4() {
       <Header1 />
       <Hero />
       <Categories />
-      <Second />
+      {/* <Second /> */}
       <Products2 parentClass="flat-spacing-5 pt-0" />
       <Features2 />
       <Collections parentClass="flat-spacing-2" />

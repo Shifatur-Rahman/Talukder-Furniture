@@ -2,7 +2,7 @@ import Footer1 from "@/components/footers/Footer1";
 
 import Blogs from "@/components/common/Blogs";
 import Categories from "@/components/common/Categories";
-import Second from "@/components/common/Second";
+// import Second from "@/components/common/Second";
 import Collections from "@/components/common/Collections";
 import Collections2 from "@/components/common/Collections2";
 import Features from "@/components/common/Features";
@@ -30,7 +30,7 @@ export default function HomePage() {
       <Header1 />
       <Hero />
       <Categories />
-      <Second />
+      {/* <Second /> */}
       <Products1 />
       <Lookbook />
       <Products2 />
