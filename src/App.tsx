@@ -22,6 +22,11 @@ import ComputerTablePage from "./pages/products/Computer-Table";
 import HighBackChairPage from "./pages/products/High-Back-Chair";
 import ConferenceTablePage from "./pages/products/Conference-Table";
 import WorkstationPage from "./pages/products/Workstation";
+import CupboardPage from "./pages/products/Cupboard";
+import TwoDrawerCabinetPage from "./pages/products/2-Drawer";
+import ThreeDrawerCabinetPage from "./pages/products/3-Drawer";
+import ThreeDrawerCombinedCabinetPage from "./pages/products/3-Drawer-Combined";
+import TwoDrawerCombinedCabinetPage from "./pages/products/2-Drawer-Combined";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -410,6 +415,54 @@ function App() {
                     /> 
 
                     <Route
+                      path="office-cupboard"
+                      element={
+                        <ProductLayout> 
+                          <CupboardPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    {/* file cabinet */}
+
+                    
+                    <Route
+                      path="2-drawer-cabinet"
+                      element={
+                        <ProductLayout> 
+                          <TwoDrawerCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="2-drawer-combined-cabinet"
+                      element={
+                        <ProductLayout> 
+                          <TwoDrawerCombinedCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="3-drawer-cabinet"
+                      element={
+                        <ProductLayout> 
+                          <ThreeDrawerCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="3-drawer-combined-cabinet"
+                      element={
+                        <ProductLayout> 
+                          <ThreeDrawerCombinedCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+                   
+                    <Route
                       path="product-style-03"
                       element={
                         <ProductLayout>
@@ -417,6 +470,7 @@ function App() {
                         </ProductLayout>
                       }
                     />
+
                     <Route
                       path="product-style-04"
                       element={

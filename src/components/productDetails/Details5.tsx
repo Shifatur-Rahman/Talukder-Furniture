@@ -321,7 +321,7 @@ export default function Details5({ product }: ProductCardProps) {
                         <p className="text-caption-1 text-1">Instock</p>
                       </li>
                       <li>
-                        <p className="text-caption-1">Categories:</p>
+                        <p className="text-caption-1">Categories:</p> 
                         <p className="text-caption-1">
                           <a href="#" className="text-1 link">
                             wood

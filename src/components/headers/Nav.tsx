@@ -751,7 +751,7 @@ export const officeFurnitureMenu = [
     ],
   },
   {
-    title: "Cabinets",
+    title: "Cabinets", 
     href: "/cabinets",
     links: [
       { label: "Office Cupboard", href: "/office-cupboard" },
@@ -761,10 +761,10 @@ export const officeFurnitureMenu = [
         label: "Filing Cabinet",
         href: "/cabinets/filing-cabinet",
         children: [
-          { label: "2 Drawer Cabinet", href: "/2-drawer" },
-          { label: "2 Drawer Cabinet Combined", href: "/2-drawer-combined" },
-          { label: "3 Drawer Cabinet", href: "/3-drawer" },
-          { label: "3 Drawer Cabinet Combined", href: "/3-drawer-combined" },
+          { label: "2 Drawer Cabinet", href: "/2-drawer-cabinet" },
+          { label: "2 Drawer Cabinet Combined", href: "/2-drawer-combined-cabinet" },
+          { label: "3 Drawer Cabinet", href: "/3-drawer-cabinet" },
+          { label: "3 Drawer Cabinet Combined", href: "/3-drawer-combined-cabinet" },
           { label: "4 Drawer Cabinet", href: "/4-drawer" },
           { label: "4 Drawer Cabinet Combined", href: "/4-drawer-combined" },
         ],
