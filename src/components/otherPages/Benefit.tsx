@@ -22,9 +22,9 @@ export default function Benefit() {
                   className="text-body-1 text_secondary wow fadeInUp"   
                   data-wow-delay="0.1s"
                 >
-                  GearO products reflect the values of craftsmanship,
+                  Talukder products reflect the values of craftsmanship,
                   simplicity, functionality and quality materials that define
-                  our Danish design roots.
+                  our excellent design roots.
                 </p> 
               </div>
               <div className="benefit">

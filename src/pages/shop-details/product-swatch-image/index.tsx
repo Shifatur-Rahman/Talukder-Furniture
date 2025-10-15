@@ -11,8 +11,8 @@ import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
   title:
-    "Product Details || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+    "Product Details || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function ProductSwatchImagePage() {
@@ -22,7 +22,7 @@ export default function ProductSwatchImagePage() {
   const product = allProducts.filter((p) => p.id == id)[0] || allProducts[0];
   return (
     <>
-      <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} /> 
       <Header1 parentClass="header-default border-bot" />
       <Breadcumb product={product} />
       <Details4 product={product} />

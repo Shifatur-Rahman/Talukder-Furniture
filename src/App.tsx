@@ -21,6 +21,7 @@ import ExecutiveTablePage from "./pages/products/Executive-Table";
 import ComputerTablePage from "./pages/products/Computer-Table";
 import HighBackChairPage from "./pages/products/High-Back-Chair";
 import ConferenceTablePage from "./pages/products/Conference-Table";
+import WorkstationPage from "./pages/products/Workstation";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -398,6 +399,16 @@ function App() {
                         </ProductLayout>
                       }
                     />
+
+                    <Route
+                      path="workstation"
+                      element={
+                        <ProductLayout> 
+                          <WorkstationPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
                     <Route
                       path="product-style-03"
                       element={

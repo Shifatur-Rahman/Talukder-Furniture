@@ -332,7 +332,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </>
                         ) : (
                           // Normal clickable link (no children)
-                          <Link to={link.href} className="menu-link-text">
+                          <Link to="link.href" className="menu-link-text">
                             {link.label}
                           </Link>
                         )}
@@ -518,7 +518,7 @@ export default function Nav({ textColor = "" }: NavProps) {
                           </>
                         ) : (
                           // Normal clickable link (no children)
-                          <Link to={link.href} className="menu-link-text">
+                          <Link to="link.href" className="menu-link-text">
                             {link.label}
                           </Link>
                         )}
@@ -747,7 +747,7 @@ export const officeFurnitureMenu = [
     links: [
       { label: "1 Seater", href: "/sofa-1-seater" },
       { label: "2 Seater", href: "/sofa-2-seater" },
-      { label: "3 Seater", href: "/sofa-3-seater" }, 
+      { label: "3 Seater", href: "/sofa-3-seater" },  
     ],
   },
   {
@@ -776,7 +776,7 @@ export const officeFurnitureMenu = [
     href: "/waiting",
     links: [
       { label: "Waiting Chair", href: "/waiting-chair" },
-      { label: "Auditorium Chair", href: "/auditorium-chair" },
+      { label: "Auditorium Chair", href: "/auditorium-chair" }, 
       { label: "Workstation", href: "/workstation" },
       { label: "Waiting Sofa", href: "/waiting-sofa" },
       { label: "Working Desk", href: "/working-desk" },
@@ -1027,7 +1027,7 @@ export const bedRoomFurnitureMenu = [
 
 
 //    Institutional
-export const institutionalFurnitureMenu = [
+export const institutionalFurnitureMenu = [ 
   // {
   //   title: "Hospital",
   //   links: [

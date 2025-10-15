@@ -6,8 +6,8 @@ import {
   sizes,
 } from "@/data/productFilterOptions";
 import { productMain } from "@/data/products";
-import { sofaMain } from "@/data/sofa"; 
-import { shoeRackMain } from "@/data/shoeRack"; 
+// import { sofaMain } from "@/data/sofa"; 
+// import { shoeRackMain } from "@/data/shoeRack"; 
 import type { FilterProps } from "@/types/product";
 
 import Slider from "rc-slider";

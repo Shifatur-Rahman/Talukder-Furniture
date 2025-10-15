@@ -239,7 +239,7 @@ export default function Details1({ product }: ProductCardProps) {
                               </div>
                               <div className="line-bt" />
                               <div>
-                                <h6>Fashion GearO</h6>
+                                <h6>Talukder Furniture</h6>
                                 <p>
                                   Pickup available. Usually ready in 24 hours
                                 </p>
@@ -312,7 +312,7 @@ export default function Details1({ product }: ProductCardProps) {
                       </li>
                       <li>
                         <p className="text-caption-1">Vendor:</p>
-                        <p className="text-caption-1 text-1">GearO</p>
+                        <p className="text-caption-1 text-1">Talukder Furniture</p>
                       </li>
                       <li>
                         <p className="text-caption-1">Available:</p>

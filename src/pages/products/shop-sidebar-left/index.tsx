@@ -3,8 +3,8 @@ import Products2 from "@/components/products/Products2";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Shop || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Shop || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function ShopSidebarLeftPage() {

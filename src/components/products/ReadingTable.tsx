@@ -5,8 +5,8 @@ import { useEffect, useReducer, useState } from "react";
 
 import { initialState, reducer } from "@/reducer/filterReducer";
 
-import FilterMeta from "./FilterMeta";
-import FilterModal from "./FilterModal";
+// import FilterMeta from "./FilterMeta";
+// import FilterModal from "./FilterModal";
 import Listview from "./Listview";
 import { readingTableMain } from "@/data/readingTable"; 
  
@@ -40,7 +40,7 @@ export default function ReadingTable({
     sortingOption,
     filtered,
     sorted,
-    activeFilterOnSale,
+    activeFilterOnSale, 
   } = state;
 
   const allProps = {

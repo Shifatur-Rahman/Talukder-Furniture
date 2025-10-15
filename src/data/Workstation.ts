@@ -194,7 +194,7 @@ export const workstationProducts = [
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
-  },
+  }, 
   {
     id: 12,
     delay: "0s",
@@ -212,11 +212,7 @@ export const workstationProducts = [
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
-
-
 ]
-
-
 
 
 

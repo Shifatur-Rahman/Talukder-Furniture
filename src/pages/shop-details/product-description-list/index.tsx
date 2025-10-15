@@ -12,8 +12,8 @@ import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
   title:
-    "Product Details || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+    "Product Details || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment", 
 };
 
 export default function ProductDescriptionListPage() {
