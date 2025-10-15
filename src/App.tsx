@@ -20,6 +20,7 @@ import MdTablePage from "./pages/products/Md-Table";
 import ExecutiveTablePage from "./pages/products/Executive-Table";
 import ComputerTablePage from "./pages/products/Computer-Table";
 import HighBackChairPage from "./pages/products/High-Back-Chair";
+import ConferenceTablePage from "./pages/products/Conference-Table";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -355,6 +356,16 @@ function App() {
                         </ProductLayout>
                       }
                     /> 
+
+                      <Route
+                      path="conference-table"
+                      element={
+                        <ProductLayout>
+                          <ConferenceTablePage />
+                        </ProductLayout>
+                      }
+                    /> 
+
                     <Route
                       path="dining-4-seater"
                       element={
