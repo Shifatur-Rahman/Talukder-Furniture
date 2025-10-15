@@ -314,7 +314,7 @@ export default function Details5({ product }: ProductCardProps) {
                       </li>
                       <li>
                         <p className="text-caption-1">Vendor:</p>
-                        <p className="text-caption-1 text-1">GearO</p>
+                        <p className="text-caption-1 text-1">Talukder Furniture</p>
                       </li>
                       <li>
                         <p className="text-caption-1">Available:</p>
@@ -330,7 +330,7 @@ export default function Details5({ product }: ProductCardProps) {
                           <a href="#" className="text-1 link">
                             chair
                           </a>
-                          ,
+                          , 
                           <a href="#" className="text-1 link">
                             furniture
                           </a>
