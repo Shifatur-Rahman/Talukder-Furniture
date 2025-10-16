@@ -1,12 +1,11 @@
 
-export const threeDrawerCombinedCabinetProducts = [ 
-
-    {
+export const fourDrawerCombinedProducts = [
+{
     id: 1,
     delay: "0s",
-    title: "Three Drawer File Cabinet", 
-    imgSrc: "/images/category/office/File Cabinet/3 Drawer Combined/01.jpg", 
-    hoverImg: "/images/category/office/File Cabinet/3 Drawer Combined/01.jpg", 
+    title: "Office Cupboard", 
+    imgSrc: "/images/category/office/File Cabinet/4 Drawer Combined/01.jpg", 
+    hoverImg: "/images/category/office/File Cabinet/4 Drawer Combined/01.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -18,15 +17,13 @@ export const threeDrawerCombinedCabinetProducts = [
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
-
-]   
-
-
-export const threeDrawerCombinedCabinetMain = [...threeDrawerCombinedCabinetProducts].slice( 
+] 
+ 
+export const fourDrawerCombinedMain = [...fourDrawerCombinedProducts].slice( 
   0,
   5
-); 
+);
 
-export const allThreeDrawerCombinedCabinet = [
-  ...threeDrawerCombinedCabinetProducts, 
+export const allFourDrawerCombined = [ 
+  ...fourDrawerCombinedProducts, 
 ]; 

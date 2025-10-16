@@ -27,6 +27,8 @@ import TwoDrawerCabinetPage from "./pages/products/2-Drawer";
 import ThreeDrawerCabinetPage from "./pages/products/3-Drawer";
 import ThreeDrawerCombinedCabinetPage from "./pages/products/3-Drawer-Combined";
 import TwoDrawerCombinedCabinetPage from "./pages/products/2-Drawer-Combined";
+import FourDrawerCabinetPage from "./pages/products/4-Drawer";
+import FourDrawerCombinedCabinetPage from "./pages/products/4-Drawer-Combined";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -458,6 +460,24 @@ function App() {
                       element={
                         <ProductLayout> 
                           <ThreeDrawerCombinedCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="4-drawer-cabinet"
+                      element={
+                        <ProductLayout> 
+                          <FourDrawerCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="4-drawer-combined-cabinet"
+                      element={
+                        <ProductLayout> 
+                          <FourDrawerCombinedCabinetPage />
                         </ProductLayout>
                       }
                     /> 

@@ -8,13 +8,13 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { ironShelfMain } from "@/data/ironShelf"; 
+import { fourDrawerMain } from "@/data/FourDrawer"; 
  
 // Filter state type (update this to match your reducer state exactly)   
  
-// Props for Products1 
-interface IronShelfProps {
-  parentClass?: string;
+// Props for Products1
+interface FourDrawerProps {
+  parentClass?: string; 
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
@@ -22,12 +22,12 @@ interface IronShelfProps {
  
 // console.log("ShoeRackMain products:", shoeRackMain); 
  
-export default function ironShelf({
+export default function fourDrawer({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: IronShelfProps) {
+}: FourDrawerProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -98,7 +98,7 @@ export default function ironShelf({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: ironShelfMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: fourDrawerMain });
   }, [ 
     price,
     availability,
@@ -110,7 +110,7 @@ export default function ironShelf({
   ]);
 
   useEffect(() => {
-    dispatch({ type: "SORT_PRODUCTS" });
+    dispatch({ type: "SORT_PRODUCTS" }); 
   }, [filtered, sortingOption]);
 
   return (
@@ -166,7 +166,6 @@ export default function ironShelf({
           </div>
         </div>
       </section>
-      {/* <FilterModal allProps={allProps} /> */}
     </>
   );
 }
