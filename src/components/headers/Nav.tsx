@@ -745,9 +745,9 @@ export const officeFurnitureMenu = [
     title: "Office Sofa",
     href: "/office-sofa",
     links: [
-      { label: "1 Seater", href: "/sofa-1-seater" },
-      { label: "2 Seater", href: "/sofa-2-seater" },
-      { label: "3 Seater", href: "/sofa-3-seater" },  
+      { label: "1 Seater", href: "/1-seater-sofa" },
+      { label: "2 Seater", href: "/2-seater-sofa" },
+      { label: "3 Seater", href: "/3-seater-sofa" },  
     ],
   },
   {

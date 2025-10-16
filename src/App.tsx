@@ -29,6 +29,10 @@ import ThreeDrawerCombinedCabinetPage from "./pages/products/3-Drawer-Combined";
 import TwoDrawerCombinedCabinetPage from "./pages/products/2-Drawer-Combined";
 import FourDrawerCabinetPage from "./pages/products/4-Drawer";
 import FourDrawerCombinedCabinetPage from "./pages/products/4-Drawer-Combined";
+import OneSofaPage from "./pages/products/1-Sofa";
+import TwoSofaPage from "./pages/products/2-Sofa";
+import ThreeSofaPage from "./pages/products/3-Sofa";
+import OfficeAlmirahPage from "./pages/products/Office-Almirah";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -478,6 +482,46 @@ function App() {
                       element={
                         <ProductLayout> 
                           <FourDrawerCombinedCabinetPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    {/* Sofa */}
+
+                    <Route
+                      path="1-seater-sofa"
+                      element={
+                        <ProductLayout> 
+                          <OneSofaPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="2-seater-sofa"
+                      element={
+                        <ProductLayout> 
+                          <TwoSofaPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="3-seater-sofa"
+                      element={
+                        <ProductLayout> 
+                          <ThreeSofaPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    {/* Office Almirah */}
+
+                    <Route
+                      path="office-almirah"
+                      element={
+                        <ProductLayout> 
+                          <OfficeAlmirahPage />
                         </ProductLayout>
                       }
                     /> 
