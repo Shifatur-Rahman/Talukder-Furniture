@@ -750,7 +750,7 @@ export const officeFurnitureMenu = [
       { label: "3 Seater", href: "/3-seater-sofa" },  
     ],
   },
-  {
+  { 
     title: "Cabinets", 
     href: "/cabinets",
     links: [

@@ -26,6 +26,6 @@ export default function StoreListPage() {
       <StoreLocation />
       <Features3 parentClass="flat-spacing" />
       <Footer1 />
-    </>
+    </> 
   );
 }
