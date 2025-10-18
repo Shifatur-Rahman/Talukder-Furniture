@@ -215,7 +215,7 @@ header {
       width: calc(100% + 64px);
       height: 59px;
       display: none;
-    }
+    } 
   }
   .item-link {
     display: flex;
@@ -730,7 +730,7 @@ header {
     gap: 12px;
     .icon {
       font-size: 20px !important;
-      margin-bottom: 0 !important;
+      margin-bottom: 0 !important; 
       @include mixin.transition3;
     }
     .inner-left {
