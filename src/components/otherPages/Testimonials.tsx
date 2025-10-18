@@ -10,8 +10,8 @@ export default function Testimonials() {
         <i className="icon icon-star" key={i} />
       ))}
     </>
-  );
-
+  ); 
+ 
   const VerifiedSVG = () => ( 
     <svg
       className="icon"
@@ -105,7 +105,7 @@ export default function Testimonials() {
             >
               {productWithTestimonials.map((item, index) => (
                 <SwiperSlide className="swiper-slide" key={index}>
-                  <div className="testimonial-item hover-img">
+                  <div className="testimonial-item hover-img"> 
                     <div className="content">
                       <div className="content-top">
                         <div className="list-star-default">

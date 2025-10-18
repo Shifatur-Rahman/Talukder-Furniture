@@ -22,10 +22,10 @@ export default function About() {
               </p> 
             </div> 
           </div>
-          <div className="col-12">
+          <div className="col-12"> 
             <div className="img-wrap"> 
               <img
-                className="lazyload effect-paralax"
+                className="lazyload effect-paralax" 
                 src="/images/section/section-about.jpg" 
                 data-=""
                 alt="" 

@@ -17,7 +17,7 @@ export default function Categories() {
       </div>
       <h3>Office</h3>
     </div>
-  </div>
+  </div> 
 
   {/* Row 2 */} 
   <div className="row-group">
