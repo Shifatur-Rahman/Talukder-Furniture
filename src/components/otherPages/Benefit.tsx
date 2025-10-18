@@ -17,7 +17,7 @@ export default function Benefit() {
           <div className="col-lg-6">
             <div className="box-about">
               <div className="heading-section spacing-3">
-                <h3 className="wow fadeInUp">Danish Design DNA</h3> 
+                <h3 className="wow fadeInUp">Excellent Design</h3> 
                 <p
                   className="text-body-1 text_secondary wow fadeInUp"   
                   data-wow-delay="0.1s"
@@ -68,7 +68,7 @@ export default function Benefit() {
                   <div className="content">
                     <h4 className="title">Functionality</h4>
                     <p className="text-body-default text_secondary">
-                      Our designs are purposeful, carrying on the Danish
+                      Our designs are purposeful, carrying on the Bengali
                       tradition of design that values functionality and form.
                     </p>
                   </div>

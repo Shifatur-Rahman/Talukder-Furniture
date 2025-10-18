@@ -789,13 +789,13 @@ export const livingRoom = [
   {
     title: "Sofa Set",
     links: [
-      { label: "Sofa Set 3-1-1", href: "/md-ceo-table" },
+      { label: "Sofa Set 3-1-1", href: "/sofa-table" },
       { label: "Sofa Set 3-2-1", href: "/executive-table" }, 
       { label: "Sofa Set 2-2-1", href: "/side-rack" },
-      { label: "1 Seater", href: "/conference-table" },
-      { label: "2 Seater", href: "/computer-table" },
-      { label: "3 Seater", href: "/side-rack" },
-      { label: "Divan Sofa", href: "/conference-table" },
+      { label: "1 Seater", href: "/1-seater-sofa" },
+      { label: "2 Seater", href: "/2-seater-sofa" },
+      { label: "3 Seater", href: "/3-seater-sofa" },
+      { label: "Divan Sofa", href: "/divan-sofa" },
       { label: "Sofa Cum Bed", href: "/sofa-cum-bed" }, 
     ],
   },
@@ -803,7 +803,7 @@ export const livingRoom = [
   {
     title: "Recliner/Rocker",
     links: [
-        { label: "Rocking Chair", href: "/md-ceo-table" }, 
+        { label: "Rocking Chair", href: "/sofa-table" }, 
     ],
   },
 
@@ -996,33 +996,35 @@ export const bedRoomFurnitureMenu = [
     ], 
   }, 
   
-   {
-    title: "Children Furniture",
-    links: [
-      { label: "Children's Bed Frame", href: "/single-bed-frame" },
-      { label: "Cot", href: "/double-bed-frame" },
-      { label: "Cradle", href: "/king-bed-frame" }, 
+  //  {
+  //   title: "Children Furniture",
+  //   links: [
+  //     { label: "Children's Bed Frame", href: "/single-bed-frame" },
+  //     { label: "Cot", href: "/double-bed-frame" },
+  //     { label: "Cradle", href: "/king-bed-frame" }, 
 
-      {
-        label: "Children's Cabinets", // parent
-        children: [
-          { label: "Waredrobe Cabinet", href: "/single-spring-mattress" },
-          { label: "Children's Cupboard", href: "/double-spring-mattress" },
-          { label: "Children's Storage", href: "/king-spring-mattress" },
-        ],
-      },
+  //     {
+  //       label: "Children's Cabinets",
+  //       children: [
+  //         { label: "Waredrobe Cabinet", href: "/single-spring-mattress" },
+  //         { label: "Children's Cupboard", href: "/double-spring-mattress" },
+  //         { label: "Children's Storage", href: "/king-spring-mattress" },
+  //       ],
+  //     },
 
-       {
-        label: "Children's Mattresses", // parent
-        children: [
-          { label: "Children's Spring Mattresses", href: "/single-spring-mattress" },
-          { label: "Children's Coir Mattresses", href: "/double-spring-mattress" },
-          { label: "Children's Foam Mattresses", href: "/king-spring-mattress" }, 
-        ],
-      },
+  //      {
+  //       label: "Children's Mattresses",
+  //       children: [
+  //         { label: "Children's Spring Mattresses", href: "/single-spring-mattress" },
+  //         { label: "Children's Coir Mattresses", href: "/double-spring-mattress" },
+  //         { label: "Children's Foam Mattresses", href: "/king-spring-mattress" }, 
+  //       ],
+  //     },
 
-    ],
-  },
+  //   ],
+  // },
+
+
 ];
 
 
