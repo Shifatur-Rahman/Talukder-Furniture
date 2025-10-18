@@ -11,8 +11,8 @@ export const blogs = [
     width: 1110,
     height: 833,
     featured: true, 
-  },
-  {
+  }, 
+  { 
     id: 20,
     title: "The Best Office Desks for Small Spaces",
     date: "March 02, 2025",

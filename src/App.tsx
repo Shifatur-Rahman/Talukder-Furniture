@@ -519,7 +519,7 @@ function App() {
 
                     {/* Office Almirah */}
 
-                    <Route
+                    <Route 
                       path="office-almirah"
                       element={
                         <ProductLayout> 
