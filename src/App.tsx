@@ -33,6 +33,7 @@ import OneSofaPage from "./pages/products/1-Sofa";
 import TwoSofaPage from "./pages/products/2-Sofa";
 import ThreeSofaPage from "./pages/products/3-Sofa";
 import OfficeAlmirahPage from "./pages/products/Office-Almirah";
+import MediumBackChairPage from "./pages/products/Medium-Back-Chair";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -522,6 +523,26 @@ function App() {
                       element={
                         <ProductLayout> 
                           <OfficeAlmirahPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    {/* medium-back-chair */}
+                    <Route
+                      path="medium-back-chair"
+                      element={
+                        <ProductLayout> 
+                          <MediumBackChairPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                     {/* low-back-chair */}
+                    <Route
+                      path="low-back-chair"
+                      element={
+                        <ProductLayout> 
+                          <MediumBackChairPage />
                         </ProductLayout>
                       }
                     /> 

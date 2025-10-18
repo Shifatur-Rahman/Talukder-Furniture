@@ -1,12 +1,12 @@
 
-export const mediumBackChairProducts = [  
+export const lowBackChairProducts = [ 
 
 {
     id: 1,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/01.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/01.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/01.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/01.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -19,11 +19,11 @@ export const mediumBackChairProducts = [
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   }, 
   {
-    id: 2, 
+    id: 2,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/02.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/02.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/02.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/02.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -38,9 +38,9 @@ export const mediumBackChairProducts = [
   {
     id: 3,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/03.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/03.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/03.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/03.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -55,9 +55,9 @@ export const mediumBackChairProducts = [
   {
     id: 4,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/04.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/04.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/04.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/04.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -72,9 +72,9 @@ export const mediumBackChairProducts = [
   {
     id: 5,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/05.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/05.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/05.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/05.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -89,9 +89,9 @@ export const mediumBackChairProducts = [
   {
     id: 6,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/06.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/06.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/06.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/06.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -106,9 +106,9 @@ export const mediumBackChairProducts = [
   {
     id: 7,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/07.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/07.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/07.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/07.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -123,10 +123,10 @@ export const mediumBackChairProducts = [
   {
     id: 8,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/08.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/08.jpg", 
-    price: 100,
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/08.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/08.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -140,9 +140,9 @@ export const mediumBackChairProducts = [
   {
     id: 9,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/09.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/09.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/09.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/09.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -157,9 +157,9 @@ export const mediumBackChairProducts = [
   {
     id: 10,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/10.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/10.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/10.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/10.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -174,9 +174,9 @@ export const mediumBackChairProducts = [
   {
     id: 11,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/11.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/11.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/11.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/11.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -191,9 +191,9 @@ export const mediumBackChairProducts = [
   {
     id: 12,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/12.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/12.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/12.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/12.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -208,9 +208,9 @@ export const mediumBackChairProducts = [
   {
     id: 13,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/13.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/13.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/13.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/13.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -225,9 +225,9 @@ export const mediumBackChairProducts = [
   {
     id: 14,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/14.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/14.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/14.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/14.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -242,9 +242,9 @@ export const mediumBackChairProducts = [
   {
     id: 15,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/15.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/15.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/15.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/15.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -259,9 +259,9 @@ export const mediumBackChairProducts = [
   {
     id: 16,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/16.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/16.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/16.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/16.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -276,9 +276,9 @@ export const mediumBackChairProducts = [
   {
     id: 17,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/17.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/17.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/17.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/17.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -293,9 +293,9 @@ export const mediumBackChairProducts = [
   {
     id: 18,
     delay: "0s",
-    title: "Medium back Chair", 
-    imgSrc: "/images/category/office/chair/MediumBackChair/18.jpg", 
-    hoverImg: "/images/category/office/chair/MediumBackChair/18.jpg", 
+    title: "Low back Chair", 
+    imgSrc: "/images/category/office/chair/LowBackChair/18.jpg", 
+    hoverImg: "/images/category/office/chair/LowBackChair/18.jpg", 
     price: 100,
     oldPrice: null, 
     sale: null,
@@ -306,16 +306,20 @@ export const mediumBackChairProducts = [
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
-  }
+  }, 
 
 
 ]
 
-export const mediumBackChairMain = [...mediumBackChairProducts].slice( 
+
+
+
+
+export const lowBackChairMain = [...lowBackChairProducts].slice( 
   0,
   30
 );
 
-export const allMediumBackChair = [ 
-  ...mediumBackChairProducts, 
+export const allLowBackChair = [ 
+  ...lowBackChairProducts, 
 ]; 
