@@ -7,8 +7,8 @@ import Register from "@/components/otherPages/Register";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Register || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Register || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function RegisterPage() {

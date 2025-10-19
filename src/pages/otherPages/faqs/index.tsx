@@ -7,8 +7,8 @@ import Faqs from "@/components/otherPages/Faqs";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Faqs || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Faqs || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function FaqsPage() {

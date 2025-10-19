@@ -18,8 +18,8 @@ import Header1 from "@/components/headers/Header1";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Home 02 || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Home 02 || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment", 
 };
 
 export default function Homepage2() {

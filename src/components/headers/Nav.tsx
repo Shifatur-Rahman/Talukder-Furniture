@@ -784,14 +784,14 @@ export const officeFurnitureMenu = [
   },
 ]; 
 
-// livingRoom
+// livingRoom 
 export const livingRoom = [ 
   {
     title: "Sofa Set", 
     links: [
       { label: "Sofa Set 3-1-1", href: "/sofa-311" },
-      { label: "Sofa Set 3-2-1", href: "/executive-table" }, 
-      { label: "Sofa Set 2-2-1", href: "/side-rack" },
+      { label: "Sofa Set 3-2-1", href: "/sofa-321" }, 
+      { label: "Sofa Set 2-2-1", href: "/sofa-221" },
       { label: "1 Seater", href: "/1-seater-sofa" },
       { label: "2 Seater", href: "/2-seater-sofa" },
       { label: "3 Seater", href: "/3-seater-sofa" },
@@ -803,7 +803,7 @@ export const livingRoom = [
   {
     title: "Recliner/Rocker",
     links: [
-        { label: "Rocking Chair", href: "/sofa-table" }, 
+        { label: "Rocking Chair", href: "/sofaaa-table" }, 
     ],
   },
 

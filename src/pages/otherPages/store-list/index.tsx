@@ -8,8 +8,8 @@ import StoreLocation from "@/components/otherPages/StoreLocation";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Store List || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Store List || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function StoreListPage() {

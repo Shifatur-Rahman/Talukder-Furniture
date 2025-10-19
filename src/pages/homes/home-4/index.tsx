@@ -15,8 +15,8 @@ import Testimonials from "@/components/homes/home-4/Testimonials";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Home 04 || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Home 04 || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function Homepage4() {

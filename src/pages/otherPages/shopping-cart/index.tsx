@@ -8,8 +8,8 @@ import ShopCart from "@/components/otherPages/ShopCart";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Shopping Cart || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Shopping Cart || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function ShppingCartPage() {
@@ -27,6 +27,6 @@ export default function ShppingCartPage() {
       <ShopCart />
       <RelatedProducts />
       <Footer1 />
-    </>
+    </> 
   );
 }

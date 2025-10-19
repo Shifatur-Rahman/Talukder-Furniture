@@ -7,8 +7,8 @@ import Order from "@/components/otherPages/Order";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Order || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Order || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function OrderPage() {
@@ -22,7 +22,7 @@ export default function OrderPage() {
         pageName="Order"
         pageTitle="Order"
         parentPage=""
-      />
+      /> 
       <Order />
       <Footer1 />
     </>

@@ -8,8 +8,8 @@ import Wishlist from "@/components/otherPages/Wishlist";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Wish List || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Wish List || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function WishListPage() {

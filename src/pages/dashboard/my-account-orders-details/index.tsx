@@ -8,8 +8,8 @@ import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
   title:
-    "My Acccount Order Details || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+    "My Acccount Order Details || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function MyAccountOrdersDetails() {

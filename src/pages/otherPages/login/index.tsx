@@ -7,8 +7,8 @@ import Login from "@/components/otherPages/Login";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Login || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Login || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function LoginPage() {

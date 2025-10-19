@@ -7,8 +7,8 @@ import Terms from "@/components/otherPages/Terms";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Term Of Use || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Term Of Use || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function TermsOfUsePage() {

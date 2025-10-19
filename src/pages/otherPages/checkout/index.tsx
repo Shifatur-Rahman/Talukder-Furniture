@@ -7,8 +7,8 @@ import Checkout from "@/components/otherPages/Checkout";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Checkout || GearO - Office equipment eCommerce Reactjs Template",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  title: "Checkout || Talukder Furniture - Office equipment",
+  description: "Talukder Furniture - Office equipment",
 };
 
 export default function CheckoutPage() {
@@ -23,8 +23,8 @@ export default function CheckoutPage() {
         pageTitle="Check Out"
         parentPage=""
       />
-      <Checkout />
-      <Footer1 />
+      <Checkout /> 
+      <Footer1 /> 
     </>
   );
 }
