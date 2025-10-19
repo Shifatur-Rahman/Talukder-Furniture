@@ -8,26 +8,26 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { divanSofaMain } from "@/data/DivanSofa"; 
+import { sofa311Main } from "@/data/Sofa311"; 
  
 // Filter state type (update this to match your reducer state exactly) 
  
 // Props for Products1
-interface DivanSofaProps {
+interface Sofa311Props {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
-  
+ 
 // console.log("sofaMain products:", sofaMain); 
  
-export default function DivanSofa({
+export default function Sofa311({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: DivanSofaProps) { 
+}: Sofa311Props) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -98,12 +98,12 @@ export default function DivanSofa({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: divanSofaMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: sofa311Main }); 
   }, [ 
     price,
     availability,
     color,
-    size, 
+    size,
     brands,
     categories,
     activeFilterOnSale,

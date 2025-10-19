@@ -35,6 +35,8 @@ import ThreeSofaPage from "./pages/products/3-Sofa";
 import OfficeAlmirahPage from "./pages/products/Office-Almirah";
 import MediumBackChairPage from "./pages/products/Medium-Back-Chair";
 import LowBackChairPage from "./pages/products/Low-Back-Chair";
+import DivanSofaPage from "./pages/products/Divan-Sofa";
+import Sofa311Page from "./pages/products/Sofa-311";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -547,7 +549,49 @@ function App() {
                         </ProductLayout>
                       }
                     /> 
-                   
+
+                     {/* divan-sofa */}
+                    <Route
+                      path="divan-sofa"
+                      element={
+                        <ProductLayout> 
+                          <DivanSofaPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    {/* sofa-311 */}
+                   <Route
+                      path="sofa-311" 
+                      element={
+                        <ProductLayout> 
+                          <Sofa311Page /> 
+                        </ProductLayout>
+                      }
+                    /> 
+
+                     {/* sofa-311 */}
+                   <Route
+                      path="sofa-311" 
+                      element={
+                        <ProductLayout> 
+                          <Sofa311Page /> 
+                        </ProductLayout>
+                      }
+                    /> 
+
+                     {/* sofa-311 */}
+                   <Route
+                      path="sofa-311" 
+                      element={
+                        <ProductLayout> 
+                          <Sofa311Page /> 
+                        </ProductLayout>
+                      }
+                    /> 
+
+
+
                     <Route
                       path="product-style-03"
                       element={

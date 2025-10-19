@@ -787,9 +787,9 @@ export const officeFurnitureMenu = [
 // livingRoom
 export const livingRoom = [ 
   {
-    title: "Sofa Set",
+    title: "Sofa Set", 
     links: [
-      { label: "Sofa Set 3-1-1", href: "/sofa-table" },
+      { label: "Sofa Set 3-1-1", href: "/sofa-311" },
       { label: "Sofa Set 3-2-1", href: "/executive-table" }, 
       { label: "Sofa Set 2-2-1", href: "/side-rack" },
       { label: "1 Seater", href: "/1-seater-sofa" },
