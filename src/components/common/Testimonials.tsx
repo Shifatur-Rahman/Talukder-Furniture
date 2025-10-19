@@ -86,7 +86,7 @@ export default function Testimonials({
                               />
                             </g>
                             <defs>
-                              <clipPath>
+                              <clipPath> 
                                 <rect
                                   width={20}
                                   height={20}
