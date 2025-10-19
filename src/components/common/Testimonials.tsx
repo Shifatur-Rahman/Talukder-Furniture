@@ -20,19 +20,25 @@ export default function Testimonials({
                 Our customers adore our products, and we constantly aim to
                 delight them.
               </p>
-            </div>
+            </div> 
             <Swiper
               className="swiper tf-sw-testimonial"
-              spaceBetween={15}
+              spaceBetween={15} 
               breakpoints={{
                 0: { slidesPerView: 1 }, 
                 575: {
                   slidesPerView: 1,
                 },
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 2, 
                   spaceBetween: 30,
                 },
+                // test
+                992: {
+                  slidesPerView: 2,
+                  spaceBetween: 25,
+                },
+                // test
                 1200: {
                   slidesPerView: 3,
                   spaceBetween: 30,
@@ -43,7 +49,7 @@ export default function Testimonials({
                 clickable: true,
                 el: ".spd9",
               }}
-            >
+            > 
               {testimonials.map((item, index) => (
                 <SwiperSlide className="swiper-slide" key={index}>
                   <div className="testimonial-item hover-img style-2">
@@ -121,8 +127,8 @@ export default function Testimonials({
                       </div>
                     </div>
                   </div>
-                </SwiperSlide>
-              ))}
+                </SwiperSlide> 
+              ))} 
 
               <div className="sw-pagination-testimonial sw-dots type-circle d-flex justify-content-center spd9" />
             </Swiper>

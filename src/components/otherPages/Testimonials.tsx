@@ -22,7 +22,7 @@ export default function Testimonials() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g clipPath="url(#clip0_15758_14563)">
-        <path
+        <path 
           d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
           stroke="#3DAB25"
           strokeWidth="1.5"
@@ -162,7 +162,7 @@ export default function Testimonials() {
                       </a>
                     </div>
                   </div>
-                </SwiperSlide>
+                </SwiperSlide> 
               ))}
               <div className="sw-pagination-testimonial sw-dots d-block d-md-none type-circle d-flex justify-content-center spd28" />
             </Swiper>
