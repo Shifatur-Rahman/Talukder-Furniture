@@ -745,9 +745,9 @@ export const dealSlides = [
 export const productWithTestimonials = [
   {
     id: 29,
-    name: "Sarah",
+    name: "Mr. Sakib Mahmud",
     quote:
-      "Great experience shopping at GearO! The office equipment I purchased is high-quality and the delivery was super fast. Will definitely return for future needs!",
+      "Great experience shopping at Talukder! The book shelf I purchased is high-quality and the delivery was super fast. Will definitely return for future needs!",
     avatar: "/images/shop/testimonials-item-1.jpg",
     imgSrc: "/images/section/testimonials-1.jpg",
     title: "Contrasting sheepskin...",
@@ -755,9 +755,9 @@ export const productWithTestimonials = [
   },
   {
     id: 30,
-    name: "Michael",
+    name: "Mrs. Jerin Akter",
     quote:
-      "GearO offers a fantastic range of office products at competitive prices. Their customer service was helpful, and the ordering process was seamless.",
+      "Talukder offers a fantastic range of living products at competitive prices. Their customer service was helpful, and the ordering process was seamless.",
     avatar: "/images/shop/testimonials-item-2.jpg",
     imgSrc: "/images/section/testimonials-2.jpg",
     title: "Contrasting sheepskin...",
@@ -765,9 +765,9 @@ export const productWithTestimonials = [
   },
   {
     id: 31,
-    name: "Jennifer",
+    name: "Mr. Abdullah Al Sahin",
     quote:
-      "I found everything I needed for my home office here. Excellent selection, prompt delivery, and top-notch customer support. Highly recommend GearO!",
+      "I found everything I needed for my home office here. Excellent selection, prompt delivery, and top-notch customer support. Highly recommend Talukder!",
     avatar: "/images/shop/testimonials-item-3.jpg",
     imgSrc: "/images/section/testimonials-3.jpg",
     title: "Contrasting sheepskin...",

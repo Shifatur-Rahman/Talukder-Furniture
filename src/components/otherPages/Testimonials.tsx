@@ -36,7 +36,7 @@ export default function Testimonials() {
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </g>
+      </g> 
       <defs>
         <clipPath id="clip0_15758_14563">
           <rect
@@ -45,9 +45,9 @@ export default function Testimonials() {
             fill="white"
             transform="translate(0 0.684082)"
           />
-        </clipPath>
-      </defs>
-    </svg>
+        </clipPath> 
+      </defs> 
+    </svg> 
   );
 
   return (
@@ -100,11 +100,11 @@ export default function Testimonials() {
               }}
               navigation={{
                 prevEl: ".snbp28",
-                nextEl: ".snbn28",
-              }}
-            >
-              {productWithTestimonials.map((item, index) => (
-                <SwiperSlide className="swiper-slide" key={index}>
+                nextEl: ".snbn28", 
+              }} 
+            > 
+              {productWithTestimonials.map((item, index) => ( 
+                <SwiperSlide className="swiper-slide" key={index}> 
                   <div className="testimonial-item hover-img"> 
                     <div className="content">
                       <div className="content-top">
@@ -120,7 +120,7 @@ export default function Testimonials() {
                               {item.name}
                             </a>
                           </div>
-                          <VerifiedSVG />
+                          <VerifiedSVG /> 
                         </div>
                       </div>
                       <div className="box-product">
@@ -170,5 +170,5 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
-  );
+  ); 
 }
