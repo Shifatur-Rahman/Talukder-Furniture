@@ -73,7 +73,7 @@ export default function Compare() {
                   ))}
                 </>
               ) : (
-                <div className="tf-compare-inner">
+                <div className="tf-compare-inner"> 
                   <div className="text-center">
                     No items added to compare yet. Browse Products to find items
                     you’d like to compare.
@@ -166,7 +166,7 @@ export default function Compare() {
 
             {/* Color */}
             <div className="tf-compare-row">
-              <div className="tf-compare-col tf-compare-field d-md-block d-none">
+              <div className="tf-compare-col tf-compare-field d-md-block d-none"> 
                 <h6>Color</h6>
               </div>
               {items.map((_, i) => (
@@ -228,4 +228,4 @@ export default function Compare() {
       </div>
     </div>
   );
-}
+}   
