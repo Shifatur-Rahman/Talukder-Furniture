@@ -94,10 +94,10 @@ export default function Lookbook() {
                             <div className="price text-body-default justify-content-center">
                               {product.oldPrice && (
                                 <span className="text-caption-1 old-price">
-                                  ${product.oldPrice.toFixed(2)}
+                                   ৳{product.oldPrice.toFixed(2)}
                                 </span>
                               )}
-                              ${product.price.toFixed(2)}
+                               ৳{product.price.toFixed(2)}
                             </div>
                           </div>
                         </div>
