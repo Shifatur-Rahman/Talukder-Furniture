@@ -106,7 +106,7 @@ export default function CurrencySelect({
             {optionsData.map((elm, i) => (
               <li onClick={() => setSelected(elm)} key={i}>
                 <a
-                  className={`dropdown-item ${
+                  className={`dropdown-item ${ 
                     selected.value === elm.value ? "active selected" : ""
                   }`}
                 >

@@ -26,7 +26,7 @@ export default function AccountOrders() {
                       <td>#123</td>
                       <td>August 1, 2025</td>
                       <td>On hold</td>
-                      <td>$200.0 for 1 items</td>
+                      <td>৳ 200.0 for 1 items</td>
                       <td>
                         <Link
                           to={`/my-account-orders-details`}
@@ -40,7 +40,7 @@ export default function AccountOrders() {
                       <td>#345</td>
                       <td>August 2, 2025</td>
                       <td>On hold</td>
-                      <td>$300.0 for 1 items</td>
+                      <td>৳ 300.0 for 1 items</td>
                       <td>
                         <Link
                           to={`/my-account-orders-details`}
@@ -54,7 +54,7 @@ export default function AccountOrders() {
                       <td>#567</td>
                       <td>August 3, 2025</td>
                       <td>On hold</td>
-                      <td>$400.0 for 1 items</td>
+                      <td>৳ 400.0 for 1 items</td>
                       <td>
                         <Link
                           to={`/my-account-orders-details`}

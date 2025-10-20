@@ -44,13 +44,13 @@ export default function Compare() {
             <div className="tf-compare-row tf-compare-grid">
               <div className="tf-compare-col d-md-block d-none" />
               {items.length ? (
-                <>
-                  {items.map((product, i) => (
-                    <div key={i} className="tf-compare-col">
+                <> 
+                  {items.map((product, i) => ( 
+                    <div key={i} className="tf-compare-col"> 
                       <div className="tf-compare-item">
-                        <Link
+                        <Link 
                           className="tf-compare-image"
-                          to={`/product-detail/${product.id}`}
+                          to={`/product-detail/${product.id}`} 
                         >
                           <img
                             className="lazyload"
@@ -114,7 +114,7 @@ export default function Compare() {
                   key={i}
                   className="tf-compare-col tf-compare-field text-center"
                 >
-                  <span className="price">${product.price.toFixed(2)}</span>
+                  <span className="price">৳ {product.price.toFixed(2)}</span>
                 </div>
               ))}
             </div>

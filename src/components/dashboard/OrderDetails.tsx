@@ -150,22 +150,22 @@ export default function OrderDetails() {
                           <div className="text-2">Ergonomic Chair Pro</div>
                           <div className="mt_4">
                             <span className="">Price :</span>
-                            $219.99
+                            ৳ 219.99
                           </div>
                         </div>
                       </div>
                       <ul>
                         <li className="d-flex justify-content-between text-2">
                           <span>Total Price</span>
-                          <span className="">$219.99</span>
+                          <span className="">৳ 219.99</span>
                         </li>
                         <li className="d-flex justify-content-between text-2 mt_4 pb_8 line-bt">
                           <span>Total Discounts</span>
-                          <span className="">$10</span>
+                          <span className="">৳ 10</span>
                         </li>
                         <li className="d-flex justify-content-between text-2 mt_8">
                           <span>Order Total</span>
-                          <span className="">$209.99</span>
+                          <span className="">৳ 209.99</span>
                         </li>
                       </ul>
                     </div> 
@@ -204,7 +204,7 @@ export default function OrderDetails() {
                           <span className="fw-7">17/07/2025, 02:34pm</span>
                         </li>
                         <li>
-                          Total : <span className="fw-7">$18.95</span>
+                          Total : <span className="fw-7">৳ 18.95</span>
                         </li>
                         <li>
                           Payment Methods :
