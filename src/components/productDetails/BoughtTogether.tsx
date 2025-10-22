@@ -106,7 +106,7 @@ export default function BoughtTogether() {
                   {product.compareAtPrice && (
                     <>
                       <div className="compare-at-price">
-                        ${product.compareAtPrice.toFixed(2)}
+                        ৳ {product.compareAtPrice.toFixed(2)}
                       </div>
                       <div className="badges-on-sale">
                         -

@@ -76,7 +76,7 @@ export default function ProductGrouped() {
       )
     );
   };
-
+     
   // Calculate total price
   const totalPrice = products
     .filter((product) => product.checked)
@@ -136,16 +136,16 @@ export default function ProductGrouped() {
                   </select>
                 </div>
                 <div className="tf-product-info-price type-small">
-                  <h5 className="price-on-sale">${product.price.toFixed(2)}</h5>
+                  <h5 className="price-on-sale">${product.price.toFixed(2)}</h5> 
                   {product.comparePrice && (
                     <div className="compare-at-price">
-                      ${product.comparePrice.toFixed(2)}
+                      ৳ {product.comparePrice.toFixed(2)}
                     </div>
                   )}
                   {product.discount && (
                     <div className="badges-on-sale">-{product.discount}%</div>
                   )}
-                </div>
+                </div>     
               </div>
               <div className="wg-quantity style-1">
                 <span
@@ -153,7 +153,7 @@ export default function ProductGrouped() {
                   onClick={() =>
                     handleQuantityChange(product.id, product.quantity - 1)
                   }
-                >
+                > 
                   -
                 </span>
                 <input
@@ -170,11 +170,11 @@ export default function ProductGrouped() {
                 <span
                   className="btn-quantity plus-btn"
                   onClick={() =>
-                    handleQuantityChange(product.id, product.quantity + 1)
+                    handleQuantityChange(product.id, product.quantity + 1) 
                   }
-                >
-                  +
-                </span>
+                > 
+                  + 
+                </span> 
               </div>
             </div>
           </div>
@@ -183,11 +183,11 @@ export default function ProductGrouped() {
       <div className="tf-bundle-product-total-submit d-flex gap-6 align-items-center">
         <h5>Total Price:</h5>
         <div className="tf-product-info-price type-1">
-          <h4 className="price-on-sale">${totalPrice.toFixed(2)}</h4>
+          <h4 className="price-on-sale"> ৳ {totalPrice.toFixed(2)}</h4>
           {totalComparePrice > 0 && (
             <>
               <div className="compare-at-price">
-                ${totalComparePrice.toFixed(2)}
+                ৳ {totalComparePrice.toFixed(2)}
               </div>
               {totalDiscount > 0 && (
                 <div className="badges-on-sale">-{totalDiscount}%</div>
@@ -199,3 +199,4 @@ export default function ProductGrouped() {
     </>
   );
 }
+   

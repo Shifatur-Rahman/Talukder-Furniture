@@ -110,11 +110,11 @@ export default function Details15({ product }: ProductCardProps) {
                     <div className="tf-product-info-desc">
                       <div className="tf-product-info-price">
                         <h5 className="price-on-sale">
-                          ${product.price.toFixed(2)}
+                          ৳ {product.price.toFixed(2)}
                         </h5>
                         {product.oldPrice && (
                           <div className="compare-at-price">
-                            ${product.oldPrice.toFixed(2)}
+                            ৳ {product.oldPrice.toFixed(2)}
                           </div>
                         )}
                         <div className="badges-on-sale text-btn-uppercase">

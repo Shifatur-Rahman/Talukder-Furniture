@@ -102,7 +102,7 @@ export default function ShopCart() {
                         </td>
                         <td className="tf-cart-item_price text-center">
                           <div className="cart-price text-button price-on-sale">
-                            ${product.price.toFixed(2)}
+                            ৳ {product.price.toFixed(2)}
                           </div>
                         </td>
                         <td
@@ -140,7 +140,7 @@ export default function ShopCart() {
                           className="tf-cart-item_total text-center"
                         >
                           <div className="cart-total text-button total-price">
-                            ${(product.price * product.quantity).toFixed(2)}
+                            ৳ {(product.price * product.quantity).toFixed(2)}
                           </div>
                         </td>
                         <td
