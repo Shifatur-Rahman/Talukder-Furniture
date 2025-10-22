@@ -90,9 +90,9 @@ export default function ProductGrouped() {
     );
 
   const totalDiscount =
-    totalComparePrice > 0
-      ? Math.round(((totalComparePrice - totalPrice) / totalComparePrice) * 100)
-      : 0;
+    totalComparePrice > 0 
+      ? Math.round(((totalComparePrice - totalPrice) / totalComparePrice) * 100) 
+      : 0; 
 
   return (
     <>
@@ -194,7 +194,7 @@ export default function ProductGrouped() {
               )}
             </>
           )}
-        </div>
+        </div>    
       </div>
     </>
   );
