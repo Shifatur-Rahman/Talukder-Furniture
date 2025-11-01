@@ -833,6 +833,13 @@ export const livingRoom = [
     ],
   },
 
+     {
+    title: "BedRoom Set",
+    links: [
+      { label: "BedRoom Set", href: "/bed-room-set" }, 
+    ],
+  },
+
   {
     title: "Racks",
     links: [
@@ -983,6 +990,12 @@ export const bedRoomFurnitureMenu = [
       { label: "Shoe Rack", href: "/shoe-rack" },
     ],
   },
+  //  {
+  //   title: "BedRoom",
+  //   links: [
+  //     { label: "BedRoom", href: "/bed-room-set" }, 
+  //   ],
+  // },
   {
     title: "Dressing Table",
     links: [

@@ -14,9 +14,9 @@ export const conferenceTableProducts = [
     inStock: true, 
     filterColor: ["Beige", "Orange", "Green", "Black", "Purple", "Dark Blue"], 
     filterCategory: ["Bags", "Clothing", "Women", "Shoes", "Uncategorized"],
-    filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
-    tabFilterOptions2: ["New Arrivals", "On Sale"],
-    tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
+    tabFilterOptions2: ["New Arrivals", "On Sale"], 
+    tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"], 
   },
   {
     id: 2,

@@ -53,21 +53,21 @@ export default function DiningSixSeater({
         ? dispatch({ type: "SET_COLOR", payload: "All" })
         : dispatch({ type: "SET_COLOR", payload: value });
     },
-    setSize: (value: string) => {
+    setSize: (value: string) => { 
       value === size
         ? dispatch({ type: "SET_SIZE", payload: "All" })
         : dispatch({ type: "SET_SIZE", payload: value });
-    },
+    }, 
     setAvailability: (value: string) => {
       value === availability
         ? dispatch({ type: "SET_AVAILABILITY", payload: "All" })
         : dispatch({ type: "SET_AVAILABILITY", payload: value });
     },
-
+ 
     setBrands: (newBrand: string) => {
       const updated = [...brands].includes(newBrand)
         ? [...brands].filter((elm) => elm !== newBrand)
-        : [...brands, newBrand];
+        : [...brands, newBrand]; 
       dispatch({ type: "SET_BRANDS", payload: updated }); 
     },
     removeBrand: (newBrand: string) => {
@@ -106,17 +106,17 @@ export default function DiningSixSeater({
     size,
     brands,
     categories,
-    activeFilterOnSale,
-  ]);
+    activeFilterOnSale, 
+  ]); 
 
   useEffect(() => {
-    dispatch({ type: "SORT_PRODUCTS" });
+    dispatch({ type: "SORT_PRODUCTS" }); 
   }, [filtered, sortingOption]);
 
-  return (
+  return ( 
     <>
       <section className={parentClass}>
-        <div className={`container${isFullLayout ? "-full" : ""}`}>
+        <div style={{margin:"0 10px"}} className={`containerr${isFullLayout ? "-full" : ""}`}> 
           <div className="tf-shop-control">
             <div className="tf-control-filter">
               <a

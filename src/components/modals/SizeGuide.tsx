@@ -2,7 +2,7 @@ export default function SizeGuide() {
   return (
     <div className="modal fade modal-size-guide" id="size-guide">
       <div className="modal-dialog modal-dialog-centered">
-        <div className="modal-content widget-tabs style-2">
+        <div className="modal-content widget-tabs style-2"> 
           <table className="tab-sizeguide-table">
             <thead>
               <tr>
@@ -14,7 +14,7 @@ export default function SizeGuide() {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr> 
                 <td>XS</td>
                 <td>2</td>
                 <td>32</td>

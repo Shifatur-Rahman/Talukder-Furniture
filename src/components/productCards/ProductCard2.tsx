@@ -120,12 +120,12 @@ const ProductCard2 = React.memo(({ product }: ProductCardProps) => {
           {product.title}
         </Link>
 
-        <div className="price text-button">
+        {/* <div className="price text-button">
           {product.oldPrice && (
             <span className="old-price"> ${product.oldPrice.toFixed(2)}</span>
           )}
           <span className="current-price"> ${product.price.toFixed(2)}</span>
-        </div>
+        </div> */}
 
         <p className="description text_secondary text-body-default">
           Grounded in principles of simplicity and craftsmanship, Seoul’s clean

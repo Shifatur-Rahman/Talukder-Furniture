@@ -202,7 +202,8 @@ export default function QuickView() {
                   </div>
                 </div>
                 <div className="tf-product-info-desc">
-                  <div className="tf-product-info-price">
+
+                  {/* <div className="tf-product-info-price">
                     <h5 className="price-on-sale">
                       ৳ {quickViewItem.price.toFixed(2)}
                     </h5>
@@ -214,7 +215,8 @@ export default function QuickView() {
                     <div className="badges-on-sale text-btn-uppercase">
                       -25%
                     </div>
-                  </div>
+                  </div> */}
+
                   <p>
                     The garments labelled as Committed are products that have
                     been produced using sustainable fibres or processes,

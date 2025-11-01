@@ -211,14 +211,14 @@ const ProductCard = React.memo(
             {product.title}
           </Link>
 
-          <div className="price text-body-default">
+          {/* <div className="price text-body-default">
             {product.oldPrice && (
               <span className="text-caption-1 old-price">
                 ৳ {product.oldPrice.toFixed(2)}
               </span>
             )}
              ৳ {product.price.toFixed(2)}
-          </div>
+          </div> */}
 
           <ul className="list-color-product">{swatches}</ul>
         </div>

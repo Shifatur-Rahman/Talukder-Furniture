@@ -39,6 +39,7 @@ import DivanSofaPage from "./pages/products/Divan-Sofa";
 import Sofa311Page from "./pages/products/Sofa-311";
 import Sofa321Page from "./pages/products/Sofa-321";
 import Sofa221Page from "./pages/products/Sofa-221";
+import BedRoomPage from "./pages/products/BedRoomSet";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -298,7 +299,7 @@ function App() {
                     /> 
 
                     <Route
-                      path="shoe-rack"
+                      path="shoe-rack" 
                       element={
                         <ProductLayout>
                           <ShoeRackPage />
@@ -588,6 +589,16 @@ function App() {
                       element={
                         <ProductLayout> 
                           <Sofa221Page /> 
+                        </ProductLayout>
+                      }
+                    /> 
+
+
+                     <Route 
+                      path="bed-room-set" 
+                      element={
+                        <ProductLayout> 
+                          <BedRoomPage /> 
                         </ProductLayout>
                       }
                     /> 

@@ -77,7 +77,7 @@ export default function ProductGrouped() {
     );
   };
      
-  // Calculate total price
+  // Calculate total price 
   const totalPrice = products
     .filter((product) => product.checked)
     .reduce((sum, product) => sum + product.price * product.quantity, 0);
@@ -87,7 +87,7 @@ export default function ProductGrouped() {
     .reduce(
       (sum, product) => sum + (product.comparePrice || 0) * product.quantity,
       0
-    );
+    ); 
 
   const totalDiscount =
     totalComparePrice > 0 
@@ -132,10 +132,11 @@ export default function ProductGrouped() {
                       <option key={variant} value={variant}>
                         {variant}
                       </option>
-                    ))}
-                  </select>
-                </div>
-                <div className="tf-product-info-price type-small">
+                    ))} 
+                  </select> 
+                </div> 
+
+                {/* <div className="tf-product-info-price type-small">
                   <h5 className="price-on-sale">${product.price.toFixed(2)}</h5> 
                   {product.comparePrice && (
                     <div className="compare-at-price">
@@ -145,7 +146,8 @@ export default function ProductGrouped() {
                   {product.discount && (
                     <div className="badges-on-sale">-{product.discount}%</div>
                   )}
-                </div>     
+                </div> */}
+
               </div>
               <div className="wg-quantity style-1">
                 <span
