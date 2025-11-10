@@ -22,7 +22,7 @@ interface SofaProps {
  
 // console.log("sofaMain products:", sofaMain); 
  
-export default function Sofa({
+export default function Sofa({ 
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 

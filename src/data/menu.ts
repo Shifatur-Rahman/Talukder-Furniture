@@ -9,7 +9,7 @@ export const shopPages = [
       { href: "/shop-sidebar-left", label: "Shop Sidebar Left" },
       { href: "/shop-sidebar-right", label: "Shop Sidebar Right" },
     ],
-  },
+  }, 
   {
     title: "Shop Filter",
     links: [
@@ -117,7 +117,7 @@ export const blogLinks = [
   { href: "/blog-list", label: "Blog List" },
   { href: "/blog-details/1", label: "Blog Details" },
 ];
-
+   
 export const otherPages = [
   { href: "/about", label: "About Us" },
   { href: "/faqs", label: "Faqs" },
@@ -125,14 +125,24 @@ export const otherPages = [
   { href: "/term-of-use", label: "Term Of Use" },
   { href: "/contact", label: "Contact Us" },
 ];
-
+ 
+// test 
+ 
+export const officeFurnitureMenu = [
+  { href: "/executive", label: "Executive Table" }, 
+  { label: "MD/CEO Table", href: "/md-table" },
+   { label: "Conference Table", href: "/conference-table" },
+];
+ 
+// test 
+  
 export const demoPages = [
   {
-    href: "/",
+    href: "/", 
     src: "/images/demo/home-1.jpg",
     alt: "home-1",
     name: "Homepage 01",
-  },
+  }, 
   {
     href: "/home-2",
     src: "/images/demo/home-2.jpg",

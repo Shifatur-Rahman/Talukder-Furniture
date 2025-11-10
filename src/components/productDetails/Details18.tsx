@@ -162,7 +162,7 @@ export default function Details18({ product }: ProductCardProps) {
                             setQuantity(qty);
                           }
                         }}
-                      />
+                      /> 
                     </div>
                     <div>
                       <div className="tf-product-info-by-btn mb_12">

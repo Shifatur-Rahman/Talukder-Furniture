@@ -311,32 +311,62 @@ export default function Nav({ textColor = "" }: NavProps) {
                   {/* Links inside Category */}
                   <ul className="menu-list">
                     {menu.links.map((link, idx) => (
+
                       <li key={idx}>
-                        {/* If this link has children → Parent */}
-                        {link.children && Array.isArray(link.children) ? (
+                        {Array.isArray((link as any).children) &&
+                        (link as any).children.length > 0 ? (
                           <>
-                            <span className="menu-link-text font-semibold flex items-center cursor-default">
+                            <span className="menu-link-text">
                               {link.label}
-                              <FaArrowRight className="ml-1 text-[10px]" />
                             </span>
-                            <ul className="submenu-list ml-4 mt-1">
-                              {link.children.map((child, cIdx) => (
-                                <li key={cIdx}>
-                                  <Link to={child.href} className="menu-link-text flex items-center">
-                                    <AiOutlineMinus className="mr-1" />
-                                    {child.label}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
+                            <ul className="submenu-list">
+                              {(link as any).children.map( 
+                                (child: any, cIdx: number) => (
+                                  <li key={cIdx}>
+                                    <a
+                                      href={child.href ?? "#"}
+                                      className="menu-link-text"
+                                    >
+                                      <AiOutlineMinus /> {child.label}
+                                    </a> 
+                                  </li>
+                                )
+                              )}
+                            </ul> 
                           </>
                         ) : (
-                          // Normal clickable link (no children)
-                          <Link to="link.href" className="menu-link-text">
+                          // <a href={link.href ?? "#"} className="menu-link-text">
+                          <a href="#" className="menu-link-text"> 
                             {link.label}
-                          </Link>
-                        )}
+                          </a>
+                        )} 
                       </li>
+
+                      // <li key={idx}>
+                      //   {link.children && Array.isArray(link.children) ? (
+                      //     <>
+                      //       <span className="menu-link-text font-semibold flex items-center cursor-default">
+                      //         {link.label}
+                      //         <FaArrowRight className="ml-1 text-[10px]" />
+                      //       </span>
+                      //       <ul className="submenu-list ml-4 mt-1">
+                      //         {link.children.map((child, cIdx) => (
+                      //           <li key={cIdx}>
+                      //             <Link to={child.href} className="menu-link-text flex items-center">
+                      //               <AiOutlineMinus className="mr-1" />
+                      //               {child.label}
+                      //             </Link>
+                      //           </li>
+                      //         ))}
+                      //       </ul>
+                      //     </>
+                      //   ) : (
+                      //     // Normal clickable link (no children)
+                      //     <Link to="link.href" className="menu-link-text">
+                      //       {link.label}
+                      //     </Link>
+                      //   )}
+                      // </li>
                     ))}
                   </ul>
                 </div>
@@ -699,24 +729,25 @@ export default function Nav({ textColor = "" }: NavProps) {
             </div>
           </div>
         </div>
-      </li> */}
+      </li> */}     
 
     </>
   );
 }
-
-
-//officeFurniture
+ 
+ 
+ 
+//officeFurniture 
 export const officeFurnitureMenu = [
   {
     title: "Tables",
      href: "/tables", // route for title
     links: [
       { label: "MD/CEO Table", href: "/md-table" },
-      { label: "Executive Table", href: "/executive-table" }, 
+      { label: "Executive Table", href: "/executive" }, 
       { label: "Side Rack", href: "/side-rack" },
       { label: "Conference Table", href: "/conference-table" },
-      { label: "Computer Table", href: "/computer-table" },
+      { label: "Computer Table", href: "/computer-table" }, 
     ],
   },
   {
@@ -1008,34 +1039,6 @@ export const bedRoomFurnitureMenu = [
       { label: "Plastic Tables & Chairs", href: "/dressing-table" }, 
     ], 
   }, 
-  
-  //  {
-  //   title: "Children Furniture",
-  //   links: [
-  //     { label: "Children's Bed Frame", href: "/single-bed-frame" },
-  //     { label: "Cot", href: "/double-bed-frame" },
-  //     { label: "Cradle", href: "/king-bed-frame" }, 
-
-  //     {
-  //       label: "Children's Cabinets",
-  //       children: [
-  //         { label: "Waredrobe Cabinet", href: "/single-spring-mattress" },
-  //         { label: "Children's Cupboard", href: "/double-spring-mattress" },
-  //         { label: "Children's Storage", href: "/king-spring-mattress" },
-  //       ],
-  //     },
-
-  //      {
-  //       label: "Children's Mattresses",
-  //       children: [
-  //         { label: "Children's Spring Mattresses", href: "/single-spring-mattress" },
-  //         { label: "Children's Coir Mattresses", href: "/double-spring-mattress" },
-  //         { label: "Children's Foam Mattresses", href: "/king-spring-mattress" }, 
-  //       ],
-  //     },
-
-  //   ],
-  // },
 
 
 ];

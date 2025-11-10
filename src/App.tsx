@@ -17,7 +17,7 @@ import Dining4SeaterPage from "./pages/products/Dining-4-Seater";
 import Dining6SeaterPage from "./pages/products/Dining-6-Seater";
 import Dining8SeaterPage from "./pages/products/Dining-8-Seater";
 import MdTablePage from "./pages/products/Md-Table";
-import ExecutiveTablePage from "./pages/products/Executive-Table";
+import ExecutiveTablePage from "./pages/products/Executive-Table"; 
 import ComputerTablePage from "./pages/products/Computer-Table";
 import HighBackChairPage from "./pages/products/High-Back-Chair";
 import ConferenceTablePage from "./pages/products/Conference-Table";
@@ -122,7 +122,11 @@ const LoginPage = lazy(() => import("./pages/otherPages/login"));
 const RegisterPage = lazy(() => import("./pages/otherPages/register"));
 const WishListPage = lazy(() => import("./pages/otherPages/wish-list"));
 const SearchResultPage = lazy(() => import("./pages/otherPages/search-result"));
-const AboutPage = lazy(() => import("./pages/otherPages/about"));
+
+
+const AboutPage = lazy(() => import("./pages/otherPages/about")); 
+
+
 const FaqsPage = lazy(() => import("./pages/otherPages/faqs"));
 const StoreListPage = lazy(() => import("./pages/otherPages/store-list"));
 const TermsOfUsePage = lazy(() => import("./pages/otherPages/term-of-use"));
@@ -250,19 +254,19 @@ function App() {
                 <Routes>
                   <Route path="/">
                     <Route index element={<HomePage />} />
-                    <Route path="home-2" element={<Homepage2 />} />
+                    {/* <Route path="home-2" element={<Homepage2 />} />
                     <Route path="home-3" element={<Homepage3 />} />
                     <Route path="home-4" element={<Homepage4 />} />
-                    <Route path="home-5" element={<Homepage5 />} /> 
+                    <Route path="home-5" element={<Homepage5 />} />  */}
  
-                    <Route
+                    {/* <Route
                       path="shop-default" 
                       element={
                         <ProductLayout> 
                           <ShopDefaultPage /> 
                         </ProductLayout> 
                       }   
-                    /> 
+                    />  */}
 
                     {/* md-ceo table */} 
 
@@ -279,7 +283,7 @@ function App() {
                     {/* executive-table */}  
 
                     <Route
-                      path="/executive-table"
+                      path="executive"
                       element={
                         <ProductLayout>
                           <ExecutiveTablePage /> 
@@ -290,7 +294,7 @@ function App() {
                     {/* computer-table */}   
 
                     <Route
-                      path="/computer-table" 
+                      path="computer-table" 
                       element={
                         <ProductLayout> 
                           <ComputerTablePage /> 
@@ -304,7 +308,7 @@ function App() {
                         <ProductLayout>
                           <ShoeRackPage />
                         </ProductLayout>
-                      }
+                      } 
                     />
                     <Route
                       path="tv-cabinet"
@@ -543,7 +547,7 @@ function App() {
                       }
                     /> 
 
-                     {/* low-back-chair */}
+                     {/* low-back-chair */} 
                     <Route
                       path="low-back-chair"
                       element={
@@ -573,7 +577,7 @@ function App() {
                       }
                     /> 
 
-                     {/* sofa-311 */}
+                     {/* sofa-321 */}
                    <Route
                       path="sofa-321" 
                       element={
@@ -583,7 +587,7 @@ function App() {
                       }
                     /> 
 
-                     {/* sofa-311 */} 
+                     {/* sofa-221 */} 
                    <Route
                       path="sofa-221" 
                       element={
@@ -605,7 +609,7 @@ function App() {
 
 
 
-                    <Route
+                    {/* <Route
                       path="product-style-03"
                       element={
                         <ProductLayout>
@@ -629,7 +633,9 @@ function App() {
                           <ProductStylePage5 />
                         </ProductLayout>
                       }
-                    />
+                    /> */}
+   
+
                   </Route>
 
                   <Route path="shopping-cart" element={<ShppingCartPage />} />

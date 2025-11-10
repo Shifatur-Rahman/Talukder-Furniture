@@ -40,9 +40,6 @@ export const fourDrawerProducts = [
 ]
 
 
-
-
-
 export const fourDrawerMain = [...fourDrawerProducts].slice( 
   0,
   30

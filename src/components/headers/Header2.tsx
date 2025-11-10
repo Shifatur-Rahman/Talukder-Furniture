@@ -83,7 +83,7 @@ export default function Header2() {
                 </ul>
               </nav>
             </div>
-
+   
             <div className="col-xl-2 col-8 d-flex justify-content-center">
               <Link to={`/`} className="logo-header d-flex">
                 <img
@@ -138,7 +138,7 @@ export default function Header2() {
                 </li>
               </ul>
             </div>
-            
+               
           </div>
         </div>
       </div>

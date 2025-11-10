@@ -24,7 +24,7 @@ export default function BlogListPage() {
         parentPage=""
       />
       <BlogList />
-      <Footer1 />
+      <Footer1 /> 
     </>
   );
 }

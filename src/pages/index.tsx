@@ -19,7 +19,7 @@ import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
   title: "Home || Talukder Furniture",
-  description: "GearO - Office equipment eCommerce Reactjs Template",
+  description: "Talukder - Office equipment",
 };
 
 export default function HomePage() {

@@ -25,7 +25,7 @@ export default function AboutPage() {
       <Benefit />
       <Testimonials />
       <Team />
-      <Footer1 />
+      <Footer1 /> 
     </>
   );
 }

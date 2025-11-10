@@ -1,0 +1,34 @@
+<!-- <IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Don’t rewrite files or folders that exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+ 
+  # Redirect everything else to index.html 
+  RewriteRule ^ index.html [L] 
+</IfModule>   -->
+ 
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Always serve index.html for all requests except existing files/folders
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Optional: force HTTPS (recommended)
+<IfModule mod_ssl.c>
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Optional: caching rules for static assets
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|svg|ico|woff2|woff|ttf|eot)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>

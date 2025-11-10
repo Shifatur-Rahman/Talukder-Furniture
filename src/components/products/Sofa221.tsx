@@ -110,13 +110,13 @@ export default function Sofa221({
   ]);
 
   useEffect(() => {
-    dispatch({ type: "SORT_PRODUCTS" });
+    dispatch({ type: "SORT_PRODUCTS" }); 
   }, [filtered, sortingOption]);
 
   return (
     <>
       <section className={parentClass}>
-        <div className={`container${isFullLayout ? "-full" : ""}`}>
+        <div style={{margin:"0 10px"}} className={`containerr${isFullLayout ? "-full" : ""}`}>
           <div className="tf-shop-control">
             <div className="tf-control-filter">
               <a
@@ -124,18 +124,18 @@ export default function Sofa221({
                 data-bs-toggle="offcanvas"
                 aria-controls="filterShop"
                 className="tf-btn-filter"
-              >
+              > 
                 <span className="icon icon-filter" />
                 <span className="text">Filters</span>
               </a>
-              <div
+              <div 
                 onClick={allProps.toggleFilterWithOnSale}
                 className={`d-none d-lg-flex shop-sale-text ${ 
                   activeFilterOnSale ? "active" : ""
                 }`}
               >
                 <i className="icon icon-checkcircle" />
-                <p className="text-caption-1">Shop sale items only</p>
+                <p className="text-caption-1">Shop sale items only</p> 
               </div>
             </div>
             <ul className="tf-control-layout">
@@ -164,7 +164,7 @@ export default function Sofa221({
               </div>
             )}
           </div>
-        </div>
+        </div> 
       </section>
       {/* <FilterModal allProps={allProps} /> */}
     </>

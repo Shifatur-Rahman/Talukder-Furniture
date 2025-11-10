@@ -1,4 +1,4 @@
-import Sofa221Product from "@/components/products/Sofa221";
+// import Sofa221Product from "@/components/products/Sofa221";
 
 import MetaComponent from "@/components/common/MetaComponent";
 import Sofa221 from "@/components/products/Sofa221";
