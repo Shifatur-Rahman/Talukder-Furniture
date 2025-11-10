@@ -20,7 +20,7 @@ export default function Lookbook() {
               alt="banner-cls"
               src="/images/banner/banner-lookbook-1.jpg" 
               width={1184}
-              height={876}
+              height={876} 
             /> 
           </div>  
           <div 
