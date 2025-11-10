@@ -193,12 +193,12 @@ const ProductPickupAvailabblePage = lazy(
 const ProductExtarnalPage = lazy(
   () => import("./pages/shop-details/product-external")
 );
-const ShopDetailsLayout = lazy(() => import("./pages/shop-details/layout"));
+const ShopDetailsLayout = lazy(() => import("./pages/shop-details/layout")); 
 
 // Blog Pages
 const BlogGridPage = lazy(() => import("./pages/blogs/blog-grid"));
 const BlogListPage = lazy(() => import("./pages/blogs/blog-list"));
-const BlogDetailsPage = lazy(() => import("./pages/blogs/blog-details"));
+const BlogDetailsPage = lazy(() => import("./pages/blogs/blog-details")); 
 
 // Dashboard Pages
 const MyAccountPage = lazy(() => import("./pages/dashboard/my-account"));

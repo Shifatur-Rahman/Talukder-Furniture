@@ -15,7 +15,7 @@ export default function Lookbook() {
         <div className="cls-lookbook">
           <div className="img-style">
             <img
-              className="lazyload"
+              className="lazyload" 
               data-src="/images/banner/banner-lookbook-1.jpg" 
               alt="banner-cls"
               src="/images/banner/banner-lookbook-1.jpg" 
