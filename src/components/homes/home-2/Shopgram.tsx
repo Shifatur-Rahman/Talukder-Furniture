@@ -59,7 +59,7 @@ export default function Shopgram() {
                 />
               </div>
               <Link
-                to={`/product-detail/${product.id}`}
+                to={`/product-detail/${product.id}`} 
                 className="box-icon hover-tooltip"
               >
                 <span className="icon icon-eye" />

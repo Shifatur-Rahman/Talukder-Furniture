@@ -21,9 +21,9 @@ export default function BlogDetails({ blog }: BlogDetailsProps) {
             <ul className="meta">
               <li className="text-body-1">
                 <i className="icon-calendar" />
-                <a className="link" href="#">
+                <a className="link" href="#"> 
                   {blog.date}
-                </a>
+                </a> 
               </li>
               <li className="text-body-1">
                 <i className="icon-user" />
@@ -238,7 +238,7 @@ export default function BlogDetails({ blog }: BlogDetailsProps) {
                       </svg>
                     </div>
                   </div>
-                  <div className="day text-caption-1">August 13, 2025</div>
+                  <div className="day text-caption-1">August 13, 2025</div> 
                 </div>
                 <p>Great choice of Acronym AF1’s</p>
               </div>
@@ -273,5 +273,5 @@ export default function BlogDetails({ blog }: BlogDetailsProps) {
         </ul>
       </div>
     </div>
-  );
+  ); 
 }

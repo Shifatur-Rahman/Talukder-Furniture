@@ -20,7 +20,7 @@ export default function SeliveryReturn() {
                 All orders shipped with UPS Express.
               </p>
               <p className="text-paragraph">
-                Always free shipping for orders over US $250.
+                Always free shipping for orders over US at ৳50,000.
               </p>
               <p className="text-paragraph">
                 All orders are shipped with a UPS tracking number.
@@ -49,7 +49,7 @@ export default function SeliveryReturn() {
             <div className="tf-product-popup-delivery">
               <div className="title">Help</div>
               <p className="text-paragraph">
-                Give us a shout if you have any other questions and/or concerns.
+                Give us a shout if you have any other questions and/or concerns. 
               </p>
               <p className="text-paragraph">
                 Email:

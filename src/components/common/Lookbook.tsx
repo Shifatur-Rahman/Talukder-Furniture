@@ -54,8 +54,8 @@ export default function Lookbook() {
       <div className="right-product">
         <div className="heading-section">
           <h3 className="wow fadeInUp">
-            Start With These <br />
-            Curated Spaces
+            Start With These <br /> 
+            Curated Spaces 
           </h3>
           <p
             className="text-body-default text_secondary wow fadeInUp"

@@ -146,9 +146,9 @@ export default function Hero() {
                 >
                   {item.title}
                 </Link>
-                <div className="text-button text_white">
+                {/* <div className="text-button text_white">
                   ${item.price.toFixed(2)}
-                </div>
+                </div> */}
                 <a
                   href="#quickView"
                   onClick={() => setQuickViewItem(item)}

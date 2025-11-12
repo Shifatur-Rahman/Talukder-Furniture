@@ -62,14 +62,14 @@ const SidebarAccount = lazy(() => import("@/components/modals/SidebarAccount"));
 
 // Pages
 const HomePage = lazy(() => import("./pages")); 
-const Homepage2 = lazy(() => import("./pages/homes/home-2"));
-const Homepage3 = lazy(() => import("./pages/homes/home-3")); 
-const Homepage4 = lazy(() => import("./pages/homes/home-4")); 
-const Homepage5 = lazy(() => import("./pages/homes/home-5")); 
+// const Homepage2 = lazy(() => import("./pages/homes/home-2"));
+// const Homepage3 = lazy(() => import("./pages/homes/home-3")); 
+// const Homepage4 = lazy(() => import("./pages/homes/home-4")); 
+// const Homepage5 = lazy(() => import("./pages/homes/home-5")); 
 
 // Product Pages 
 const ProductLayout = lazy(() => import("./pages/products/layout")); 
-const ShopDefaultPage = lazy(() => import("./pages/products/shop-default")); 
+// const ShopDefaultPage = lazy(() => import("./pages/products/shop-default")); 
 // const SofaSetPage = lazy(() => import("./pages/products/sofa-set")); 
 // const ShopListPage = lazy(() => import("./pages/products/shop-list")); 
 // const ShopFullGridPage = lazy(() => import("./pages/products/shop-full-grid")); 
@@ -104,15 +104,15 @@ const ShopDefaultPage = lazy(() => import("./pages/products/shop-default"));
 // const ProductStylePage2 = lazy(
 //   () => import("./pages/products/product-style-02")
 // );
-const ProductStylePage3 = lazy(
-  () => import("./pages/products/product-style-03")
-);
-const ProductStylePage4 = lazy(
-  () => import("./pages/products/product-style-04")
-);
-const ProductStylePage5 = lazy(
-  () => import("./pages/products/product-style-05")
-);
+// const ProductStylePage3 = lazy(
+//   () => import("./pages/products/product-style-03")
+// );
+// const ProductStylePage4 = lazy(
+//   () => import("./pages/products/product-style-04")
+// );
+// const ProductStylePage5 = lazy(
+//   () => import("./pages/products/product-style-05")
+// );
 
 // Other Pages
 const ShppingCartPage = lazy(() => import("./pages/otherPages/shopping-cart"));

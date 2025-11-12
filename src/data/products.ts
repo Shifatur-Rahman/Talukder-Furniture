@@ -15,13 +15,13 @@ export const products = [
         img: "/images/shop/product-1.jpg", 
       },
     ],
-    filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
+    filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], // do change on this unnecessary thing 
     inStock: true,
     filterColor: ["Beige", "Orange", "Green", "Black", "Purple", "Dark Blue"],
     filterCategory: ["Bags", "Clothing", "Women", "Shoes", "Uncategorized"],
-    filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
     tabFilterOptions2: ["New Arrivals", "On Sale"],
-    tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
+    tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"], 
   },
   {
     id: 2, 
@@ -243,79 +243,61 @@ export const products = [
 export const products2 = [
   {
     id: 9,
-    delay: "0s",
-    title: "Ergonomic Chair Pro",
-    imgSrc: "/images/shop/product-1.jpg",
-    hoverImg: "/images/shop/product-1.1.jpg",
-    price: 79.99,
+    delay: "0.2s",
+    title: "High Back Chair",
+    imgSrc: "/images/shop/chair01.jpg",
+    hoverImg: "/images/shop/chair01.jpg",
+    price: 0.0,
     oldPrice: null,
     swatches: [
       {
         label: "Light Blue",
         bgClass: "bg-light-blue",
-        img: "/images/shop/product-1.2.jpg",
-      },
-      {
-        label: "Light Blue",
-        bgClass: "bg-light-blue-2",
-        img: "/images/shop/product-1.3.jpg",
+        img: "/images/shop/chair01.jpg",
       },
     ],
-    isOnisOnSale: false,
-    filterBrands: ["Hermes", "Gucci", "Zalando", "Adidas"],
-    inStock: false,
-    filterColor: [
-      "Pink",
-      "Red",
-
+    isOnisOnSale: true,
+    inStock: true, 
+    filterColor: [ 
+      "Pink", 
+      "Red", 
+      "Beige", 
+      "Orange",
       "Green",
       "Black",
       "White",
       "Purple",
-      "Grey",
-      "Light Blue",
-      "Dark Blue",
     ],
-    filterCategory: ["Bags", "Booking", "Clothing", "Women", "Men", "Shoes"], 
-    filterSizes: ["XS", "S", "M", "L", "3XL"],
+    filterCategory: [
+      "Bags",
+      "Booking",
+      "Clothing",
+      "Women",
+      "Men",
+      "Shoes",
+      "Uncategorized",
+    ],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
+    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"], 
+    
   },
+
   {
     id: 10, 
-    delay: null, 
-    title: "Double Standing Desk", 
-    imgSrc: "/images/shop/product-4.jpg", 
-    hoverImg: "/images/shop/product-4.1.jpg", 
-    price: 69.99,
+    delay: "0.3s", 
+    title: "High Back Chair", 
+    imgSrc: "/images/shop/chair02.jpg", 
+    hoverImg: "/images/shop/chair02.jpg", 
+    price: 0.0,
     oldPrice: null,
     swatches: [
       {
         label: "Light Brown",
         bgClass: "bg-light-brown",
-        img: "/images/shop/product-4.2.jpg",
-      },
-      {
-        label: "Light Pink",
-        bgClass: "bg-light-pink",
-        img: "/images/shop/product-4.3.jpg",
-      },
-      {
-        label: "Light Grey",
-        bgClass: "bg-dark-grey-2",
-        img: "/images/shop/product-4.4.jpg",
+        img: "/images/shop/chair02.jpg",
       },
     ],
     isOnisOnSale: true,
-    salePercentage: "5%",
-    colors: [
-      {
-        bgColor: "bg-beige",
-        imgSrc: "/images/products/mens/men-13.jpg",   
-      },
-      {
-        bgColor: "bg-light-blue-2",
-        imgSrc: "/images/products/mens/men-12.jpg",
-      },
-    ],
     filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"], 
     inStock: true, 
     filterColor: [ 
@@ -339,7 +321,27 @@ export const products2 = [
     ],
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
   },
-];
+  {
+    id: 11,
+    delay: "0.2s",
+    title: "Medium Back Chair", 
+    imgSrc: "/images/shop/chair03.jpg",
+    hoverImg: "/images/shop/chair03.jpg",
+    price: 0.0,
+    oldPrice: null,
+    swatches: [
+      {
+        label: "Light Blue",
+        bgClass: "bg-light-blue",
+        img: "/images/shop/chair03.jpg",
+      },
+    ],
+    isOnisOnSale: true,
+    inStock: true,
+    filterBrands: ["Nike", "Louis Vuitton", "Hermes", "Adidas"], 
+    filterCategory: ["Bags", "Booking", "Clothing", "Women"],
+  },
+]; 
       
 export const products3 = [
   {
@@ -598,7 +600,7 @@ export const galleryItems = [
     price: 10,
     delay: "0.4s",
   },
-];
+]; 
 
 export const thumbsProducts = [
   {

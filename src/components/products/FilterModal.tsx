@@ -49,8 +49,8 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
                       (
                       {
                         productMain.filter((elm) =>
-                          elm.filterCategory.includes(category.name)
-                        ).length
+                          elm.filterCategory.includes(category.name) 
+                        ).length 
                       }
                       )
                     </span>
@@ -189,9 +189,9 @@ export default function FilterModal({ allProps }: FilterSidebarProps) {
                     <span className="count-brand">
                       (
                       {
-                        productMain.filter((el) =>
-                          el.filterBrands.includes(brand.label)
-                        ).length
+                        productMain.filter((el) => 
+                          el.filterBrands.includes(brand.label) 
+                        ).length 
                       }
                       )
                     </span>

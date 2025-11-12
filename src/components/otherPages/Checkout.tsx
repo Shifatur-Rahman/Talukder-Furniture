@@ -429,12 +429,12 @@ export default function Checkout() {
                               Gray, Size C
                             </div>
                           </div>
-                          <div className="total-price text-button">
+                          {/* <div className="total-price text-button">
                             <span className="count">{product.quantity}</span>X
                             <span className="price">
                               ${product.price.toFixed(2)}
                             </span>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     ))}

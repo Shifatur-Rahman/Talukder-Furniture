@@ -40,17 +40,17 @@ export default function ShoppingCart() {
                     </div>
                     <div className="content">
                       <div className="name">
-                        <Link
-                          className="link text-line-clamp-1"
-                          to={`/product-detail/${product.id}`}
+                        <Link 
+                          className="link text-line-clamp-1" 
+                          to={`/product-detail/${product.id}`} 
                         >
                           {product.title}
                         </Link>
                       </div>
                       <div className="cart-item-bot">
-                        <div className="text-button price">
+                        {/* <div className="text-button price">
                           ${product.price.toFixed(2)}
-                        </div>
+                        </div> */}
                         <a
                           className="link text-button"
                           href="#"

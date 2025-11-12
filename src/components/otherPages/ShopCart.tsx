@@ -100,11 +100,11 @@ export default function ShopCart() {
                             </div>
                           </div>
                         </td>
-                        <td className="tf-cart-item_price text-center">
+                        {/* <td className="tf-cart-item_price text-center">
                           <div className="cart-price text-button price-on-sale">
                             ৳ {product.price.toFixed(2)}
                           </div>
-                        </td>
+                        </td> */}
                         <td
                           data-cart-title="Quantity"
                           className="tf-cart-item_quantity"
