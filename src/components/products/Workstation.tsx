@@ -106,19 +106,19 @@ export default function workstation({
     size,
     brands,
     categories,
-    activeFilterOnSale,
+    activeFilterOnSale, 
   ]);
 
   useEffect(() => {
     dispatch({ type: "SORT_PRODUCTS" });
-  }, [filtered, sortingOption]);
+  }, [filtered, sortingOption]); 
 
   return (
-    <>
+    <> 
       <section className={parentClass}>
-        <div className={`container${isFullLayout ? "-full" : ""}`}>
-          <div className="tf-shop-control">
-            <div className="tf-control-filter">
+        <div className={`containerr${isFullLayout ? "-full" : ""}`}> 
+          <div className="tf-shop-control"> 
+            <div className="tf-control-filter"> 
               <a
                 href="#filterShop"
                 data-bs-toggle="offcanvas"
@@ -126,7 +126,7 @@ export default function workstation({
                 className="tf-btn-filter"
               >
                 <span className="icon icon-filter" />
-                <span className="text">Filters</span>
+                <span className="text">Filters</span> 
               </a>
               <div
                 onClick={allProps.toggleFilterWithOnSale}

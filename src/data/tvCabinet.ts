@@ -13,7 +13,7 @@ export const tvCabinetProducts = [
       {
         label: "Light Blue", 
         bgClass: "bg-light-blue",
-        img: "/images/category/livingroom/tvCabinet/01.jpg", 
+        img: "/images/category/livingroom/tvCabinet/01.jpg",     
       },
       {
         label: "Light Blue",
@@ -93,7 +93,7 @@ export const tvCabinetProducts = [
     title: "TV Cabinet", 
     imgSrc: "/images/category/livingroom/tvCabinet/04.jpg", 
     hoverImg: "/images/category/livingroom/tvCabinet/04.jpg", 
-    price: 100,
+    price: 100, 
     oldPrice: null, 
     sale: null,
     swatches: [
@@ -101,7 +101,7 @@ export const tvCabinetProducts = [
         label: "Light Blue", 
         bgClass: "bg-light-blue",
         img: "/images/category/livingroom/tvCabinet/04.jpg", 
-      },
+      }, 
       {
         label: "Light Blue",
         bgClass: "bg-light-blue-2",
@@ -112,13 +112,14 @@ export const tvCabinetProducts = [
     inStock: true,
     filterColor: ["Beige", "Orange", "Green", "Black", "Purple", "Dark Blue"],
     filterCategory: ["Bags", "Clothing", "Women", "Shoes", "Uncategorized"],
-    filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
+  
   {
-    id: 5,
-    delay: "0s",
+    id: 5, 
+    delay: "0s", 
     title: "TV Cabinet", 
     imgSrc: "/images/category/livingroom/tvCabinet/05.jpg", 
     hoverImg: "/images/category/livingroom/tvCabinet/05.jpg", 
