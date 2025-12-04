@@ -833,17 +833,48 @@ export const livingRoom = [
   {
     title: "Recliner/Rocker",
     links: [
-        { label: "Rocking Chair", href: "/sofaaa-table" }, 
-    ],
-  },
-
-  {
-    title: "Accent Chairs",
-    links: [
+      { label: "Rocking Chair", href: "/sofaaa-table" },
       { label: "Accent Chairs Stool", href: "/sofa-1-seater" },
       { label: "Folding Chair", href: "/sofa-2-seater" },
     ],
   },
+
+  // {
+  //   title: "Accent Chairs",
+  //   links: [
+  //     { label: "Accent Chairs Stool", href: "/sofa-1-seater" },
+  //     { label: "Folding Chair", href: "/sofa-2-seater" },
+  //   ],
+  // },
+
+  // test
+
+   {
+    title: "Home Items",
+    links: [
+      { label: "Dressing Table", href: "/dressing-table" },
+      { label: "Dressing Stool", href: "/dressing-stool" },
+      { label: "Cupboard", href: "/cupboard" },
+      { label: "Waredrobe", href: "/waredrobe" },
+      { label: "Side Board", href: "/side-board" },
+      { label: "Display Shelf", href: "/display-shelf" },
+    ],
+  },
+
+  // test
+
+  {
+    title: "Accent Tables",
+    links: [
+      { label: "Center Table", href: "/sofa-1-seater" },
+      { label: "Side Table", href: "/sofa-2-seater" },
+      { label: "Coffee Table", href: "/coffee-table" },
+      { label: "Reading Table", href: "/reading-table" },
+    ],
+  }, 
+
+
+
 
   {
     title: "Accent Tables",
@@ -854,7 +885,7 @@ export const livingRoom = [
       { label: "Reading Table", href: "/reading-table" },
     ],
   },
-   
+      
   {
     title: "Cabinets",
     links: [
