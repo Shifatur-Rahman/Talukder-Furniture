@@ -108,15 +108,15 @@ export default function TwoSofa({
     categories,
     activeFilterOnSale,
   ]);
- 
+  
   useEffect(() => {
     dispatch({ type: "SORT_PRODUCTS" });
   }, [filtered, sortingOption]);
-
-  return (
+ 
+  return ( 
     <>
       <section className={parentClass}>
-        <div className={`container${isFullLayout ? "-full" : ""}`}>
+        <div style={{margin:"0 10px"}} className={`containerr${isFullLayout ? "-full" : ""}`}>
           <div className="tf-shop-control">
             <div className="tf-control-filter">
               <a
@@ -166,7 +166,7 @@ export default function TwoSofa({
           </div>
         </div>
       </section>
-      {/* <FilterModal allProps={allProps} /> */}
+      {/* <FilterModal allProps={allProps} /> */} 
     </>
   );
 }

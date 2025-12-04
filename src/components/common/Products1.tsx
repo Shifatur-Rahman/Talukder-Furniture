@@ -10,8 +10,8 @@ export default function Products1({ cardStyle = 1 }) {
             <div className="heading-section text-center">
               <h3 className="wow fadeInUp">Our Picks For You</h3> 
               <p
-                className="text-body-default text_secondary wow fadeInUp"
-                data-wow-delay="0.1s"
+                className="text-body-default text_secondary wow fadeInUp" 
+                data-wow-delay="0.1s" 
               >
                 Fresh styles just in! Elevate your look.
               </p>
@@ -22,7 +22,7 @@ export default function Products1({ cardStyle = 1 }) {
                   cardStyle={cardStyle}
                   product={product}
                   key={index}
-                />
+                /> 
               ))}
             </div>
           </div>
@@ -31,3 +31,5 @@ export default function Products1({ cardStyle = 1 }) {
     </section>
   );
 }
+ 
+ 

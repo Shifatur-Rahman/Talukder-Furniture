@@ -578,12 +578,12 @@ export default function Nav({ textColor = "" }: NavProps) {
                     <Link to="/product-detail/1" className="link">
                       Desks
                     </Link>
-                  </h6>
+                  </h6> 
                   <h6>25 products</h6> 
-                </div>
-              </div>
-            </div> */}
-
+                </div> 
+               </div>
+             </div> */}
+ 
           </div>
         </div>
       </div>
@@ -776,9 +776,8 @@ export const officeFurnitureMenu = [
     title: "Office Sofa",
     href: "/office-sofa",
     links: [
-      { label: "1 Seater", href: "/1-seater-sofa" },
-      { label: "2 Seater", href: "/2-seater-sofa" },
-      { label: "3 Seater", href: "/3-seater-sofa" },  
+      { label: "Luxury Office Sofa", href: "/luxury-office-sofa" },
+      { label: "Waiting Sofa", href: "/waiting-sofa" },
     ],
   },
   { 

@@ -37,7 +37,7 @@ export default function Categories() {
               <img
                 className="avt"
                 alt="avt"
-                src="/images/shop/product-1.jpg"
+                src="/images/shop/product-1.jpg" 
                 width={900}
                 height={900}
               />
@@ -60,6 +60,7 @@ export default function Categories() {
                     </span>
                   </Link>
                 </li>
+
                 <li>
                   <Link to={`/shop-default`} className="item link">
                     <img
@@ -74,6 +75,7 @@ export default function Categories() {
                     </span>
                   </Link>
                 </li>
+
               </ul>
             </div>
           </div>
@@ -181,6 +183,7 @@ export default function Categories() {
               </ul>
             </div>
           </div>
+
           <div className="wd-facet-categories">
             <div
               role="dialog"
@@ -232,6 +235,7 @@ export default function Categories() {
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>

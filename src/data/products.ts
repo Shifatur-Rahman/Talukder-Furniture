@@ -22,7 +22,7 @@ export const products = [
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"], 
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"], 
-  },
+  }, 
   {
     id: 2, 
     delay: "0.1s",
@@ -63,7 +63,7 @@ export const products = [
         img: "/images/shop/product-3.jpg",
       },
     ],
-    filterBrands: ["Hermes", "Gucci", "Zalando", "Adidas"],
+    filterBrands: ["Hermes", "Gucci", "Zalando", "Adidas"], 
     inStock: true,
     filterColor: [
       "Pink",
@@ -139,7 +139,7 @@ export const products = [
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "On pieces", "Tops", "Skirts", "Sale"],
-  },
+  }, 
   {
     id: 6,
     delay: "0.1s",

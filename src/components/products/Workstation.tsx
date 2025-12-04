@@ -73,7 +73,7 @@ export default function workstation({
     removeBrand: (newBrand: string) => {
       const updated = brands.filter((brand) => brand !== newBrand);
       dispatch({ type: "SET_BRANDS", payload: updated });
-    },
+    }, 
     setCategories: (newItem: string) => {
       const updated = categories.includes(newItem)
         ? categories.filter((elm) => elm !== newItem)
@@ -116,7 +116,7 @@ export default function workstation({
   return (
     <> 
       <section className={parentClass}>
-        <div className={`containerr${isFullLayout ? "-full" : ""}`}> 
+        <div style={{margin:"0 10px"}} className={`containerr${isFullLayout ? "-full" : ""}`}> 
           <div className="tf-shop-control"> 
             <div className="tf-control-filter"> 
               <a
@@ -135,7 +135,7 @@ export default function workstation({
                 }`}
               >
                 <i className="icon icon-checkcircle" />
-                <p className="text-caption-1">Shop sale items only</p>
+                <p className="text-caption-1">Shop sale items only</p> 
               </div>
             </div>
             <ul className="tf-control-layout">
@@ -149,7 +149,7 @@ export default function workstation({
               <Sorting allProps={allProps} />
             </div>
           </div>
-          <div className="wrapper-control-shop">
+          <div className="wrapper-control-shop"> 
             {/* <FilterMeta productLength={sorted.length} allProps={allProps} /> */} 
             {activeLayout === 1 ? (
               <div className="tf-list-layout wrapper-shop" id="listLayout">
@@ -159,14 +159,14 @@ export default function workstation({
               <div
                 className={`tf-grid-layout wrapper-shop tf-col-${activeLayout}`}
                 id="gridLayout"
-              >
+              > 
                 <GridView cardStyle={cardStyle} products={sorted} />
-              </div>
+              </div> 
             )}
           </div>
         </div>
-      </section>
-      {/* <FilterModal allProps={allProps} /> */}
+      </section> 
+      {/* <FilterModal allProps={allProps} /> */} 
     </>
   );
 }

@@ -18,7 +18,9 @@ interface DiningSixSeaterProps {
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
-}  
+}   
+   
+   
  
 // console.log("sofaMain products:", sofaMain); 
   
@@ -143,7 +145,7 @@ export default function DiningSixSeater({
                 setActiveLayout={setActiveLayout}
                 activeLayout={activeLayout}
               />
-            </ul>
+            </ul> 
             <div className="tf-control-sorting">
               <p className="d-none d-lg-block text-caption-1">Sort by:</p>
               <Sorting allProps={allProps} />
@@ -151,7 +153,7 @@ export default function DiningSixSeater({
           </div>
           <div className="wrapper-control-shop">
             {/* <FilterMeta productLength={sorted.length} allProps={allProps} /> */} 
-            {activeLayout === 1 ? (
+            {activeLayout === 1 ? ( 
               <div className="tf-list-layout wrapper-shop" id="listLayout">
                 <Listview products={sorted} />
               </div>

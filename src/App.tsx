@@ -499,26 +499,26 @@ function App() {
 
                     {/* Sofa */}
 
-                    <Route
+                    {/* <Route
                       path="1-seater-sofa"
                       element={
                         <ProductLayout> 
                           <OneSofaPage />
                         </ProductLayout>
                       }
-                    /> 
+                    />  */}
 
                     <Route
-                      path="2-seater-sofa"
+                      path="luxury-office-sofa" 
                       element={
                         <ProductLayout> 
                           <TwoSofaPage />
                         </ProductLayout>
                       }
                     /> 
-
+                              {/*components are written by 3 seater sofa */}
                     <Route
-                      path="3-seater-sofa"
+                      path="waiting-sofa"
                       element={
                         <ProductLayout> 
                           <ThreeSofaPage />

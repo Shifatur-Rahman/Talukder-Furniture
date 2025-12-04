@@ -18,7 +18,7 @@ interface TvCabinetProps {
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
-}  
+} 
  
 // console.log("ShoeRackMain products:", shoeRackMain); 
  
@@ -161,12 +161,12 @@ export default function tvCabinet({
                 id="gridLayout"
               >
                 <GridView cardStyle={cardStyle} products={sorted} />
-              </div>
+              </div> 
             )}
           </div>
         </div>
       </section>
-      {/* <FilterModal allProps={allProps} /> */}
+      {/* <FilterModal allProps={allProps} /> */} 
     </>
   );
 }

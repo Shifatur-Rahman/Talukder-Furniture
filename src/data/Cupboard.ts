@@ -179,7 +179,7 @@ export const cupboardProducts = [
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
-
+ 
 {
     id: 11,
     delay: "0s",

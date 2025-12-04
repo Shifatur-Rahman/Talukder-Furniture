@@ -5,7 +5,7 @@ import type { Product } from "@/types/product";
 
 interface ProductCardProps {
   product: Product;
-  cardStyle?: number;
+  cardStyle?: number; 
 }
 
 const CARD_STYLES_WITH_CART_ICON = [2, 4];
@@ -23,7 +23,7 @@ const ProductCard = React.memo(
       setQuickViewItem,
     } = useContextElement();
 
-    const [currentImage, setCurrentImage] = useState("");
+    const [currentImage, setCurrentImage] = useState(""); 
 
     const isInCart = isAddedToCartProducts(product.id);
     const isInWishlist = isAddedtoWishlist(product.id);
@@ -87,7 +87,9 @@ const ProductCard = React.memo(
         className={`card-product style-${cardStyle} wow fadeInUp`}
         data-wow-delay={product.delay}
       >
-        <div className="card-product-wrapper">
+
+        
+        <div className="card-product-wrapper"> 
           <Link to={`/product-detail/${product.id}`} className="image-wrap">
             <img
               className="lazyload img-product"
@@ -95,7 +97,7 @@ const ProductCard = React.memo(
               alt={product.title}
               width={600}
               height={600}
-            />
+            /> 
             <img
               className="lazyload img-hover"
               data-src={product.hoverImg}
@@ -104,7 +106,7 @@ const ProductCard = React.memo(
               width={600}
               height={600}
             />
-          </Link>
+          </Link> 
 
           {product.sale && (
             <div className="on-sale-wrap">
@@ -153,7 +155,7 @@ const ProductCard = React.memo(
               <span className="tooltip">
                 {isInCompare ? "Compared" : "Compare"}
               </span>
-            </a>
+            </a> 
 
             {!CARD_STYLES_WITHOUT_QUICKVIEW.includes(cardStyle) && (
               <a
@@ -167,7 +169,7 @@ const ProductCard = React.memo(
               </a>
             )}
           </div>
-
+    
           {cardStyle !== 2 && cardStyle !== 4 && (
             <div className="list-btn-main">
               {cardStyle === 5 && (
@@ -201,9 +203,9 @@ const ProductCard = React.memo(
               )}
             </div>
           )}
-        </div>
+        </div> 
 
-        <div className="card-product-info">
+        <div className="card-product-info"> 
           <Link
             to={`/product-detail/${product.id}`}
             className="text-title title link"
