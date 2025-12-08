@@ -734,8 +734,7 @@ export default function Nav({ textColor = "" }: NavProps) {
     </>
   );
 }
- 
- 
+
  
 //officeFurniture 
 export const officeFurnitureMenu = [
@@ -771,7 +770,7 @@ export const officeFurnitureMenu = [
         ],
       },
     ],
-  },
+  }, 
   {
     title: "Office Sofa",
     href: "/office-sofa",
@@ -852,16 +851,17 @@ export const livingRoom = [
    {
     title: "Home Items",
     links: [
-      { label: "Dressing Table", href: "/dressing-table" },
-      { label: "Dressing Stool", href: "/dressing-stool" },
-      { label: "Cupboard", href: "/cupboard" },
+      { label: "Dressing Table", href: "/dressing-table" }, 
+      { label: "Dressing Stool", href: "/dressing-stool" }, 
+      { label: "Cupboard", href: "/home-cupboard" },
       { label: "Waredrobe", href: "/waredrobe" },
       { label: "Side Board", href: "/side-board" },
-      { label: "Display Shelf", href: "/display-shelf" },
+      { label: "Display Shelf", href: "/display-shelf" },  
+      { label: "Home Almirah", href: "/home-almirah" },   
     ],
   },
-
-  // test
+ 
+  // test 
 
   {
     title: "Accent Tables",
@@ -974,10 +974,10 @@ export const diningRoom = [
     ],
   },
 ];
-
-
-//    Bed Room
-
+     
+  
+//    Bed Room 
+   
 export const bedRoomFurnitureMenu = [
   {
     title: "Mattress", 
@@ -1057,16 +1057,11 @@ export const bedRoomFurnitureMenu = [
   //     { label: "BedRoom", href: "/bed-room-set" }, 
   //   ],
   // },
-  {
-    title: "Dressing Table",
-    links: [
-      { label: "Dressing Table", href: "/dressing-table" }, 
-    ],
-  },
+ 
    {
     title: "Outdoor Furniture",
     links: [
-      { label: "Plastic Tables & Chairs", href: "/dressing-table" }, 
+      { label: "Plastic Tables & Chairs", href: "/test" }, 
     ], 
   }, 
 

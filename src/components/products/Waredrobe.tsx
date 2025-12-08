@@ -8,26 +8,26 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { dressingTableMain } from "@/data/DressingTable"; 
+import { waredrobeMain } from "@/data/Waredrobe"; 
  
-// Filter state type (update this to match your reducer state exactly) 
+// Filter state type (update this to match your reducer state exactly)   
  
 // Props for Products1
-interface DressingTableProps {
+interface WaredrobeProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
  
-// console.log("sofaMain products:", sofaMain); 
+// console.log("ShoeRackMain products:", shoeRackMain); 
  
-export default function DressingTable({
+export default function waredrobe({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: DressingTableProps) { 
+}: WaredrobeProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -41,7 +41,7 @@ export default function DressingTable({
     filtered,
     sorted,
     activeFilterOnSale,
-  } = state;
+  } = state; 
 
   const allProps = {
     ...state,
@@ -73,7 +73,7 @@ export default function DressingTable({
     removeBrand: (newBrand: string) => {
       const updated = brands.filter((brand) => brand !== newBrand);
       dispatch({ type: "SET_BRANDS", payload: updated });
-    },
+    }, 
     setCategories: (newItem: string) => {
       const updated = categories.includes(newItem)
         ? categories.filter((elm) => elm !== newItem)
@@ -96,29 +96,29 @@ export default function DressingTable({
     clearFilter: () => { 
       dispatch({ type: "CLEAR_FILTER" }); 
     },
-  }; 
+  };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: dressingTableMain }); 
+     dispatch({ type: "FILTER_PRODUCTS", payload: waredrobeMain });
   }, [ 
     price,
     availability,
-    color, 
+    color,
     size,
     brands,
     categories,
-    activeFilterOnSale,
+    activeFilterOnSale, 
   ]);
 
   useEffect(() => {
     dispatch({ type: "SORT_PRODUCTS" });
-  }, [filtered, sortingOption]);
+  }, [filtered, sortingOption]); 
 
-  return (
-    <>
+  return ( 
+    <> 
       <section className={parentClass}>
-        <div className={`container${isFullLayout ? "-full" : ""}`}>
-          <div className="tf-shop-control">
-            <div className="tf-control-filter">
+        <div className={`container${isFullLayout ? "-full" : ""}`}> 
+          <div className="tf-shop-control"> 
+            <div className="tf-control-filter"> 
               <a
                 href="#filterShop"
                 data-bs-toggle="offcanvas"
@@ -126,7 +126,7 @@ export default function DressingTable({
                 className="tf-btn-filter"
               >
                 <span className="icon icon-filter" />
-                <span className="text">Filters</span>
+                <span className="text">Filters</span> 
               </a>
               <div
                 onClick={allProps.toggleFilterWithOnSale}
@@ -135,7 +135,7 @@ export default function DressingTable({
                 }`}
               >
                 <i className="icon icon-checkcircle" />
-                <p className="text-caption-1">Shop sale items only</p>
+                <p className="text-caption-1">Shop sale items only</p> 
               </div>
             </div>
             <ul className="tf-control-layout">
@@ -149,7 +149,7 @@ export default function DressingTable({
               <Sorting allProps={allProps} />
             </div>
           </div>
-          <div className="wrapper-control-shop">
+          <div className="wrapper-control-shop"> 
             {/* <FilterMeta productLength={sorted.length} allProps={allProps} /> */} 
             {activeLayout === 1 ? (
               <div className="tf-list-layout wrapper-shop" id="listLayout">
@@ -159,13 +159,14 @@ export default function DressingTable({
               <div
                 className={`tf-grid-layout wrapper-shop tf-col-${activeLayout}`}
                 id="gridLayout"
-              >
+              > 
                 <GridView cardStyle={cardStyle} products={sorted} />
-              </div>
+              </div> 
             )}
           </div>
         </div>
       </section> 
+      {/* <FilterModal allProps={allProps} /> */} 
     </>
   );
 }

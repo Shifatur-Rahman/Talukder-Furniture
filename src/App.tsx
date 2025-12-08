@@ -29,7 +29,7 @@ import ThreeDrawerCombinedCabinetPage from "./pages/products/3-Drawer-Combined";
 import TwoDrawerCombinedCabinetPage from "./pages/products/2-Drawer-Combined";
 import FourDrawerCabinetPage from "./pages/products/4-Drawer";
 import FourDrawerCombinedCabinetPage from "./pages/products/4-Drawer-Combined";
-import OneSofaPage from "./pages/products/1-Sofa";
+// import OneSofaPage from "./pages/products/1-Sofa";
 import TwoSofaPage from "./pages/products/2-Sofa";
 import ThreeSofaPage from "./pages/products/3-Sofa";
 import OfficeAlmirahPage from "./pages/products/Office-Almirah";
@@ -41,6 +41,12 @@ import Sofa321Page from "./pages/products/Sofa-321";
 import Sofa221Page from "./pages/products/Sofa-221";
 import BedRoomPage from "./pages/products/BedRoomSet";
 import DressingTablePage from "./pages/products/DressingTable";
+import DisplayShelfPage from "./pages/products/Display-Shelf";
+import HomeCupboardPage from "./pages/products/Home-Cupboard";
+import DressingStoolPage from "./pages/products/Dressing-Stool";
+import WaredrobePage from "./pages/products/Waredrobe";
+import SideBoardPage from "./pages/products/SideBoard";
+import HomeAlmirahPage from "./pages/products/Home-Almirah";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -615,11 +621,65 @@ function App() {
                       path="dressing-table"
                       element={
                         <ProductLayout>
-                          <DressingTablePage />
+                          <DressingTablePage /> 
                         </ProductLayout>
                       }
                     /> 
 
+
+                    <Route
+                      path="display-shelf"
+                      element={
+                        <ProductLayout>
+                          <DisplayShelfPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="home-cupboard"
+                      element={
+                        <ProductLayout>
+                          <HomeCupboardPage />
+                        </ProductLayout>
+                      }
+                    /> 
+ 
+                    <Route
+                      path="dressing-stool"
+                      element={
+                        <ProductLayout>
+                          <DressingStoolPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="waredrobe"
+                      element={
+                        <ProductLayout>
+                          <WaredrobePage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="side-board"
+                      element={
+                        <ProductLayout>
+                          <SideBoardPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                     <Route
+                      path="home-almirah"
+                      element={
+                        <ProductLayout>
+                          <HomeAlmirahPage />
+                        </ProductLayout>
+                      }
+                    /> 
 
 
                             

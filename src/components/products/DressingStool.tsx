@@ -8,12 +8,12 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { dressingTableMain } from "@/data/DressingTable"; 
+import { dressingStoolMain } from "@/data/DressingStool"; 
  
 // Filter state type (update this to match your reducer state exactly) 
  
 // Props for Products1
-interface DressingTableProps {
+interface DressingStoolProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
@@ -22,12 +22,12 @@ interface DressingTableProps {
  
 // console.log("sofaMain products:", sofaMain); 
  
-export default function DressingTable({
+export default function DressingStool({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: DressingTableProps) { 
+}: DressingStoolProps) { 
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -98,7 +98,7 @@ export default function DressingTable({
     },
   }; 
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: dressingTableMain }); 
+     dispatch({ type: "FILTER_PRODUCTS", payload: dressingStoolMain }); 
   }, [ 
     price,
     availability,

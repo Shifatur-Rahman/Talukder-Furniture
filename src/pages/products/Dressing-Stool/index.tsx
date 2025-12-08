@@ -1,6 +1,6 @@
 
 import MetaComponent from "@/components/common/MetaComponent";
-import DressingTable from "@/components/products/DressingTable";
+import DressingStool from "@/components/products/DressingStool";
 
 const metadata = {
   title: "Shop || Talukder - Office equipment",
@@ -8,11 +8,11 @@ const metadata = {
 };
 
 
-export default function DressingTablePage() { 
+export default function DressingStoolPage() { 
   return (
     <> 
       <MetaComponent meta={metadata} /> 
-      <DressingTable /> 
+      <DressingStool /> 
     </>  
   );
 } 

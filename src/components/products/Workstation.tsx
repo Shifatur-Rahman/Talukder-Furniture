@@ -145,7 +145,7 @@ export default function workstation({
               />
             </ul>
             <div className="tf-control-sorting">
-              <p className="d-none d-lg-block text-caption-1">Sort by:</p>
+              <p className="d-none d-lg-block text-caption-1">Sort by:</p> 
               <Sorting allProps={allProps} />
             </div>
           </div>

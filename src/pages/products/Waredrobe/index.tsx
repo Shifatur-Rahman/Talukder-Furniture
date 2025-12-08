@@ -1,18 +1,18 @@
+import Waredrobe from "@/components/products/Waredrobe";
 
 import MetaComponent from "@/components/common/MetaComponent";
-import DressingTable from "@/components/products/DressingTable";
 
 const metadata = {
   title: "Shop || Talukder - Office equipment",
   description: "Talukder - Office equipment",
 };
 
-
-export default function DressingTablePage() { 
+export default function WaredrobePage() { 
   return (
-    <> 
+    <>
       <MetaComponent meta={metadata} /> 
-      <DressingTable /> 
-    </>  
+      <Waredrobe /> 
+    </> 
   );
-} 
+}
+

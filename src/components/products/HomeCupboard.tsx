@@ -8,26 +8,26 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { dressingTableMain } from "@/data/DressingTable"; 
+import { homeCupboardMain } from "@/data/HomeCupboard"; 
  
-// Filter state type (update this to match your reducer state exactly) 
+// Filter state type (update this to match your reducer state exactly)   
  
-// Props for Products1
-interface DressingTableProps {
+// Props for Products1 
+interface HomeCupboardProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
  
-// console.log("sofaMain products:", sofaMain); 
+// console.log("ShoeRackMain products:", shoeRackMain); 
  
-export default function DressingTable({
+export default function homeCupboard({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: DressingTableProps) { 
+}: HomeCupboardProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -46,7 +46,7 @@ export default function DressingTable({
   const allProps = {
     ...state,
     setPrice: (value: [number, number]) =>
-      dispatch({ type: "SET_PRICE", payload: value }),
+      dispatch({ type: "SET_PRICE", payload: value }), 
 
     setColor: (value: string) => {
       value === color
@@ -96,19 +96,19 @@ export default function DressingTable({
     clearFilter: () => { 
       dispatch({ type: "CLEAR_FILTER" }); 
     },
-  }; 
+  };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: dressingTableMain }); 
+     dispatch({ type: "FILTER_PRODUCTS", payload: homeCupboardMain });
   }, [ 
     price,
     availability,
-    color, 
+    color,
     size,
     brands,
     categories,
     activeFilterOnSale,
   ]);
-
+ 
   useEffect(() => {
     dispatch({ type: "SORT_PRODUCTS" });
   }, [filtered, sortingOption]);
@@ -165,7 +165,8 @@ export default function DressingTable({
             )}
           </div>
         </div>
-      </section> 
+      </section>
+      {/* <FilterModal allProps={allProps} /> */}
     </>
   );
 }

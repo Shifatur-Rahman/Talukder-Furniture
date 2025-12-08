@@ -29,7 +29,7 @@ export const sofaProducts = [
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
   },
-  // {
+  // { 
   //   id: 2,
   //   delay: "0.1s",
   //   title: "Sofa 222",

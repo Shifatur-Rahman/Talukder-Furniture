@@ -1,12 +1,12 @@
+export const displayShelfProducts = [ 
 
-export const dolnaProducts = [ 
     {
     id: 1,
     delay: "0s",
-    title: "Dolna", 
-    imgSrc: "/images/category/diningroom/dolna/1.png", 
-    hoverImg: "/images/category/diningroom/dolna/1.png", 
-    price: 100,
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/1.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/1.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -20,10 +20,10 @@ export const dolnaProducts = [
   {
     id: 2,
     delay: "0s",
-    title: "Dolna", 
-    imgSrc: "/images/category/diningroom/dolna/2.png", 
-    hoverImg: "/images/category/diningroom/dolna/2.png", 
-    price: 100,
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/2.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/2.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -37,10 +37,10 @@ export const dolnaProducts = [
   {
     id: 3,
     delay: "0s",
-    title: "Dolna", 
-    imgSrc: "/images/category/diningroom/dolna/3.png", 
-    hoverImg: "/images/category/diningroom/dolna/3.png", 
-    price: 100,
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/3.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/3.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -54,10 +54,10 @@ export const dolnaProducts = [
   {
     id: 4,
     delay: "0s",
-    title: "Dolna", 
-    imgSrc: "/images/category/diningroom/dolna/4.png", 
-    hoverImg: "/images/category/diningroom/dolna/4.png", 
-    price: 100,
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/4.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/4.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -71,10 +71,10 @@ export const dolnaProducts = [
   {
     id: 5,
     delay: "0s",
-    title: "Dolna", 
-    imgSrc: "/images/category/diningroom/dolna/5.png", 
-    hoverImg: "/images/category/diningroom/dolna/5.png", 
-    price: 100,
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/5.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/5.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -88,10 +88,10 @@ export const dolnaProducts = [
   {
     id: 6,
     delay: "0s",
-    title: "Dolna", 
-    imgSrc: "/images/category/diningroom/dolna/6.png", 
-    hoverImg: "/images/category/diningroom/dolna/6.png", 
-    price: 100,
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/6.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/6.jpg", 
+    price: 100, 
     oldPrice: null, 
     sale: null,
     filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
@@ -101,15 +101,52 @@ export const dolnaProducts = [
     filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
     tabFilterOptions2: ["New Arrivals", "On Sale"],
     tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
-  }, 
+  },
+  {
+    id: 7,
+    delay: "0s",
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/7.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/7.jpg", 
+    price: 100, 
+    oldPrice: null, 
+    sale: null,
+    filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
+    inStock: true, 
+    filterColor: ["Beige", "Orange", "Green", "Black", "Purple", "Dark Blue"], 
+    filterCategory: ["Bags", "Clothing", "Women", "Shoes", "Uncategorized"],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
+    tabFilterOptions2: ["New Arrivals", "On Sale"],
+    tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
+  },
+  {
+    id: 8,
+    delay: "0s",
+    title: "Display Shelf", 
+    imgSrc: "/images/category/livingroom/display shelf/8.jpg", 
+    hoverImg: "/images/category/livingroom/display shelf/8.jpg", 
+    price: 100, 
+    oldPrice: null, 
+    sale: null,
+    filterBrands: ["Nike", "Louis Vuitton", "Zalando", "Adidas"], 
+    inStock: true, 
+    filterColor: ["Beige", "Orange", "Green", "Black", "Purple", "Dark Blue"], 
+    filterCategory: ["Bags", "Clothing", "Women", "Shoes", "Uncategorized"],
+    filterSizes: ["XS", "L", "XL", "2XL", "3XL"],
+    tabFilterOptions2: ["New Arrivals", "On Sale"],
+    tabFilterOptions: ["Bottoms", "Skirts", "Dresses", "Sale"],
+  },
 ]
 
-export const dolnaMain = [...dolnaProducts].slice( 
+
+
+
+
+export const displayShelfMain = [...displayShelfProducts].slice( 
   0,
-  9
-); 
+  30
+);
 
-export const allDolna = [ 
-  ...dolnaProducts, 
+export const allDisplayShelf = [ 
+  ...displayShelfProducts, 
 ]; 
-
