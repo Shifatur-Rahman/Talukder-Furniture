@@ -8,26 +8,26 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { shoeRackMain } from "@/data/shoeRack"; 
+import { rockingChairMain } from "@/data/RockingChair"; 
  
-// Filter state type (update this to match your reducer state exactly)   
+// Filter state type (update this to match your reducer state exactly) 
  
 // Props for Products1
-interface ShoeRackProps {
+interface RockingChairProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
  
-// console.log("ShoeRackMain products:", shoeRackMain); 
+// console.log("sofaMain products:", sofaMain); 
  
-export default function ShoeRack({
+export default function RockingChair({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: ShoeRackProps) {
+}: RockingChairProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -40,7 +40,7 @@ export default function ShoeRack({
     sortingOption,
     filtered,
     sorted,
-    activeFilterOnSale,
+    activeFilterOnSale, 
   } = state;
 
   const allProps = {
@@ -98,7 +98,7 @@ export default function ShoeRack({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: shoeRackMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: rockingChairMain });
   }, [ 
     price,
     availability,

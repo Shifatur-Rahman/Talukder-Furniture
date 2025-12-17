@@ -47,6 +47,17 @@ import DressingStoolPage from "./pages/products/Dressing-Stool";
 import WaredrobePage from "./pages/products/Waredrobe";
 import SideBoardPage from "./pages/products/SideBoard";
 import HomeAlmirahPage from "./pages/products/Home-Almirah";
+import DiningWagonPage from "./pages/products/Dining-Wagon";
+import HospitalBedPage from "./pages/products/Hospital-Bed";
+import OtBedPage from "./pages/products/Ot-Bed";
+import DeliveryBedPage from "./pages/products/Delivery-Bed";
+import HospitalBedTablePage from "./pages/products/Hospital-Bed-Table";
+import MedicineTrolleyPage from "./pages/products/Medicine-Trolley";
+import BabyCotPage from "./pages/products/Baby-Cot";
+import MedicineCupboardyPage from "./pages/products/Medicine-Cupboard";
+import SalineStandPage from "./pages/products/Saline-Stand";
+import RockingChairPage from "./pages/products/Rocking-Chair";
+import SingleStudentTablePage from "./pages/products/SingleStudentTable";
 
 // Common Components
 const LayoutWrapper = lazy(
@@ -682,10 +693,122 @@ function App() {
                     /> 
 
 
-                            
+                     <Route
+                      path="rocking-chair"
+                      element={
+                        <ProductLayout>
+                          <RockingChairPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="dining-wagon"
+                      element={
+                        <ProductLayout>
+                          <DiningWagonPage />
+                        </ProductLayout>
+                      }
+                    />  
+
+                    {/* hospital */} 
+
+                    <Route
+                      path="hospital-bed"
+                      element={
+                        <ProductLayout>
+                          <HospitalBedPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="ot-bed"
+                      element={
+                        <ProductLayout>
+                          <OtBedPage />
+                        </ProductLayout>
+                      }
+                    /> 
 
 
+                    <Route
+                      path="delivery-bed"
+                      element={
+                        <ProductLayout>
+                          <DeliveryBedPage />
+                        </ProductLayout>
+                      }
+                    /> 
 
+                    <Route
+                      path="hospital-bed-table"
+                      element={
+                        <ProductLayout>
+                          <HospitalBedTablePage />
+                        </ProductLayout> 
+                      }
+                    /> 
+
+
+                    <Route
+                      path="/medicine-trolley"
+                      element={
+                        <ProductLayout>
+                          <MedicineTrolleyPage />
+                        </ProductLayout> 
+                      }
+                    /> 
+
+
+                    <Route
+                      path="/baby-cot"
+                      element={
+                        <ProductLayout> 
+                          <BabyCotPage />
+                        </ProductLayout>
+                      }
+                    /> 
+   
+                    <Route
+                      path="/medicine-cupboard"
+                      element={
+                        <ProductLayout> 
+                          <MedicineCupboardyPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    <Route
+                      path="/saline-stand"
+                      element={
+                        <ProductLayout> 
+                          <SalineStandPage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+                    {/* Educational */}
+
+                    <Route
+                      path="/educational-items"
+                      element={
+                        <ProductLayout> 
+                          <SingleStudentTablePage />
+                        </ProductLayout>
+                      }
+                    /> 
+
+ 
+
+                    {/* <Route
+                      path="/saline-stand"
+                      element={
+                        <ProductLayout>
+                          <MedicineTrolleyPage />
+                        </ProductLayout>
+                      }
+                    />  */} 
 
 
 
@@ -722,7 +845,7 @@ function App() {
 
                   </Route>
 
-                  <Route path="shopping-cart" element={<ShppingCartPage />} />
+                  <Route path="shopping-cart" element={<ShppingCartPage />} /> 
                   <Route path="checkout" element={<CheckoutPage />} />
                   <Route path="order" element={<OrderPage />} />
                   <Route path="login" element={<LoginPage />} />

@@ -8,12 +8,12 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { shoeRackMain } from "@/data/shoeRack"; 
+import { diningWagonMain } from "@/data/DiningWagon"; 
  
 // Filter state type (update this to match your reducer state exactly)   
  
 // Props for Products1
-interface ShoeRackProps {
+interface diningWagonProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
@@ -22,12 +22,12 @@ interface ShoeRackProps {
  
 // console.log("ShoeRackMain products:", shoeRackMain); 
  
-export default function ShoeRack({
+export default function displayShelf({ 
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: ShoeRackProps) {
+}: diningWagonProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -41,7 +41,7 @@ export default function ShoeRack({
     filtered,
     sorted,
     activeFilterOnSale,
-  } = state;
+  } = state; 
 
   const allProps = {
     ...state,
@@ -98,7 +98,7 @@ export default function ShoeRack({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: shoeRackMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: diningWagonMain }); 
   }, [ 
     price,
     availability,
@@ -108,11 +108,11 @@ export default function ShoeRack({
     categories,
     activeFilterOnSale,
   ]);
-
+ 
   useEffect(() => {
     dispatch({ type: "SORT_PRODUCTS" });
   }, [filtered, sortingOption]);
-
+ 
   return (
     <>
       <section className={parentClass}>
@@ -149,7 +149,7 @@ export default function ShoeRack({
               <Sorting allProps={allProps} />
             </div>
           </div>
-          <div className="wrapper-control-shop">
+          <div className="wrapper-control-shop"> 
             {/* <FilterMeta productLength={sorted.length} allProps={allProps} /> */} 
             {activeLayout === 1 ? (
               <div className="tf-list-layout wrapper-shop" id="listLayout">
@@ -166,7 +166,7 @@ export default function ShoeRack({
           </div>
         </div>
       </section>
-      {/* <FilterModal allProps={allProps} /> */}
+      {/* <FilterModal allProps={allProps} /> */} 
     </>
   );
 }

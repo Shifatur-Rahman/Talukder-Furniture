@@ -8,26 +8,24 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { shoeRackMain } from "@/data/shoeRack"; 
+import { otBedMain } from "@/data/OtBed"; 
  
 // Filter state type (update this to match your reducer state exactly)   
  
 // Props for Products1
-interface ShoeRackProps {
+interface OtBedProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
- 
-// console.log("ShoeRackMain products:", shoeRackMain); 
- 
-export default function ShoeRack({
+
+export default function OtBed({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: ShoeRackProps) {
+}: OtBedProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -62,7 +60,7 @@ export default function ShoeRack({
       value === availability
         ? dispatch({ type: "SET_AVAILABILITY", payload: "All" })
         : dispatch({ type: "SET_AVAILABILITY", payload: value });
-    },
+    }, 
 
     setBrands: (newBrand: string) => {
       const updated = [...brands].includes(newBrand)
@@ -98,7 +96,7 @@ export default function ShoeRack({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: shoeRackMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: otBedMain });
   }, [ 
     price,
     availability,
@@ -112,7 +110,7 @@ export default function ShoeRack({
   useEffect(() => {
     dispatch({ type: "SORT_PRODUCTS" });
   }, [filtered, sortingOption]);
-
+ 
   return (
     <>
       <section className={parentClass}>

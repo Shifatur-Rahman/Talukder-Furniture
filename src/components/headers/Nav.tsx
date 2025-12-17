@@ -500,8 +500,8 @@ export default function Nav({ textColor = "" }: NavProps) {
 </li> 
     
 {/* new */} 
-
-       <li
+ 
+       {/* <li
   className="menu-item"
   onMouseEnter={() => setOpen(true)}
   onMouseLeave={() => setOpen(false)}
@@ -518,17 +518,17 @@ export default function Nav({ textColor = "" }: NavProps) {
             {hospitalFurnitureMenu.map((menu, index) => (
               <div className="mega-menu-item" key={index}>
                 <div className="list-categories-inner">
-                  {/* Category Title */}
+                
                   <div className="menu-heading text-title font-bold flex items-center">
                     {menu.title}
                     <FaArrowRight className="arrow-icon ml-2 text-xs" />
                   </div>
 
-                  {/* Links inside Category */}
+                
                   <ul className="menu-list">
                     {menu.links.map((link, idx) => (
                       <li key={idx}>
-                        {/* If this link has children → Parent */}
+                     
                         {link.children && Array.isArray(link.children) ? (
                           <>
                             <span className="menu-link-text font-semibold flex items-center cursor-default">
@@ -558,38 +558,108 @@ export default function Nav({ textColor = "" }: NavProps) {
                 </div>
               </div>
             ))} 
-
-            {/* Right side promo image */}
-
-            {/* <div className="mega-menu-item">
-              <div className="collection-position hover-img style-4">
-                <Link to="/product-detail/1" className="img-style w-100">
-                  <img
-                    className="lazyload"
-                    data-src="/images/banner/collections-1.jpg"
-                    alt="banner-cls"
-                    src="/images/banner/collections-1.jpg"
-                    width={657}
-                    height={877}
-                  />
-                </Link>
-                <div className="content cls-content">
-                  <h6>
-                    <Link to="/product-detail/1" className="link">
-                      Desks
-                    </Link>
-                  </h6> 
-                  <h6>25 products</h6> 
-                </div> 
-               </div>
-             </div> */}
  
           </div>
         </div>
       </div>
     </div>
   )}
-</li> 
+</li>  */}
+
+
+
+
+
+
+
+
+
+
+  <li
+      className="menu-item"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <a href="#" className="item-link">
+        Hospital <i className="icon icon-down" />
+      </a>
+
+      {open && (
+        <div className="sub-menu mega-menu mega-menu-1"> 
+          <div className="container">
+            <div className="row-demo-1">
+              <div className="mega-menu-list">
+                {hospitalFurnitureMenu.map((menu, index) => (
+                  <div className="mega-menu-item" key={index}>
+                    <div className="list-categories-inner">
+                    <div className="menu-heading text-title">{menu.title} 
+
+                       {/* <i className="fa-solid fa-arrow-right"></i> 
+                       <i class="fa-solid fa-arrow-right"></i> */}
+                       <FaArrowRight className="arrow-icon" /> 
+                    </div>
+
+                    <ul className="menu-list">
+                      {menu.links.map((link, idx) => (
+                        <li key={idx}>
+                          {link.children ? (
+                            <>
+                              <span className="menu-link-text">
+                                {link.label}
+                              </span>
+                              <ul className="submenu-list">
+                                {link.children.map((child, cIdx) => (
+                                  
+                                  <li key={cIdx}>
+                                    <a href={child.href} className="menu-link-text">
+                                      <AiOutlineMinus />
+                                      {child.label}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          ) : (
+                            <a href={link.href} className="menu-link-text">
+                              {link.label}
+                            </a>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  </div> 
+                ))}
+
+                 {/* <div className="mega-menu-item">
+                  <div className="collection-position hover-img style-4">
+                    <Link to="/product-detail/1" className="img-style w-100">
+                      <img
+                        className="lazyload"
+                        data-src="/images/banner/collections-1.jpg" 
+                        alt="banner-cls"
+                        src="/images/banner/collections-1.jpg"
+                        width={657}
+                        height={877}
+                      />
+                    </Link>
+                    <div className="content cls-content">
+                      <h6>
+                        <Link to="/product-detail/1" className="link"> 
+                          Office Items
+                        </Link>
+                      </h6>
+                      <h6>500 products</h6> 
+                    </div>
+                  </div>
+                </div> */}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </li>
 
     {/* new */}
 
@@ -846,8 +916,6 @@ export const livingRoom = [
   //   ],
   // },
 
-  // test
-
    {
     title: "Home Items",
     links: [
@@ -857,11 +925,10 @@ export const livingRoom = [
       { label: "Waredrobe", href: "/waredrobe" },
       { label: "Side Board", href: "/side-board" },
       { label: "Display Shelf", href: "/display-shelf" },  
-      { label: "Home Almirah", href: "/home-almirah" },   
+      { label: "Home Almirah", href: "/home-almirah" },  
+      { label: "Rocking Chair", href: "/rocking-chair" },   
     ],
-  },
- 
-  // test 
+  }, 
 
   {
     title: "Accent Tables",
@@ -872,9 +939,6 @@ export const livingRoom = [
       { label: "Reading Table", href: "/reading-table" },
     ],
   }, 
-
-
-
 
   {
     title: "Accent Tables",
@@ -940,8 +1004,8 @@ export const diningRoom = [
   {
     title: "Dining Room Cabinets",
     links: [
-      { label: "Dinner Wagon", href: "/sofa-1-seater" },
-      { label: "Buffet Cabinet", href: "/sofa-2-seater" },
+      { label: "Dinner Wagon", href: "/dining-wagon" },
+      { label: "Buffet Cabinet", href: "/sofa-2-seater" }, 
     ],
   },
 
@@ -1071,81 +1135,19 @@ export const bedRoomFurnitureMenu = [
 
 //    Institutional
 export const institutionalFurnitureMenu = [ 
-  // {
-  //   title: "Hospital",
-  //   links: [
-  //     {
-  //       label: "Beds",
-  //       children: [
-  //         { label: "ICU Bed", href: "/icu-bed" },
-  //         { label: "Mechanical Bed", href: "/mechanical-bed" },
-  //         { label: "Hospital Bed", href: "/hospital-bed" },
-  //         { label: "Patient Stretcher", href: "/patient-stretcher" },
-  //         { label: "Patient Stretcher cum Trolley", href: "/patient-stretcher-cum-trolley" },
-  //         { label: "Gynecological Bed", href: "/gynecological-bed" },
-  //       ],
-  //     },
-  //     {
-  //       label: "Cabinets",
-  //       children: [
-  //         { label: "Bed Side Cabinet", href: "/bed-side-cabinet" },
-  //       ],
-  //     },
-  //   ]
-  // }, 
-
-  //  {
-    
-  //   title: "Hospital",
-  //   links: [
-  //      {
-  //       label: "Trolleys",
-  //       children: [
-  //         { label: "Food Trolley", href: "/food-trolley" },
-  //         { label: "Medicine Trolley", href: "/medicine-trolley" },
-  //         { label: "Instrument Trolley", href: "/instrument-trolley" },
-  //       ],
-  //     },
-
-  //      { label: "Over Bed Table", href: "/over-bed-table" },
-  //     { label: "Medicine Cupboard", href: "/medicine-cupboard" },
-  //     { label: "Bowl Stand", href: "/bowl-stand" },
-  //     { label: "Kick Bucket", href: "/kick-bucket" },
-  //     { label: "Isolation Screen", href: "/isolation-screen" },
-
-  //     ],
-  // },
-
-  // {
-
-  //   title: "Hospital",
-  //   links: [
-  //     { label: "Saline Stand", href: "/saline-stand" },
-  //     { label: "Baby Cot", href: "/baby-cot" },
-  //     { label: "Bed Side Locker", href: "/bed-side-locker" },
-  //     {
-  //       label: "Waiting Chair",
-  //       children: [
-  //         { label: "3 Seater", href: "/waiting-chair-3-seater" },
-  //         { label: "4 Seater", href: "/waiting-chair-4-seater" },
-  //       ],
-  //     },
-  //     {
-  //       label: "Cart",
-  //       children: [
-  //         { label: "Food Cart", href: "/food-cart" },
-  //         { label: "Emergency Cart", href: "/emergency-cart" },
-  //       ],
-  //     },
-
-  //   ]
-  // }, 
   {
     title: "Educational",
     links: [
-      { label: "Classroom Chairs", href: "/classroom-chairs" }, 
-      { label: "Storage and Organizers", href: "/storage-organizers" }, 
-      { label: "Kitchenware Accents of Decors", href: "/kitchenware-accents-decors" }, 
+      { label: "Educational Items", href: "/educational-items" }, 
+      // { label: "Single Student Chair", href: "/single-student-chair" }, 
+      // { label: "Double Student Table", href: "/double-student-table" }, 
+      // { label: "Double Student Chair", href: "/double-student-chair" }, 
+      // { label: "School Bench", href: "/school-bench" }, 
+      // { label: "Teacher Table", href: "/teacher-table" }, 
+      // { label: "Teacher Chair", href: "/teacher-chair" },
+      // { label: "Student Locker", href: "/student-locker" }, 
+      // { label: "Library Table", href: "/library-table" },
+      // { label: "Podium", href: "/podium" },  
     ],
   },
     {
@@ -1157,7 +1159,7 @@ export const institutionalFurnitureMenu = [
 ];
 
 
-//    Institutional
+//    Institutional 
 export const hospitalFurnitureMenu = [ 
   {
     title: "Hospital",
@@ -1165,12 +1167,12 @@ export const hospitalFurnitureMenu = [
       {
         label: "Beds",
         children: [
-          { label: "ICU Bed", href: "/icu-bed" },
-          { label: "Mechanical Bed", href: "/mechanical-bed" },
           { label: "Hospital Bed", href: "/hospital-bed" },
-          { label: "Patient Stretcher", href: "/patient-stretcher" },
-          { label: "Patient Stretcher cum Trolley", href: "/patient-stretcher-cum-trolley" },
-          { label: "Gynecological Bed", href: "/gynecological-bed" },
+          { label: "OT Bed", href: "/ot-bed" },
+          { label: "Delivery Bed", href: "/delivery-bed" },
+          { label: "Bed Side Table", href: "/hospital-bed-table" },
+          { label: "Madicine Trolley", href: "/medicine-trolley" }, 
+          { label: "Baby Bed", href: "/baby-cot" },
         ],
       },
       {
@@ -1186,53 +1188,67 @@ export const hospitalFurnitureMenu = [
     
     title: "Hospital",
     links: [
-       {
-        label: "Trolleys",
-        children: [
-          { label: "Food Trolley", href: "/food-trolley" },
-          { label: "Medicine Trolley", href: "/medicine-trolley" },
-          { label: "Instrument Trolley", href: "/instrument-trolley" },
-        ],
-      },
 
-       { label: "Over Bed Table", href: "/over-bed-table" },
-      { label: "Medicine Cupboard", href: "/medicine-cupboard" },
-      { label: "Bowl Stand", href: "/bowl-stand" },
-      { label: "Kick Bucket", href: "/kick-bucket" },
-      { label: "Isolation Screen", href: "/isolation-screen" },
+      { label: "Patient Stretcher", href: "/patient-stretcher" },
+      { label: "Patient Stretcher cum Trolley", href: "/patient-stretcher-cum-trolley" },
+      { label: "Gynecological Bed", href: "/gynecological-bed" },
 
-      ],
+    ],
   },
+
+  // test
+
+// {
+//     title: "Tables",
+//      href: "/tables",
+//     links: [
+//       { label: "MD/CEO Table", href: "/md-table" },
+//       { label: "Executive Table", href: "/executive" }, 
+//       { label: "Side Rack", href: "/side-rack" },
+//       { label: "Conference Table", href: "/conference-table" },
+//       { label: "Computer Table", href: "/computer-table" }, 
+//     ],
+//   },
+
+  // test
+
+  //  {
+  //   title: "Home Items",
+  //   links: [
+  //     { label: "Dressing Table", href: "/dressing-table" }, 
+  //     { label: "Dressing Stool", href: "/dressing-stool" }, 
+  //     { label: "Cupboard", href: "/home-cupboard" },
+  //     { label: "Waredrobe", href: "/waredrobe" },
+  //     { label: "Side Board", href: "/side-board" },
+  //     { label: "Display Shelf", href: "/display-shelf" },  
+  //     { label: "Home Almirah", href: "/home-almirah" },   
+  //   ],
+  // },
 
   {
-
     title: "Hospital",
     links: [
-      { label: "Saline Stand", href: "/saline-stand" },
-      { label: "Baby Cot", href: "/baby-cot" },
-      { label: "Bed Side Locker", href: "/bed-side-locker" },
-      {
-        label: "Waiting Chair",
-        children: [
-          { label: "3 Seater", href: "/waiting-chair-3-seater" },
-          { label: "4 Seater", href: "/waiting-chair-4-seater" },
-        ],
-      },
-      {
-        label: "Cart",
-        children: [
-          { label: "Food Cart", href: "/food-cart" },
-          { label: "Emergency Cart", href: "/emergency-cart" },
-        ],
-      },
+      { label: "Saline Stand", href: "/saline-stand" }, 
+      { label: "Medicine Trolley", href: "/medicine-trolley" }, 
+      { label: "Medicine Cupboard", href: "/medicine-cupboard" }, 
+      { label: "Bed Side Locker", href: "/bed-side-locker" }, 
+
+      // {
+      //   label: "Waiting Chair",
+      //   children: [
+      //     { label: "3 Seater", href: "/waiting-chair-3-seater" },
+      //     { label: "4 Seater", href: "/waiting-chair-4-seater" },
+      //   ],
+      // },
+      // {
+      //   label: "Cart",
+      //   children: [
+      //     { label: "Food Cart", href: "/food-cart" },
+      //     { label: "Emergency Cart", href: "/emergency-cart" },
+      //   ],
+      // },
 
     ]
-  },
-    {
-    title: "Hospital Baby Cot",
-    links: [
-      { label: "Hospital Baby Cot", href: "/baby-cot" },
-    ],
   },
 
   {
@@ -1273,7 +1289,7 @@ export const childrenFurniture = [
   {
     title: "Children's Cot",
     links: [
-       { label: "Children's Cot", href: "/single-bed-frame" },
+       { label: "Children Cot", href: "/children-cot" },
     ],
   },
 

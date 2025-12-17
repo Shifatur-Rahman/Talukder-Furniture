@@ -5,12 +5,12 @@ export default function Categories() {
     
     <section className="flat-spacing-2">
       <div className="container-full">
-        <div className="row">
+        <div className="row"> 
           <div className="col-12"> 
             <div className="text-center flat-spacing pt-0 line-bottom-container"> 
               <div className="wrap-cls-img"> 
                 <div className="cls-img-item hover-img"> 
-                   <Link to={`/office-furniture`} className="image img-style">
+                   <Link to={`/md-table`} className="image img-style">
                     <img 
                       data-src="/images/section/collections-banner.jpg" 
                       alt="Cls Image"
@@ -20,13 +20,13 @@ export default function Categories() {
                     /> 
                   </Link> 
                   <h3> 
-                    <Link className="link" to={`/office-furniture`}> 
+                    <Link className="link" to={`/md-table`}> 
                       Office Furniture
                     </Link>
                   </h3> 
                 </div> 
                 <div className="cls-img-item hover-img"> 
-                  <Link to={`/shop-default`} className="image img-style"> 
+                  <Link to={`/sofa-221`} className="image img-style"> 
                     <img
                       data-src="/images/section/collections-banner-1.jpg" 
                       alt="Cls Image"
@@ -36,14 +36,14 @@ export default function Categories() {
                     /> 
                   </Link> 
                   <h3> 
-                    <Link className="link" to={`/shop-default`}> 
+                    <Link className="link" to={`/sofa-221`}> 
                       Living Furniture
                     </Link>
                   </h3>
                 </div>
-                <div className="cls-img-item hover-img"> 
 
-                  <Link to={`/shop-default`} className="image img-style">
+                <div className="cls-img-item hover-img"> 
+                  <Link to={`/dining-6-seater`} className="image img-style">
                     <img
                       data-src="/images/section/collections-banner-2.jpg"
                       alt="Cls Image"
@@ -53,13 +53,14 @@ export default function Categories() {
                     />
                   </Link>  
                   <h3> 
-                    <Link className="link" to={`/shop-default`}> 
+                    <Link className="link" to={`/dining-6-seater`}> 
                       Dining Room
                     </Link>
                   </h3>
                 </div>
+
                 <div className="cls-img-item hover-img"> 
-                  <Link to={`/shop-default`} className="image img-style"> 
+                  <Link to={`/bed-room-set`} className="image img-style"> 
                     <img
                       data-src="/images/section/collections-banner-3.jpg" 
                       alt="Cls Image"
@@ -69,11 +70,12 @@ export default function Categories() {
                     /> 
                   </Link> 
                   <h3> 
-                    <Link className="link" to={`/shop-default`}> 
+                    <Link className="link" to={`/bed-room-set`}> 
                       Bed Room
                     </Link> 
                   </h3>
                 </div>
+
                 <div className="cls-img-item hover-img">
                   <Link to={`/shop-default`} className="image img-style"> 
                     <img
@@ -92,7 +94,7 @@ export default function Categories() {
                 </div> 
 
                 <div className="cls-img-item hover-img">
-                  <Link to={`/shop-default`} className="image img-style"> 
+                  <Link to={`/hospital-bed`} className="image img-style"> 
                     <img
                       data-src="/images/section/collections-banner-5.jpg" 
                       alt="Cls Image"
@@ -103,7 +105,7 @@ export default function Categories() {
                   </Link> 
                   
                   <h3>
-                    <Link className="link" to={`/shop-default`}> 
+                    <Link className="link" to={`/hospital-bed`}> 
                       Hospital Furniture
                     </Link> 
                   </h3>

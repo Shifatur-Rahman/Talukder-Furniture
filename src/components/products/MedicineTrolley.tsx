@@ -8,26 +8,26 @@ import { initialState, reducer } from "@/reducer/filterReducer";
 // import FilterMeta from "./FilterMeta";
 // import FilterModal from "./FilterModal";
 import Listview from "./Listview";
-import { shoeRackMain } from "@/data/shoeRack"; 
+import { medicineTrolleyMain } from "@/data/MedicineTrolley"; 
  
 // Filter state type (update this to match your reducer state exactly)   
  
-// Props for Products1
-interface ShoeRackProps {
+// Props for Products1 
+interface MedicineTrolleyProps {
   parentClass?: string;
   defaultActiveLayout?: number; 
   isFullLayout?: boolean; 
   cardStyle?: number; 
 }  
  
-// console.log("ShoeRackMain products:", shoeRackMain); 
+// console.log("ShoeRackMain products:", mdTableMain); 
  
-export default function ShoeRack({
+export default function MedicineTrolley({
   parentClass = "flat-spacing", 
   defaultActiveLayout = 4, 
   isFullLayout = false, 
   cardStyle = 1, 
-}: ShoeRackProps) {
+}: MedicineTrolleyProps) {
   const [activeLayout, setActiveLayout] = useState<number>(defaultActiveLayout); 
   const [state, dispatch] = useReducer(reducer, initialState); 
   const {
@@ -98,7 +98,7 @@ export default function ShoeRack({
     },
   };
   useEffect(() => {
-     dispatch({ type: "FILTER_PRODUCTS", payload: shoeRackMain });
+     dispatch({ type: "FILTER_PRODUCTS", payload: medicineTrolleyMain }); 
   }, [ 
     price,
     availability,
