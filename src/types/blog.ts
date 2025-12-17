@@ -12,3 +12,4 @@ export interface Blog {
   category?: string | null; // ✅ allow null here
   layout?: string;
 }
+  
